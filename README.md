@@ -6,7 +6,7 @@ Web application that represents system for managing subjects at department of Co
 
 ## Description
 
-## Built with
+### Built with
 
-# Author
+### Author
 - Aleksandra Bogicevic - @alebogi
