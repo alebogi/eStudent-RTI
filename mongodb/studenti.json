@@ -1,0 +1,63 @@
+{
+	username: "ba170390d@student.etf.rs",
+	password: "lexo123",
+	index: "2017/0390",
+	study_type: "d",
+	name: "Aleksandra",
+	lastname: "Bogićević",
+	status: "active"
+}
+{
+	username: "mn171389@student.etf.rs",
+	password: "munzekonza1987",
+	index: "2017/1389",
+	study_type: "p",
+	name: "Nikola",
+	lastname: "Miličević",
+	status: "active"
+}
+{
+	username: "kd150666d@student.etf.rs",
+	password: "duledidule69",
+	index: "2015/0666",
+	study_type: "d",
+	name: "Dušan",
+	lastname: "Kodžopeljić",
+	status: "nonactive"
+}
+{
+	username: "ml160645@student.etf.rs",
+	password: "lazarus1312",
+	index: "2016/0645",
+	study_type: "d",
+	name: "Lazar",
+	lastname: "Mihailović",
+	status: "active"
+}
+{
+	username: "ca207859@student.etf.rs",
+	password: "volimpartizan333",
+	index: "2020/7859",
+	study_type: "m",
+	name: "Aleksa",
+	lastname: "Čolović",
+	status: "active"
+}
+{
+	username: "lb189012@student.etf.rs",
+	password: "lebronsakaraburme23",
+	index: "2018/9012",
+	study_type: "p",
+	name: "Božo",
+	lastname: "Labović",
+	status: "active"
+}
+{
+	username: "ld190189@student.etf.rs",
+	password: "codasahmajstor123",
+	index: "2019/0189",
+	study_type: "d",
+	name: "Danilo",
+	lastname: "Lalić",
+	status: "nonactive"
+}
