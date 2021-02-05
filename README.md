@@ -6,6 +6,8 @@ Web application that represents system for managing subjects at department of Co
 
 ## Description
 
+## Instalation
+
 ### Built with
 
 ### Author
