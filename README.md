@@ -24,18 +24,23 @@ In command prompt locate in backend folder. Type:\
 	npm install cors\
 	npm install mongoose ili npm install mongodb (native driver)\
 	npm install typescript\
-\
-In mongodb insert database stored in mongodb repositorium.\
-\
 
-Starting the application:
+Replace files from frontend/app/src with files from frontend/src from my project.\
+Replace files from backend/src with files from backend/src from my project.\
+
+In mongodb insert database stored in mongodb repositorium.\
+
+
+Starting the application:\
 Running frontend:\
 	ng serve --open\
 \
 Running backend:\
 	npm install typescript\
 	tsc \
-	npm run serve	\
+	npm run serve	
+	
+Running application demands internet connection, beacouse of Bootstrap CDN.	
 
 	
 ### Built with
