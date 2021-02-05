@@ -1,0 +1,78 @@
+.logo{
+	height: 55px;
+	width: 55px;
+	padding: 0;
+}
+
+.header-img{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    width: auto;
+    height: 150px;
+}
+
+.header-txt{
+    color: rgb(232, 181, 87);
+    font-size: xx-large;
+}
+
+
+.prijava-txt{
+    color: white;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.dropdown-item:hover{
+    color: black;
+    background-color: rgb(232, 181, 87);
+}
+
+.dropdown-item.active {
+	background-color: rgb(232, 181, 87);
+}
+
+a {
+	text-decoration: none !important;
+}
+
+a:link {
+	color: white;
+	transition-property: all;
+	transition-duration: 0.3s ;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color:  rgb(232, 181, 87);
+    transition-property: all;
+    transition-duration: 0.3s ;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer
+}
+
+a:active {
+    color:white;
+}
+
+.breadcrumbsItemLink{
+    color:white;
+}
+
+.breadcrumbsItemLink:hover{
+    color:  rgb(232, 181, 87);
+    height: 4px;
+}
+
+.breadcrumbsItem{
+    color:white;
+}

@@ -1,62 +1,83 @@
 
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark navFont">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Brand -->
-                <a class="navbar-brand" >
-                    
-                    <img class="logo" >
-                    &nbsp; INFERNO GYM
-                </a>
-            
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <!-- Links -->
-                    <ul class="navbar-nav  mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active justify-content-center">
-                            <a class="nav-link">Početna</a>
-                        </li>
-                                    
-                        <!-- Dropdown -->
-                        <li class="nav-item dropdown justify-content-center">
-                            <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
-                            Usluge
-                            </a>
-                            <div class="dropdown-menu justify-content-center bg-dark">
-                            <a class="dropdown-item" >Treninzi</a>
-                            <a class="dropdown-item" >Nutricionista</a>
-                            <a class="dropdown-item">Masaže</a>
-                            </div>
-                        </li>
+<header>
+    <div class="container-fluid bg-dark">
+        <img class="header-img" src="../../assets/images/bg_uni_grb.png">
+        <img class="header-img" src="../../assets/images/etf_logo_1.png">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="header-txt">Универзитет у Београду, Електротехнички факултет</span>
+        <br>
+        <div class="text-center justify-content-center">
+            <span class="header-txt text-center" >Катедра за рачунарску технику и информатику</span>
+        </div>
         
-                        <li class="nav-item justify-content-center">
-                            <a class="nav-link" >Zakazivanje treninga</a>
-                        </li>
-                        <li class="nav-item justify-content-center">
-                            <a class="nav-link" >Moj nalog</a>
-                        </li>
-                        <li class="nav-item justify-content-center">
-                            <a class="nav-link" >O nama</a>
-                        </li>
-                    </ul>
-                    <div class="my-2 my-lg-0 languages" >
-                                           
-                    </div>
-                </div>
-            </nav>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark navFont">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <section id="inner-headline" class="justify-content-left">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-sm-12">
-                            <h2 class="breadcrumbs">
-                                <a><i class="fa fa-home" aria-hidden="true"></i> &nbsp; Dobro došli!</a>
-                            </h2>
-                        </div>
+        <!-- Brand -->
+        <a class="navbar-brand" >
+            <img class="logo" src="../../assets/images/etf_logo_3_sivi.png">
+            &nbsp; ЕТФ - РТИ
+        </a>
+    
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <!-- Links -->
+            <ul class="navbar-nav  mr-auto mt-2 mt-lg-0">
+                <li class="nav-item justify-content-center" >
+                    <a class="nav-link" routerLink="pocetna">Почетна</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="zaposleni">Запослени</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="obavestenja">Обавештења</a>
+                </li>
+                            
+                <!-- Dropdown -->
+                <li class="nav-item dropdown justify-content-center">
+                    <a routerLink="osnovneStudije" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                    Основне студије
+                    </a>
+                    <div class="dropdown-menu justify-content-center bg-dark">
+                        <a class="dropdown-item" routerLink="osnovneStudijeRTI">Одсек за РТИ</a>
+                        <a class="dropdown-item" routerLink="osnovneStudijeSI">Одсек за СИ</a>
+                        <a class="dropdown-item" routerLink="osnovneStudijeOstali">Остали одсеци</a>
                     </div>
+                </li>
+
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="master"> Мастер студије</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="nauka">Наука</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link" routerLink="kontakt">Контакт</a>
+                </li>
+            </ul>
+            <div class="my-2 my-lg-0 prijava-txt" >
+                <a routerLink="login"> Пријави се </a> |    
+                <a routerLink="registracija"> Региструј се</a>               
+            </div>
+        </div>
+    </nav>
+
+    <section id="inner-headline">
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div class="col-lg-12">
+                    <h2 class="breadcrumbs">
+                        <a><i class="fa fa-home breadcrumbsItemLink" aria-hidden="true" ></i></a>
+                        <i class="fa fa-arrow-right breadcrumbsItem" aria-hidden="true"></i>
+                        <a >O nama</a>
+                    </h2>
                 </div>
-            </section>
-        </header>
+            </div>
+        </div>
+    </section>
+</header>
