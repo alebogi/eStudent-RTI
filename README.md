@@ -8,7 +8,7 @@ Web application that represents system for managing subjects at department of Co
 
 ## Instalation
 Install node.js.
-Instal angular 10.1.6 with following command:
+Instal angular 10.1.6 with following command:\
 	`npm install -g @angular/cli@10.1.6` 
 
 Create two folders, frontend and backend.\
@@ -18,7 +18,7 @@ In command prompt locate in frontend folder. For creating new app type:
 	routing? YES, CSS
 	```
 
-In command prompt locate in backend folder. Type:
+In command prompt locate in backend folder. Type:\
 	```
 	npm install express 
 	npm install body-parser
@@ -26,6 +26,7 @@ In command prompt locate in backend folder. Type:
 	npm install mongoose or npm install mongodb (native driver)
 	npm install typescript
 	```
+\	
 Replace files from frontend/app/src with files from frontend/src from my project.\
 Replace files from backend/src with files from backend/src from my project.
 
@@ -38,8 +39,8 @@ Running frontend:\
 \
 Running backend:\
 	```
-	npm install typescript\
-	tsc \
+	npm install typescript
+	tsc
 	npm run serve	
 	```
 	
