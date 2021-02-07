@@ -7,7 +7,7 @@ import { MyheaderComponent } from './myheader/myheader.component';
 import { MyfooterComponent } from './myfooter/myfooter.component';
 import { PocetnaComponent } from './pocetna/pocetna.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [

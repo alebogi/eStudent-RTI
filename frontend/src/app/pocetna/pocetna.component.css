@@ -1,0 +1,37 @@
+.btn{
+    color: white  !important;
+}
+
+.btn :hover{
+    color: rgb(232, 181, 87) !important;
+    background-color: grey !important;
+}
+
+.prijava{
+    margin-left: 10px;
+}
+
+a:hover {
+    color:  rgb(252, 167, 10);
+    transition-property: all;
+    transition-duration: 0.3s ;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer
+}
+
+/* .mySlides{
+    max-height: 500px;
+    height: 500px;
+    max-width: 6500px;
+    width: 650px;
+} */
+
+.centralPart{
+    margin-top: 10px;
+}
+
+.info{
+    text-align: justify;
+    align: justify;
+}
