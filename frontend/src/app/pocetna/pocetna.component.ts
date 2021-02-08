@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PocetnaComponent implements OnInit {
   slideNum: number = 0;
+  username: string;
+  password: string;
+  mssg: string;
 
   constructor() {
     this.slideNum = 0;
@@ -14,7 +17,8 @@ export class PocetnaComponent implements OnInit {
 
   ngOnInit(): void {
     this.slideNum = 0;
-    setInterval(this.incSlideNum, 3000);
+    this.mssg = "";
+    //setInterval(this.incSlideNum, 3000);
   }
 
   
@@ -44,6 +48,12 @@ export class PocetnaComponent implements OnInit {
     //str = "<img class='mySlides'" + 'src="'+ "{{" + "'../../assets/images/slide'+ slideNum +" + "'.jpg'}}" + '"' +">";
     document.getElementById("slide").innerHTML = str;
 
+   }
+
+
+   login(){
+      alert(this.username);
+      alert(this.password);
    }
 }
 

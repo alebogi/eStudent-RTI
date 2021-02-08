@@ -8,13 +8,15 @@ import { MyfooterComponent } from './myfooter/myfooter.component';
 import { PocetnaComponent } from './pocetna/pocetna.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RegistracijaComponent } from './registracija/registracija.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyheaderComponent,
     MyfooterComponent,
-    PocetnaComponent
+    PocetnaComponent,
+    RegistracijaComponent
   ],
   imports: [
     BrowserModule,

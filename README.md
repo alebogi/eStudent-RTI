@@ -18,7 +18,7 @@ ng new app
 routing? YES, CSS
 ```
 
-In command prompt locate in backend folder. Type:\
+In command prompt locate in backend folder. Type:
 ```
 npm install express
 npm install body-parser
@@ -26,7 +26,7 @@ npm install cors
 npm install mongoose or npm install mongodb (native driver)
 npm install typescript
 ```
-\	
+	
 Replace files from frontend/app/src with files from frontend/src from my project.\
 Replace files from backend/src with files from backend/src from my project.
 
@@ -37,7 +37,7 @@ Starting the application:\
 Running frontend:\
 `ng serve --open`\
 \
-Running backend:\
+Running backend:
 ```
 npm install typescript
 tsc
