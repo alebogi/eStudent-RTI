@@ -1,0 +1,46 @@
+
+
+    <br>
+    <h4>Пријавите се на свој налог</h4>
+    <br>
+    <table>
+        <tr>
+            <td>
+                Корисничко име:
+            </td>
+            <td>
+                <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="username">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Шифра:
+            </td>
+            <td>
+                <input type="password" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Звање:
+            </td>
+            <td>
+                <input type="radio" name="zvanje" value="student" [(ngModel)]="zvanje"> Студент
+                <input type="radio" name="zvanje" value="zaposleni" [(ngModel)]="zvanje"> Запослени
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="radio" name="zvanje" value="admin" [(ngModel)]="zvanje"> Администратор
+            </td>
+        </tr>
+    </table>
+    <br> <br>
+    <button type="button" class="btn bg-dark" (click)="login()">Пријави се</button> <br>
+    <span class='greska'>{{mssg}}</span>
+    <br>
+    <span>
+        Немате налог? <a routerLink="registracija" style="color:rgb(29, 29, 102)">Региструјте се.</a>
+    </span>
+    <hr>

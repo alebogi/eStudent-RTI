@@ -7,54 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PocetnaComponent implements OnInit {
   slideNum: number = 0;
-  username: string;
-  password: string;
-  mssg: string;
+  
 
   constructor() {
-    this.slideNum = 0;
+    
    }
 
   ngOnInit(): void {
-    this.slideNum = 0;
-    this.mssg = "";
-    //setInterval(this.incSlideNum, 3000);
+
+    
   }
 
-  
+
    
-
-   incSlideNum(){
-     var str = "";
-     
-     if(this.slideNum == undefined){
-      this.slideNum = 0;
-     }
-
-     if(this.slideNum == 0){
-      this.slideNum = 1;
-    }else if (this.slideNum == 1){
-      this.slideNum = 2;
-    }else if (this.slideNum == 2){
-      this.slideNum = 0;
-    }
-    if(this.slideNum == 0){
-      str = "<img class='mySlides'" + ' src="../../assets/images/slide0.jpg"> ' ;
-    }else if (this.slideNum == 1){
-      str = "<img class='mySlides'" + ' src="../../assets/images/slide1.jpg" >' ;
-    }else if (this.slideNum == 2){
-      str = "<img class='mySlides'" + ' src="../../assets/images/slide2.jpg"> ';
-    }
-    //str = "<img class='mySlides'" + 'src="'+ "{{" + "'../../assets/images/slide'+ slideNum +" + "'.jpg'}}" + '"' +">";
-    document.getElementById("slide").innerHTML = str;
-
-   }
-
-
-   login(){
-      alert(this.username);
-      alert(this.password);
-   }
 }
 
 

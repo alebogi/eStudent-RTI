@@ -7,10 +7,6 @@
     background-color: grey !important;
 }
 
-.prijava{
-    margin-left: 10px;
-}
-
 a:hover {
     color:  rgb(252, 167, 10);
     transition-property: all;
@@ -20,16 +16,6 @@ a:hover {
     cursor: pointer
 }
 
-.card{
-    margin-right: 0px  !important; 
-    margin-bottom: 15px;
-}
-
-.centralPart{
-    margin-top: 10px;
-}
-
-.info{
-    text-align: justify;
-    
+.greska{
+    color: red;
 }

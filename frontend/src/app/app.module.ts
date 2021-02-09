@@ -9,6 +9,7 @@ import { PocetnaComponent } from './pocetna/pocetna.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistracijaComponent } from './registracija/registracija.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RegistracijaComponent } from './registracija/registracija.component';
     MyheaderComponent,
     MyfooterComponent,
     PocetnaComponent,
-    RegistracijaComponent
+    RegistracijaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
