@@ -62,6 +62,43 @@ router.route('/loginAdmin').post((req, res)=>{
 
 //~~~~~ REGISTRACIJA ~~~~~~~
 
+router.route('/registracijaStudent').post((req, res)=>{
+    let username = req.body.username;
+    student.find({"username":username}, (err, stud)=>{
+        if(!stud){
+            //ne postoji niko sa tim username-om i mozemo da napravimo novog korisnika
+            let novi = new student(req.body);
+            novi.save().then(user=>{
+                    res.status(200).json({'user':'ok'});
+                }).catch(err=>{
+                    res.status(400).json({'user':'no'});
+                })            
+        } else{
+            res.json({"greska":"Korisnicko ime vec postoji."}); //??
+        }
+    });
+
+});
+
+router.route('/registracijaZaposleni').post((req, res)=>{
+    let username = req.body.username;
+    zaposleni.find({"username":username}, (err, zaposl)=>{
+        if(!zaposl){
+            //ne postoji niko sa tim username-om i mozemo da napravimo novog korisnika
+            let novi = new zaposleni(req.body);
+            novi.save().
+                then(user=>{
+                    res.status(200).json({'user':'ok'});
+                }).catch(err=>{
+                    res.status(400).json({'user':'no'});
+                })            
+        } else{
+            res.json({"greska":"Korisnicko ime vec postoji."});
+        }
+    });
+
+});
+
 //-------------------
 
 app.use('/', router);

@@ -37,4 +37,15 @@ export class KorisnikServisService {
 
     return this.http.post(`${this.uri}/loginAdmin`, data);
   }
+
+
+  registracijaStudent(user){
+    const data = user;
+    return this.http.post(`${this.uri}/registracijaStudent`, data);
+  }
+
+  registracijaZaposleni(user){
+    const data = user;
+    return this.http.post(`${this.uri}/registracijaZaposleni`, data);
+  }
 }

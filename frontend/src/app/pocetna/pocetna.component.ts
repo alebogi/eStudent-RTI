@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-pocetna',
@@ -6,19 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pocetna.component.css']
 })
 export class PocetnaComponent implements OnInit {
-  slideNum: number = 0;
+  ulogovan: boolean = false;
   
 
   constructor() {
     
-   }
-
-  ngOnInit(): void {
-
-    
   }
 
+  ngOnInit(): void {
+    this.proveriUlogovan();
+  }
 
+  proveriUlogovan(){
+    if(localStorage.getItem("ulogovan") == "da"){
+      this.ulogovan = true;
+    }else{
+      this.ulogovan = false;
+    }
+  }
    
 }
 

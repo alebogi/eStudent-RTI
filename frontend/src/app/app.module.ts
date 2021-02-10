@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistracijaComponent } from './registracija/registracija.component';
 import { LoginComponent } from './login/login.component';
+import { PartneriComponent } from './partneri/partneri.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './login/login.component';
     MyfooterComponent,
     PocetnaComponent,
     RegistracijaComponent,
-    LoginComponent
+    LoginComponent,
+    PartneriComponent
   ],
   imports: [
     BrowserModule,

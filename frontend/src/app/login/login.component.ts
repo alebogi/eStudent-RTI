@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   password: string = "";
   zvanje: string = "";
   mssg: string = "";
-  ulogovan: boolean = false;
+  
 
   constructor(private servisKorisnik: KorisnikServisService) { }
 
@@ -50,6 +50,8 @@ export class LoginComponent implements OnInit {
             this.mssg = "";
             //ulogovati studenta
             alert("uloguj studenta");
+            localStorage.setItem("ulogovan", "da");
+            localStorage.setItem("ulogovan_username", this.username);
           }
         })
       }else if(this.zvanje == "zaposleni"){
@@ -60,6 +62,8 @@ export class LoginComponent implements OnInit {
             this.mssg = "";
             //uloguj zaposlenog
             alert("uloguj zaposlenog");
+            localStorage.setItem("ulogovan", "da");
+            localStorage.setItem("ulogovan_username", this.username);
           }
         })
       }else if(this.zvanje == "admin"){
@@ -70,6 +74,8 @@ export class LoginComponent implements OnInit {
             this.mssg = "";
             //uloguj admina
             alert("uloguj admina");
+            localStorage.setItem("ulogovan", "da");
+            localStorage.setItem("ulogovan_username", this.username);
           }
         })
       }

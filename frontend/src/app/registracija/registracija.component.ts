@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Student } from '../model/studenti.model';
+import { Zaposleni } from '../model/zaposleni.model';
+import { KorisnikServisService } from '../servisi/korisnik-servis.service';
 
 @Component({
   selector: 'app-registracija',
@@ -7,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistracijaComponent implements OnInit {
 
-  constructor() { }
+  student: Student;
+  zaposleni: Zaposleni;
+  mssg: string;
+
+  constructor(private servisKorisnik: KorisnikServisService) { }
 
   ngOnInit(): void {
+    this.student = {} as Student;
+    this.zaposleni = {} as Zaposleni;
+    this.mssg = "";
   }
 
+  registerStudent(){
+    this.servisKorisnik.registracijaStudent(this.student).subscribe(ob=>{
+      if(ob['user']=='ok'){
+        alert('student registrovan');
+      }
+    })
+  }
+
+  registerZaposleni(){
+    this.servisKorisnik.registracijaZaposleni(this.zaposleni).subscribe(ob=>{
+      if(ob['user']=='ok'){
+        alert('zaposleni registrovan');
+      }
+    })
+  }
 }
