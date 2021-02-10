@@ -3,6 +3,7 @@ import { Student } from '../model/studenti.model';
 import { Zaposleni } from '../model/zaposleni.model';
 import { Admin } from '../model/admini.model';
 import { KorisnikServisService } from '../servisi/korisnik-servis.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,7 @@ export class LoginComponent implements OnInit {
   mssg: string = "";
   
 
-  constructor(private servisKorisnik: KorisnikServisService) { }
+  constructor(private servisKorisnik: KorisnikServisService, private router: Router) { }
 
   ngOnInit(): void {
     this.mssg = "";
@@ -49,9 +50,12 @@ export class LoginComponent implements OnInit {
           }else{
             this.mssg = "";
             //ulogovati studenta
-            alert("uloguj studenta");
             localStorage.setItem("ulogovan", "da");
+            localStorage.setItem("ulogovaniTip", "student");
             localStorage.setItem("ulogovan_username", this.username);
+            let str = student.name + " " + student.lastname;
+            localStorage.setItem("ulogovan_imeprezime", str);
+            location.reload();
           }
         })
       }else if(this.zvanje == "zaposleni"){
@@ -61,9 +65,12 @@ export class LoginComponent implements OnInit {
           }else{
             this.mssg = "";
             //uloguj zaposlenog
-            alert("uloguj zaposlenog");
             localStorage.setItem("ulogovan", "da");
+            localStorage.setItem("ulogovaniTip", "zaposleni");
             localStorage.setItem("ulogovan_username", this.username);
+            let str = zaposlen.name + " " + zaposlen.lastname;
+            localStorage.setItem("ulogovan_imeprezime", str);
+            location.reload();
           }
         })
       }else if(this.zvanje == "admin"){
@@ -73,9 +80,12 @@ export class LoginComponent implements OnInit {
           }else{
             this.mssg = "";
             //uloguj admina
-            alert("uloguj admina");
             localStorage.setItem("ulogovan", "da");
+            localStorage.setItem("ulogovaniTip", "admin");
             localStorage.setItem("ulogovan_username", this.username);
+            let str = "Ваше височанство";
+            localStorage.setItem("ulogovan_imeprezime", str);
+            location.reload();
           }
         })
       }

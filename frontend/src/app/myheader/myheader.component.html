@@ -7,6 +7,12 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span class="header-txt">Универзитет у Београду, Електротехнички факултет</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button *ngIf="ulogovan=='da'" class="btn bg-secondary" (click)="logout()">Одјави се</button>
         <br>
         <div class="text-center justify-content-center">
             <span class="header-txt text-center" >Катедра за рачунарску технику и информатику</span>
@@ -29,7 +35,7 @@
             <!-- Links -->
             <ul class="navbar-nav  mr-auto mt-2 mt-lg-0">
                 <li class="nav-item justify-content-center" >
-                    <a class="nav-link">Почетна</a>
+                    <a class="nav-link" routerLink="">Почетна</a>
                 </li>
                 <li class="nav-item justify-content-center">
                     <a class="nav-link" >Запослени</a>
@@ -63,7 +69,9 @@
             <div class="my-2 my-lg-0 prijava-txt" >
                 <!-- <a routerLink="login"> Пријави се </a> |    
                 <a > Региструј се</a>                -->
-                Добро дошли!
+                Добро дошли
+                <span *ngIf="ulogovan=='da'">, {{ulogvanImePrezime}}</span>
+                
             </div>
         </div>
     </nav>
@@ -73,7 +81,7 @@
             <div class="row bg-dark">
                 <div class="col-lg-12">
                     <h2 class="breadcrumbs">
-                        <a><i class="fa fa-home breadcrumbsItemLink" aria-hidden="true" ></i></a>
+                        <a routerLink=""><i class="fa fa-home breadcrumbsItemLink" aria-hidden="true" ></i></a>
                         <!-- <i class="fa fa-arrow-right breadcrumbsItem" aria-hidden="true"></i>
                         <a ></a> -->
                     </h2>

@@ -15,62 +15,62 @@
                 <table>
                     <tr>
                         <td>
-                            Корисничко име:
+                            Корисничко име: *
                         </td>
                         <td>
-                            <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="student.username">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Шифра:
-                        </td>
-                        <td>
-                            <input type="password" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="student.password">
+                            <input type="text" required errormessage="Поље не сме бити празно" placeholder="piGGBBBB@student.etf.rs" [(ngModel)]="student.username">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Индекс:
+                            Шифра: *
                         </td>
                         <td>
-                            <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="student.index">
+                            <input type="password" required errormessage="Поље не сме бити празно" [(ngModel)]="student.password">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Тип студија:
+                            Индекс: *
                         </td>
                         <td>
-                            <input type="radio" name="tipStudija" value="osnovne" [(ngModel)]="student.study_type"> Основне 
-                            <input type="radio" name="tipStudija" value="master" [(ngModel)]="student.study_type"> Мастер
+                            <input type="text" required aria-errormessage="Поље не сме бити празно."  placeholder="ГГГГ/ББББ" [(ngModel)]="student.index">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Тип студија: *
+                        </td>
+                        <td>
+                            <input type="radio" name="tipStudija" value="d" [(ngModel)]="student.study_type"> Основне 
+                            <input type="radio" name="tipStudija" value="m" [(ngModel)]="student.study_type"> Мастер
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>
-                            <input type="radio" name="tipStudija" value="doktorske" [(ngModel)]="student.study_type"> Докторске
+                            <input type="radio" name="tipStudija" value="p" [(ngModel)]="student.study_type"> Докторске
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Име:
+                            Име: *
                         </td>
                         <td>
-                            <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="student.name">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Презиме:
-                        </td>
-                        <td>
-                            <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="student.lastname">
+                            <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="student.name">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Статус:
+                            Презиме: *
+                        </td>
+                        <td>
+                            <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="student.lastname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Статус: *
                         </td>
                         <td>
                             <input type="radio" name="status" value="aktivan" [(ngModel)]="student.status"> Активан 
@@ -80,53 +80,59 @@
                 </table>
                 <br> <br>
                 <button type="button" class="btn bg-dark" (click)="registerStudent()">Потврди</button> <br>
-                <span class='greska'>{{mssg}}</span>
+                <span class='greska'>{{mssgStudent}}</span>
+                <!-- <div class="alert alert-success alert-dismissible fade show" role="alert" class="uspesno" *ngIf='mssgStudentUspesno != ""'>
+                    {{mssgStudentUspesno}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
                 <br>
                 <hr>
 
-                <div >
+                <div *ngIf="ulogovaniTip=='admin'"> 
                     <br>
                     <h4>Направите налог за запосленог</h4>
                     <br>
                     <table>
                         <tr>
                             <td>
-                                Корисничко име:
+                                Корисничко име: *
                             </td>
                             <td>
-                                <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.username">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Шифра:
-                            </td>
-                            <td>
-                                <input type="password" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.password">
+                                <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.username">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Име:
+                                Шифра: * 
                             </td>
                             <td>
-                                <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleniname">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Презиме:
-                            </td>
-                            <td>
-                                <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.lastname">
+                                <input type="password" required errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.password">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Адреса:
+                                Име: *
                             </td>
                             <td>
-                                <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.adsress">
+                                <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Презиме: *
+                            </td>
+                            <td>
+                                <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.lastname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Адреса: *
+                            </td>
+                            <td>
+                                <input type="text" required errormessage="Поље не сме бити празно" placeholder="Улица и број, град" [(ngModel)]="zaposleni.address">
                             </td>
                         </tr>
                         <tr>
@@ -134,7 +140,7 @@
                                 Мобилни телефон:
                             </td>
                             <td>
-                                <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.phone">
+                                <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.phone" placeholder="060/1234567">
                             </td>
                         </tr>
                         <tr>
@@ -142,7 +148,7 @@
                                 Веб страница:
                             </td>
                             <td>
-                                <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.lastname">
+                                <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.website">
                             </td>
                         </tr>
                         <tr>
@@ -150,33 +156,41 @@
                                 Биографија:
                             </td>
                             <td>
-                                <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.lastname">
+                                <input type="file" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.personal_info">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Звање:
+                                Звање: *
                             </td>
                             <td>
-                                <input type="radio" name="tipStudija" value="osnovne" [(ngModel)]="student.study_type"> Основне 
-                                <input type="radio" name="tipStudija" value="master" [(ngModel)]="student.study_type"> Мастер
+                                <select name="zvanje" [(ngModel)]="zaposleni.title" required>
+                                    <option value="redovni_profesor">Редовни професор</option>
+                                    <option value="vanredni_profesor">Ванредни професор</option>
+                                    <option value="docent">Доцент</option>
+                                    <option value="asistent">Асистент</option>
+                                    <option value="saradnik">Сарадник у настави</option>
+                                    <option value="lab_tehnicar">Лаб. техничар</option>
+                                    <option value="lab_inzenjer">Лаб. инжењер</option>
+                                    <option value="istrazivac">Истраживач</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Канцеларија:
+                                Канцеларија: 
                             </td>
                             <td>
-                                <input type="text" required="yes" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.lastname">
+                                <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.office">
                             </td>
                         </tr>  
                         <tr>
                             <td>
-                                Статус:
+                                Статус: *
                             </td>
                             <td>
-                                <input type="radio" name="status" value="aktivan" [(ngModel)]="student.status"> Активан 
-                                <input type="radio" name="status" value="neaktivan" [(ngModel)]="student.status"> Неактиван
+                                <input type="radio" name="statusZaposl" value="aktivan" [(ngModel)]="zaposleni.status"> Активан 
+                                <input type="radio" name="statusZaposl" value="neaktivan" [(ngModel)]="zaposleni.status"> Неактиван
                             </td>
                         </tr>
                         <tr>
@@ -184,13 +198,19 @@
                                 Слика:
                             </td>
                             <td>
-                                <input type="text"  errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.lastname">
+                                <input type="file" [(ngModel)]="zaposleni.photo">
                             </td>
                         </tr>
                     </table>
                     <br> <br>
                     <button type="button" class="btn bg-dark" (click)="registerZaposleni()">Потврди</button> <br>
-                    <span class='greska'>{{mssg}}</span>
+                    <span class='greska'>{{mssgZaposleni}}</span>
+                    <!-- <div class="alert alert-success alert-dismissible fade show" role="alert" class="uspesno" *ngIf='mssgZaposleniUspesno != ""'>
+                        {{mssgZaposleniUspesno}}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div> -->
                     <br>
                     <hr>
                 </div>

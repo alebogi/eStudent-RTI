@@ -12,28 +12,131 @@ export class RegistracijaComponent implements OnInit {
 
   student: Student;
   zaposleni: Zaposleni;
-  mssg: string;
+  mssgStudent: string;
+  mssgZaposleni: string;
+  mssgStudentUspesno : string;
+  mssgZaposleniUspesno: string;
+
+  ulogovan: string;
+  ulogovaniTip: string;
+  ulogovanUsername: string;
+  ulogvanImePrezime: string;
 
   constructor(private servisKorisnik: KorisnikServisService) { }
 
   ngOnInit(): void {
     this.student = {} as Student;
     this.zaposleni = {} as Zaposleni;
-    this.mssg = "";
+    this.mssgStudent = "";
+    this.mssgZaposleni = "";
+    this.mssgStudentUspesno = "";
+    this.mssgZaposleniUspesno = "";
+
+    this.ulogovan = localStorage.getItem("ulogovan");
+    this.ulogovaniTip = localStorage.getItem("ulogovaniTip");
+    this.ulogovanUsername = localStorage.getItem("ulogovan_username");
+    this.ulogvanImePrezime = localStorage.getItem("ulogovan_imeprezime");
   }
 
   registerStudent(){
+    let greska = false;
+    this.mssgStudent = "";
+    this.mssgStudentUspesno = "";
+
+    //provera podataka
+
+    //da li je neko polje prazno
+    if(this.student.username == null || this.student.password == null || this.student.index == null || this.student.study_type == null
+    || this.student.name == null || this.student.lastname == null || this.student.status == null){
+      greska = true;
+      this.mssgStudent = "Поља означена звездицом не смеју да буду празна. Молимо Вас попуните сва обавезна поља.";
+      return;
+    }
+
+    //da li su polja pravilno popunjena
+
+    //provera indeksa
+    let patternIndex = /^[0-9]{4}\/[0-9]{4}$/
+    if(!patternIndex.test(this.student.index)){
+      this.mssgStudent = 'Број индекса је у погрешном формату.';
+      greska = true;
+      return;
+    }
+
+    //provera usaglasenosti inicijala, indeksa i username-a
+    let i = this.student.name.charAt(0).toLowerCase();
+    let p = this.student.lastname.charAt(0).toLowerCase();
+    let gggg = this.student.index.slice(0, 4);
+    let gg = gggg.slice(2);
+    let bbbb = this.student.index.slice(5, 9);
+    var pattern1username = new RegExp(p + i + gg + bbbb + this.student.study_type + "@student.etf.rs$");
+    var pattern2username = new RegExp(p + i + gg + bbbb + this.student.study_type + "@student.etf.bg.ac.rs$");
+
+    if (!pattern1username.test(this.student.username) && !pattern2username.test(this.student.username)) {
+      this.mssgStudent = 'Корисничко име је у погрешном формату.';
+      greska = true;
+      return;
+    }
+
+
+    //registracija
     this.servisKorisnik.registracijaStudent(this.student).subscribe(ob=>{
       if(ob['user']=='ok'){
-        alert('student registrovan');
+        alert( "Регистрација успешна! Стдент је додат у базу података.");
+        location.reload();
+       // this.mssgStudentUspesno = "Регистрација успешна! Стдент је додат у базу података.";
+      }else if(ob['user']=='no'){
+        this.mssgStudent = 'Неуспешна регистрација.';
+      }
+      if(ob['greska'] != ""){
+        this.mssgStudent = 'Корисничко име је заузето.';
+
       }
     })
   }
 
   registerZaposleni(){
+    let greska = false;
+    this.mssgZaposleniUspesno = "";
+    this.mssgZaposleni = "";
+
+    //provera podataka
+
+    //da li je neko polje prazno
+    if(this.zaposleni.username == null || this.zaposleni.password == null || this.zaposleni.address == null || this.zaposleni.name == null || this.zaposleni.lastname == null || this.zaposleni.status == null || this.zaposleni.title == null){
+      greska = true;
+      this.mssgZaposleni = "Поља означена звездицом не смеју да буду празна. Молимо Вас попуните сва обавезна поља.";
+      return;
+    }
+
+    let patternAddress = /^.{1,}\d{1,}.{0,2}, .{1,}$/
+    if (!patternAddress.test(this.zaposleni.address)) {
+      this.mssgZaposleni = 'Адреса је у погрешном формату.';
+      greska = true;
+      return;
+    }
+
+
+    if(this.zaposleni.phone != null && this.zaposleni.phone != ""){
+      let patternPhone = /^06\d\/[0-9]{6,7}$/
+      if (!patternPhone.test(this.zaposleni.phone)) {
+        this.mssgZaposleni = 'Број телефона је у погрешном формату.';
+        greska = true;
+        return;
+      }
+    }
+
+    //registracija
     this.servisKorisnik.registracijaZaposleni(this.zaposleni).subscribe(ob=>{
       if(ob['user']=='ok'){
-        alert('zaposleni registrovan');
+        alert("Регистрација успешна! Запослени је додат у базу података.");
+        location.reload();
+        //this.mssgZaposleniUspesno = "Регистрација успешна! Запослени је додат у базу података.";
+      }else if(ob['user']=='no'){
+        this.mssgZaposleni = 'Неуспешна регистрација.';
+      }
+      if(ob['greska'] != ""){
+        this.mssgZaposleni = 'Корисничко име је заузето.';
       }
     })
   }

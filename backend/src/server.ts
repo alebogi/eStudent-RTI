@@ -65,16 +65,16 @@ router.route('/loginAdmin').post((req, res)=>{
 router.route('/registracijaStudent').post((req, res)=>{
     let username = req.body.username;
     student.find({"username":username}, (err, stud)=>{
-        if(!stud){
+        if(stud.length == 0){
             //ne postoji niko sa tim username-om i mozemo da napravimo novog korisnika
             let novi = new student(req.body);
             novi.save().then(user=>{
-                    res.status(200).json({'user':'ok'});
+                    res.status(200).json({'user':'ok', 'greska': ""});
                 }).catch(err=>{
-                    res.status(400).json({'user':'no'});
+                    res.status(400).json({'user':'no', 'greska': ""});
                 })            
         } else{
-            res.json({"greska":"Korisnicko ime vec postoji."}); //??
+            res.json({'user':'no', "greska":"Korisnicko ime vec postoji."});
         }
     });
 
@@ -83,17 +83,17 @@ router.route('/registracijaStudent').post((req, res)=>{
 router.route('/registracijaZaposleni').post((req, res)=>{
     let username = req.body.username;
     zaposleni.find({"username":username}, (err, zaposl)=>{
-        if(!zaposl){
+        if(zaposl.length == 0){
             //ne postoji niko sa tim username-om i mozemo da napravimo novog korisnika
             let novi = new zaposleni(req.body);
             novi.save().
                 then(user=>{
-                    res.status(200).json({'user':'ok'});
+                    res.status(200).json({'user':'ok', 'greska': ""});
                 }).catch(err=>{
-                    res.status(400).json({'user':'no'});
+                    res.status(400).json({'user':'no', 'greska': ""});
                 })            
         } else{
-            res.json({"greska":"Korisnicko ime vec postoji."});
+            res.json({'user':'no',"greska":"Korisnicko ime vec postoji."});
         }
     });
 

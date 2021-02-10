@@ -76,3 +76,12 @@ a:active {
 .breadcrumbsItem{
     color:white;
 }
+
+.btn{
+    color: white  !important;
+}
+
+.btn :hover{
+    color: rgb(232, 181, 87) !important;
+    background-color: grey !important;
+}
