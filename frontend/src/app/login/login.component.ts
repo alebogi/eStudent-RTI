@@ -48,6 +48,14 @@ export class LoginComponent implements OnInit {
           if(!student){
             this.mssg = "Не постоји корисник са унетим подацима.\n";
           }else{
+
+            if(student.pass_changed == 0){
+              localStorage.setItem("ulogovaniTip", "student");
+              localStorage.setItem("ulogovan_username", this.username);
+              this.router.navigate(['promenaLozinke']);
+              return;
+            }
+
             this.mssg = "";
             //ulogovati studenta
             localStorage.setItem("ulogovan", "da");
@@ -56,6 +64,8 @@ export class LoginComponent implements OnInit {
             let str = student.name + " " + student.lastname;
             localStorage.setItem("ulogovan_imeprezime", str);
             location.reload();
+            
+            
           }
         })
       }else if(this.zvanje == "zaposleni"){
@@ -63,6 +73,14 @@ export class LoginComponent implements OnInit {
           if(!zaposlen){
             this.mssg = "Не постоји корисник са унетим подацима.\n";
           }else{
+
+            if(zaposlen.pass_changed == 0){
+              localStorage.setItem("ulogovaniTip", "zaposleni");
+              localStorage.setItem("ulogovan_username", this.username);
+              this.router.navigate(['promenaLozinke']);
+              return;
+            }
+
             this.mssg = "";
             //uloguj zaposlenog
             localStorage.setItem("ulogovan", "da");
@@ -71,6 +89,8 @@ export class LoginComponent implements OnInit {
             let str = zaposlen.name + " " + zaposlen.lastname;
             localStorage.setItem("ulogovan_imeprezime", str);
             location.reload();
+            
+            
           }
         })
       }else if(this.zvanje == "admin"){

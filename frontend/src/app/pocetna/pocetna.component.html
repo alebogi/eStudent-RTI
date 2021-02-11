@@ -9,6 +9,12 @@
             <div class="col-sm-3 col-lg-3 prijava justify-content-center text-center" > 
                 <app-login *ngIf="ulogovan==false"></app-login>
 
+                <div *ngIf="ulogovan==true">
+                  <br>
+                  <h6><a routerLink="promenaLozinke">Промените лозинку</a> </h6>
+                  <br>
+                </div>
+
                 <div *ngIf="ulogovaniTip=='admin'">
                     <h3>Посебне привилегије</h3>
                     <br>

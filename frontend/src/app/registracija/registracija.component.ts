@@ -78,6 +78,7 @@ export class RegistracijaComponent implements OnInit {
       return;
     }
 
+    this.student.pass_changed = 0;
 
     //registracija
     this.servisKorisnik.registracijaStudent(this.student).subscribe(ob=>{
@@ -125,6 +126,8 @@ export class RegistracijaComponent implements OnInit {
         return;
       }
     }
+
+    this.zaposleni.pass_changed = 0;
 
     //registracija
     this.servisKorisnik.registracijaZaposleni(this.zaposleni).subscribe(ob=>{

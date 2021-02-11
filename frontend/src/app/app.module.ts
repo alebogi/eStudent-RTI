@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegistracijaComponent } from './registracija/registracija.component';
 import { LoginComponent } from './login/login.component';
 import { PartneriComponent } from './partneri/partneri.component';
+import { ZaposleniComponent } from './zaposleni/zaposleni.component';
+import { PromenaLozinkeComponent } from './promena-lozinke/promena-lozinke.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PartneriComponent } from './partneri/partneri.component';
     PocetnaComponent,
     RegistracijaComponent,
     LoginComponent,
-    PartneriComponent
+    PartneriComponent,
+    ZaposleniComponent,
+    PromenaLozinkeComponent
   ],
   imports: [
     BrowserModule,

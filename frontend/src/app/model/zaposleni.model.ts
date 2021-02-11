@@ -1,6 +1,7 @@
 export class Zaposleni{
     username: string;
 	password: string;
+	pass_changed: number;
 	name: string;
 	lastname: string;
 	address: string;

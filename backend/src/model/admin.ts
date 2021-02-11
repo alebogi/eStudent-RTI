@@ -8,6 +8,9 @@ let Admin = new Schema({
     },
     password: {
         type: String
+    },
+	pass_changed: {
+        type: Number
     }
 })
 

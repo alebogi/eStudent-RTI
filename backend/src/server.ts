@@ -99,6 +99,68 @@ router.route('/registracijaZaposleni').post((req, res)=>{
 
 });
 
+//~~~~~~ PROMENA LOZINKE ~~~~~~~~
+
+router.route('/dohvatiLozinkuStudent').post((req, res)=>{
+    let username = req.body.username;
+
+    student.findOne({"username":username}, (err, stud)=>{
+        if(err) console.log(err);
+        else res.json(stud);
+    })
+})
+
+router.route('/dohvatiLozinkuZaposleni').post((req, res)=>{
+    let username = req.body.username;
+
+    zaposleni.findOne({"username":username}, (err, zap)=>{
+        if(err) console.log(err);
+        else res.json(zap);
+    })
+})
+
+router.route('/dohvatiLozinkuAdmin').post((req, res)=>{
+    let username = req.body.username;
+
+    admin.findOne({"username":username}, (err, adm)=>{
+        if(err) console.log(err);
+        else res.json(adm);
+    })
+})
+
+router.route('/promenaLozinkeStudent').post((req, res)=>{
+    let username = req.body.username;
+    student.collection.updateOne({'username':username}, { $set: {
+                                                                    "password" : req.body.password,
+                                                                    "pass_changed" : 1
+                                                                }
+                                                        });  
+    res.json({"mssg":"ok"})
+});
+
+router.route('/promenaLozinkeZaposleni').post((req, res)=>{
+    let username = req.body.username;
+    zaposleni.collection.updateOne({'username':username}, { $set: {
+                                                                    "password" : req.body.password,
+                                                                    "pass_changed" : 1
+                                                                }
+                                                        });  
+    res.json({"mssg":"ok"})
+});
+
+router.route('/promenaLozinkeAdmin').post((req, res)=>{
+    let username = req.body.username;
+    admin.collection.updateOne({'username':username}, { $set: {
+                                                                    "password" : req.body.password,
+                                                                    "pass_changed" : 1
+                                                                }
+                                                        });  
+     res.json({"mssg":"ok"})
+});
+
+//~~~~~~~   ~~~~~~~~~~~
+
+
 //-------------------
 
 app.use('/', router);

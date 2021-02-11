@@ -9,6 +9,9 @@ let Zaposleni = new Schema({
     password: {
         type: String
     },
+    pass_changed: {
+        type: Number
+    },
     name: {
         type: String
     },
