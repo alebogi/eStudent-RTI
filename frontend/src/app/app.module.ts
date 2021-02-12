@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { PartneriComponent } from './partneri/partneri.component';
 import { ZaposleniComponent } from './zaposleni/zaposleni.component';
 import { PromenaLozinkeComponent } from './promena-lozinke/promena-lozinke.component';
+import { MeniZaposleniComponent } from './meni-zaposleni/meni-zaposleni.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PromenaLozinkeComponent } from './promena-lozinke/promena-lozinke.compo
     LoginComponent,
     PartneriComponent,
     ZaposleniComponent,
-    PromenaLozinkeComponent
+    PromenaLozinkeComponent,
+    MeniZaposleniComponent
   ],
   imports: [
     BrowserModule,

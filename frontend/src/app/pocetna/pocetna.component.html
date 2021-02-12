@@ -26,7 +26,8 @@
                     <br>
                 </div>
                    
-                <app-partneri></app-partneri>
+                <app-partneri *ngIf="ulogovaniTip!='zaposleni'"></app-partneri>
+                <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
             </div>
             <div class="col-sm-6 col-lg-6 centralPart">
                 <div class="row" id="slide">

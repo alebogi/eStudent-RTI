@@ -6,7 +6,8 @@
                 <!--empty-->
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <app-partneri></app-partneri>
+                <app-partneri *ngIf="ulogovaniTip!='zaposleni'"></app-partneri>
+                <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
                 <h4>Промена шифре</h4>
