@@ -14,6 +14,11 @@ import { PartneriComponent } from './partneri/partneri.component';
 import { ZaposleniComponent } from './zaposleni/zaposleni.component';
 import { PromenaLozinkeComponent } from './promena-lozinke/promena-lozinke.component';
 import { MeniZaposleniComponent } from './meni-zaposleni/meni-zaposleni.component';
+import { ObavestenjaComponent } from './obavestenja/obavestenja.component';
+import { IstrazivanjaComponent } from './istrazivanja/istrazivanja.component';
+import { ProjektiNaukaComponent } from './projekti-nauka/projekti-nauka.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
+import { ProjektiComponent } from './projekti/projekti.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { MeniZaposleniComponent } from './meni-zaposleni/meni-zaposleni.componen
     PartneriComponent,
     ZaposleniComponent,
     PromenaLozinkeComponent,
-    MeniZaposleniComponent
+    MeniZaposleniComponent,
+    ObavestenjaComponent,
+    IstrazivanjaComponent,
+    ProjektiNaukaComponent,
+    KontaktComponent,
+    ProjektiComponent
   ],
   imports: [
     BrowserModule,

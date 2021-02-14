@@ -1,13 +1,14 @@
 {
 	username: "nbosko",
 	password: "bosko123",
+	pass_changed: 0,
 	name: "Boško",
 	lastname: "Nikolić",
 	address: "Grčića Milenka 56, Beograd",
 	phone: "060/3218378",
 	website: null,
 	personal_info: null,
-	title: "redovni_profesor",
+	title: "redovni profesor",
 	office: "lola-909",
 	status: "active",
 	photo: null
@@ -15,13 +16,14 @@
 {
 	username: "dmilicev",
 	password: "volimos123",
+	pass_changed: 0,
 	name: "Dragan",
 	lastname: "Milićev",
 	address: "Maksima Gorkog 7, Beograd",
 	phone: null,
 	website: "http://afrodita.rcub.bg.ac.rs/~dmilicev/",
 	personal_info: null,
-	title: "redovni_profesor",
+	title: "redovni profesor",
 	office: "p-24",
 	status: "active",
 	photo: null
@@ -29,13 +31,14 @@
 {
 	username: "pavle.vuletic",
 	password: "pavle123",
+	pass_changed: 0,
 	name: "Pavle",
 	lastname: "Vuletić",
 	address: "Zire Adamović 4, Beograd",
 	phone: "060/3218465",
 	website: null,
 	personal_info: null,
-	title: "vanredni_profesor",
+	title: "vanredni profesor",
 	office: "lola-914",
 	status: "active",
 	photo: null
@@ -43,6 +46,7 @@
 {
 	username: "drazen.draskovic",
 	password: "drasko123",
+	pass_changed: 0,
 	name: "Dražen",
 	lastname: "Drašković",
 	address: "Stjepana Filipovića 30, Beograd",
@@ -57,6 +61,7 @@
 {
 	username: "jelica",
 	password: "jelica123",
+	pass_changed: 0,
 	name: "Jelica",
 	lastname: "Cincović",
 	address: "Milutina Milankovića 65, Beograd",
@@ -71,6 +76,7 @@
 {
 	username: "aleksas",
 	password: "aleksa123",
+	pass_changed: 0,
 	name: "Aleksa",
 	lastname: "Srbijanović",
 	address: "Cvijićeva 89,  Beograd",
@@ -85,13 +91,14 @@
 {
 	username: "ristob",
 	password: "risto123",
+	pass_changed: 0,
 	name: "Risto",
 	lastname: "Bošković",
 	address: "Nehruova 157, Beograd",
 	phone: "065/1239875",
 	website: null,
 	personal_info: null,
-	title: "lab_tehnicar",
+	title: "lab. tehničar",
 	office: "p-25",
 	status: "active",
 	photo: null
@@ -99,13 +106,14 @@
 {
 	username: "nenadko",
 	password: "nenad123",
+	pass_changed: 0,
 	name: "Nenad",
 	lastname: "Korolija",
 	address: "Vojvođanska 17, Beograd",
 	phone: "066/1735175",
 	website: null,
 	personal_info: null,
-	title: "lab_inzenjer",
+	title: "lab. inž.",
 	office: "p-25",
 	status: "active",
 	photo: null
@@ -113,13 +121,14 @@
 {
 	username: "ana.lazovic",
 	password: "ana123",
+	pass_changed: 0,
 	name: "Ana",
 	lastname: "Lazović",
 	address: "Gandijeva 99, Beograd",
 	phone: "061/6425978",
 	website: null,
 	personal_info: null,
-	title: "istrazivac",
+	title: "istraživač",
 	office: "p-25",
 	status: "non_active",
 	photo: null

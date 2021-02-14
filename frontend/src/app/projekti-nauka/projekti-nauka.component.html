@@ -1,0 +1,32 @@
+<div id="page-container">
+    <app-myheader></app-myheader>
+    <div id="content-wrap" >
+        <div class="row">
+            <div class="col-sm-1 col-md-1 col-lg-1">
+                <!--empty-->
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+				<app-partneri *ngIf="ulogovaniTip!='zaposleni'"></app-partneri>
+                <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
+                <br> <h4>Пројекти запослених</h4> <br><br>
+                <div class="justify-content-center text-center">
+                    <ul>
+                        <li>Судска вештачења за Виши суд у Београду</li>
+                        <li>Подешавање параметара и пуштање у рад вишемоторног погона багера Еш 6/45</li>
+                        <li>Израда Ваздухопловне студије за далековод дв 110kV бр 1144В ТЕ Костолац - ТС Смедерево 3, увођење у ТС Пожаревац 2</li>
+                        <li>Развој network and service reporting system софтверске платформе</li>
+                        <li>Обука за програм DIgSiLENT</li>
+                        <li>Консултације за Huawei</li>
+                        <li>EIT UM RIS Ur-Bit</li>
+                        <li>Паметно окружење за 3 D EM симулације у IoT и 5 G</li>
+                        <li>Систем за праћење соларних постројења - SOFIS</li>
+                        <li>ADVANCING NOVEL TEXTUAL SIMILARITY -BASED SOLUTIONS IN SOFTWARE DEVELOPMENT (AVANTES)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <app-myfooter></app-myfooter>
+</div> 

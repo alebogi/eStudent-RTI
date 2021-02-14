@@ -1,0 +1,54 @@
+<div id="page-container">
+    <app-myheader></app-myheader>
+    <div id="content-wrap" >
+        <div class="row">
+            <div class="col-sm-1 col-md-1 col-lg-1">
+                <!--empty-->
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+				<app-partneri *ngIf="ulogovaniTip!='zaposleni'"></app-partneri>
+                <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
+                <h4>Обавештења</h4> <br><br>
+                <h5>Позиви за студентнска такмичења</h5><br>
+                <div *ngIf="takmicenja==true">
+                    <div *ngFor='let elem of takmicenjaNiz'>
+                         &nbsp;&nbsp; {{elem.tekst}} <br>
+                    </div>
+                </div>
+                <div *ngIf="takmicenja==false">
+                    Тренутно нема актуелних позива за такмичења.<br>
+                </div>
+                <br><h5>Обавештења о конференцијама</h5><br>
+                <div *ngIf="konferencije==true">
+                    <div *ngFor='let elem of konferencijeNiz'>
+                        {{elem.tekst}} <br>
+                    </div>
+                </div>
+                <div *ngIf="konferencije==false">
+                    Тренутно нема актуелних обавештења о конференцијама.<br>
+                </div>
+                <br><h5>Понуде за праксу</h5><br>
+                <div *ngIf="praksa==true">
+                    <div *ngFor='let elem of praksaNiz'>
+                        {{elem.tekst}} <br>
+                    </div>
+                </div>
+                <div *ngIf="praksa==false">
+                    Тренутно нема актуелних понуда за праксу.<br>
+                </div>
+                <br><h5>Понуде за посао</h5><br>
+                <div *ngIf="posao==true">
+                    <div *ngFor='let elem of posaoNiz'>
+                        {{elem.tekst}} <br>
+                    </div>
+                </div>
+                <div *ngIf="posao==false">
+                    Тренутно нема актуелних понуда за посао.<br>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <app-myfooter></app-myfooter>
+</div> 

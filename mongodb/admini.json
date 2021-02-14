@@ -1,4 +1,5 @@
 {
 	username: "adminRTI",
 	password: "admin123"
+	pass_changed: 0
 }

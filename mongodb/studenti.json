@@ -1,6 +1,7 @@
 {
 	username: "ba170390d@student.etf.rs",
 	password: "lexo123",
+	pass_changed: 0,
 	index: "2017/0390",
 	study_type: "d",
 	name: "Aleksandra",
@@ -10,6 +11,7 @@
 {
 	username: "mn171389@student.etf.rs",
 	password: "munzekonza1987",
+	pass_changed: 0,
 	index: "2017/1389",
 	study_type: "p",
 	name: "Nikola",
@@ -19,6 +21,7 @@
 {
 	username: "kd150666d@student.etf.rs",
 	password: "duledidule69",
+	pass_changed: 0,
 	index: "2015/0666",
 	study_type: "d",
 	name: "Dušan",
@@ -28,6 +31,7 @@
 {
 	username: "ml160645@student.etf.rs",
 	password: "lazarus1312",
+	pass_changed: 0,
 	index: "2016/0645",
 	study_type: "d",
 	name: "Lazar",
@@ -37,6 +41,7 @@
 {
 	username: "ca207859@student.etf.rs",
 	password: "volimpartizan333",
+	pass_changed: 0,
 	index: "2020/7859",
 	study_type: "m",
 	name: "Aleksa",
@@ -46,6 +51,7 @@
 {
 	username: "lb189012@student.etf.rs",
 	password: "lebronsakaraburme23",
+	pass_changed: 0,
 	index: "2018/9012",
 	study_type: "p",
 	name: "Božo",
@@ -55,6 +61,7 @@
 {
 	username: "ld190189@student.etf.rs",
 	password: "codasahmajstor123",
+	pass_changed: 0,
 	index: "2019/0189",
 	study_type: "d",
 	name: "Danilo",

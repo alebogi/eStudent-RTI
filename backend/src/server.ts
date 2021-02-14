@@ -5,6 +5,7 @@ import mongoose from 'mongoose'
 import student from './model/student';
 import zaposleni from './model/zaposleni';
 import admin from './model/admin';
+import obavestenja from './model/obavestenja';
 
 const app = express();
 
@@ -158,8 +159,23 @@ router.route('/promenaLozinkeAdmin').post((req, res)=>{
      res.json({"mssg":"ok"})
 });
 
-//~~~~~~~   ~~~~~~~~~~~
+//~~~~~~~ Dohvatanje zaposlenih  ~~~~~~~~~~~
 
+router.route('/dohvatiSveZaposlene').get((req, res)=>{
+    zaposleni.find({}, (err, zaposl)=>{
+        if(err) console.log(err);
+        else res.json(zaposl);
+    })
+})
+
+//~~~~~~ OBAVESTENJA ~~~~~~
+
+router.route('/dohvatiObavestenja').get((req, res)=>{
+    obavestenja.find({}, (err, obav)=>{
+        if(err) console.log(err);
+        else res.json(obav);
+    })
+})
 
 //-------------------
 

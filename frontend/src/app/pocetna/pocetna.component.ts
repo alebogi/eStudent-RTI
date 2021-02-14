@@ -9,6 +9,8 @@ import { LoginComponent } from '../login/login.component';
 export class PocetnaComponent implements OnInit {
   ulogovan: boolean = false;
   ulogovaniTip: string;
+  ulogovanUsername: string;
+  ulogvanImePrezime: string;
 
   constructor() {
     
@@ -17,6 +19,9 @@ export class PocetnaComponent implements OnInit {
   ngOnInit(): void {
     this.proveriUlogovan();
     this.ulogovaniTip = localStorage.getItem("ulogovaniTip");
+    this.ulogovanUsername = localStorage.getItem("ulogovan_username");
+    this.ulogvanImePrezime = localStorage.getItem("ulogovan_imeprezime");
+    
   }
 
   proveriUlogovan(){

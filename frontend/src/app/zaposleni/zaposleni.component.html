@@ -10,7 +10,14 @@
                 <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
-                
+                <h4>Запослени на факултету</h4>
+                <div class="text-left justify-content-left" *ngFor='let zaposl of zaposleniNiz'>
+                    <!-- <a routerLink="/profil"> -->
+                        <i class="fa fa-address-card-o" aria-hidden="true"></i> {{zaposl.name}} &nbsp; {{zaposl.lastname}} , &nbsp; {{zaposl.title}}
+                    <!-- </a> -->
+                    <!-- TO DO: IZLISTAJ PREDMETE NA KOJIM SU ANGAZOVANI -->
+
+                </div>
             </div>
         </div>       
     </div>

@@ -38,10 +38,10 @@
                     <a class="nav-link" routerLink="">Почетна</a>
                 </li>
                 <li class="nav-item justify-content-center">
-                    <a class="nav-link" routerLink="zaposleni">Запослени</a>
+                    <a class="nav-link" routerLink="/zaposleni">Запослени</a>
                 </li>
                 <li class="nav-item justify-content-center">
-                    <a class="nav-link" >Обавештења</a>
+                    <a class="nav-link" routerLink="/obavestenja">Обавештења</a>
                 </li>
                             
                 <!-- Dropdown -->
@@ -60,13 +60,20 @@
                     <a class="nav-link" > Мастер студије</a>
                 </li>
                 <li class="nav-item justify-content-center">
-                    <a class="nav-link" >Наука</a>
+                    <a class="nav-link" routerLink="/projekti"> Пројекти </a>
                 </li>
                 <li class="nav-item justify-content-center">
-                    <a class="nav-link" >Контакт</a>
+                    <a  class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" >Наука</a>
+                    <div class="dropdown-menu justify-content-center bg-dark">
+                        <a class="dropdown-item" routerLink="/istrazivanja">Истраживања</a>
+                        <a class="dropdown-item"  routerLink="/naukaProjekti">Пројекти</a>
+                    </div>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link"  routerLink="/kontakt">Контакт</a>
                 </li>
             </ul>
-            <div class="my-2 my-lg-0 prijava-txt" >
+            <div class="my-1 my-lg-0 prijava-txt" >
                 <!-- <a routerLink="login"> Пријави се </a> |    
                 <a > Региструј се</a>                -->
                 Добро дошли

@@ -96,4 +96,8 @@ export class KorisnikServisService {
     }
     return this.http.post(`${this.uri}/promenaLozinkeAdmin`, data);
   }
+
+  izlistajZaposlene(){
+    return this.http.get(`${this.uri}/dohvatiSveZaposlene`);
+  }
 }

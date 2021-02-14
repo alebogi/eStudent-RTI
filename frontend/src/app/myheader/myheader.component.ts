@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { latinicaUcirilicu } from '../app.component'
 
 @Component({
   selector: 'app-myheader',
@@ -19,6 +20,7 @@ export class MyheaderComponent implements OnInit {
     this.ulogovaniTip = localStorage.getItem("ulogovaniTip");
     this.ulogovanUsername = localStorage.getItem("ulogovan_username");
     this.ulogvanImePrezime = localStorage.getItem("ulogovan_imeprezime");
+    this.ulogvanImePrezime = latinicaUcirilicu(this.ulogvanImePrezime);
   }
 
   logout(){
