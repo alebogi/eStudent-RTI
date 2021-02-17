@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projekti-nauka',
@@ -11,7 +12,7 @@ export class ProjektiNaukaComponent implements OnInit {
   ulogovanUsername: string;
   ulogvanImePrezime: string;
 
-  constructor() { }
+  constructor(private ruter:Router) { }
 
   ngOnInit(): void {
     this.ulogovan = localStorage.getItem("ulogovan");
@@ -20,4 +21,7 @@ export class ProjektiNaukaComponent implements OnInit {
     this.ulogvanImePrezime = localStorage.getItem("ulogovan_imeprezime");
   }
 
+  preusmeri(){
+    
+  }
 }

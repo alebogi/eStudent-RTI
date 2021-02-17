@@ -23,6 +23,8 @@ import { OdsekRTIComponent } from './odsek-rti/odsek-rti.component';
 import { OdsekSIComponent } from './odsek-si/odsek-si.component';
 import { OdsekOstaloComponent } from './odsek-ostalo/odsek-ostalo.component';
 import { MasterComponent } from './master/master.component';
+import { PredmetComponent } from './predmet/predmet.component';
+import { ProfilZaposlenogComponent } from './profil-zaposlenog/profil-zaposlenog.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { MasterComponent } from './master/master.component';
     OdsekRTIComponent,
     OdsekSIComponent,
     OdsekOstaloComponent,
-    MasterComponent
+    MasterComponent,
+    PredmetComponent,
+    ProfilZaposlenogComponent
   ],
   imports: [
     BrowserModule,

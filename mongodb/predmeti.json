@@ -1,14 +1,203 @@
 {
+	naziv: "Matematika 1",
+	tip: "obavezan",
+	smer: "si",
+	semestar: 1,
+	godina: 1,
+	sifra: "13S081M1",
+	fond: "3+2",
+	espb: 5,
+	cilj: "Upoznavanje studenata sa osnovama matematičke logike, opšte i linearne algebre i matematičke analize.",
+	ishod: "Student će lako prepoznavati probleme u stručnim predmetima i primenjivati stečeno znanje, posebno za rešavanje sistema linearnih jednačina i za približna izračunavanja i aproksimaciju funkcija koje se pojavljuju pri matematičkom modelovanju odgovarajućih problema",
+	terminiPredavanja:[
+		"ponedeljak 8h",
+		"četvrtak 15h"
+	],
+	terminiVezbe:[
+		"ponedeljak 11h",
+		"sreda 15h"
+	],
+	nastavnici:[
+		"prof. dr Nenad Cakić"
+	],
+	labVezbe:null,
+	dodatno:null
+}
+{
+	naziv: "Programiranje 2",
+	tip: "obavezan",
+	smer: "si",
+	semestar: 2,
+	godina: 1,
+	sifra: "13S111P2",
+	fond: "3+2",
+	espb: 5,
+	cilj: "Učenje imperativnog programiranja na jezicima niskog nivoa i višim programskim jezicima.",
+	ishod: "Studenti će biti u stanju da: transformišu izraze Bulove algebre, izračunaju vrednost broja na osnovu prikaza u komplementu dvojke i računaju sa ovakvim brojevima, napišu jednostavan program na simboličkom mašinskom jeziku picoComputer-a, razumeju sintaksne definicije, razvijaju, isprave i testiraju modularne strukturirane programe na višem programskom jeziku i procene njihovu kompleksnost.",
+	terminiPredavanja: [
+		"ponedeljak 15h",
+		"sreda 15h"
+	],
+	terminiVezbe: [
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici: [
+		"prof. dr Milo Tomašević",
+		"prof. dr Jelica Protić"
+	],
+	labVezbe:null,
+	dodatno:null
+}
+{
+	naziv: "Objektno-orijentisano programiranje 1",
+	tip: "obavezan",
+	smer: "si",
+	semestar: 3,
+	godina: 2,
+	sifra: "13S112OO1",
+	fond: "3+2",
+	espb: 6,
+	cilj: "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
+	ishod: "Po uspešno savladanom predmetu, studenti će biti osposobljeni da: - interpretiraju i primenjuju paradigmu objektno-orijentisanog programiranja; - demonstriraju principe objektno-orijentisanog programiranja na jeziku C++; - rešavaju praktične probleme programiranja na jeziku C++; - koriste važne elemente standardne biblioteke šablona (STL).",
+	terminiPredavanja:  [
+		"utorak 13h",
+		"petak 8h"
+	],
+	terminiVezbe: [
+		"utorak 16h",
+		"petak 8h"
+	]
+	,
+	nastavnici:[
+		"prof. dr Igor Tartalja"
+	],
+	labVezbe:null,
+	dodatno:null
+}
+{
+	naziv: "Objektno-orijentisano programiranje 2",
+	tip: "obavezan",
+	smer: "si",
+	semestar: 4,
+	godina: 2,
+	sifra: "13S112OO1",
+	fond: "3+2",
+	espb: 6,
+	cilj: "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
+	ishod: "Po uspešno savladanom predmetu, studenti će biti osposobljeni da: - interpretiraju i primenjuju paradigmu objektno-orijentisanog programiranja; - demonstriraju principe objektno-orijentisanog programiranja na jeziku C++; - rešavaju praktične probleme programiranja na jeziku C++; - koriste važne elemente standardne biblioteke šablona (STL).",
+	terminiPredavanja:  [
+		"utorak 13h",
+		"petak 8h"
+	],
+	terminiVezbe: [
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"prof. dr Igor Tartalja"
+	],
+	labVezbe:null,
+	dodatno:null
+}
+{
+	naziv: "Računarske mreže 2",
+	tip: "izborni",
+	smer: "si",
+	semestar: 5,
+	godina: 3,
+	sifra: "13S113RM2",
+	fond: "2+2",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa arhitekturom i mehanizmima funkcionisanja Interneta, te naprednim konceptima, protokolima i algoritmima funkcionisanja nekih ključnih Internet servisa i savremenih računarskih mreža.",
+	ishod: "Nakon ovog kursa studenti će u potpunosti razumeti arhitekturu Interneta i modernih mehanizama prosleđivanja paketa, što je ključno za razumevanje načina na koji funkcionišu aplikacije koje rade na Internetu.",
+	terminiPredavanja:[
+		"sreda 19h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:["prof.dr Pavle Vuletić"],
+	labVezbe: "3 lab vezbe",
+	dodatno:null
+}
+{
+	naziv: "Konkurentno i distribuirano programiranje",
+	tip: "obavezan",
+	smer: "si",
+	semestar: 6,
+	godina: 3,
+	sifra: "13S113KDP",
+	fond: "2+2",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa osnovnim konceptima konkurentnog i distribuiranog programiranja",
+	ishod: "Posedovanje osnovnih znanja o konceptima, algoritmima, principima, problemima i rešenjima vezanim za konkurentno i distribuirano programiranja",
+	terminiPredavanja:[
+		"petak 16h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici: ["prof. dr Zaharije Radivojević"],
+	labVezbe: "3 lab vezbe",
+	dodatno:null
+}
+{
 	naziv: "Programiranje Internet Aplikacija",
 	tip: "obavezan",
+	smer: "si",
+	semestar: 7,
+	godina: 4,
 	sifra: "SI4PIA",
-	fond: ,
-	espb:,
-	cilj:,
-	ishod:,
-	terminiPredavanja:,
-	terminiVezbe:,
-	nastavnici:,
-	labVezbe:,
-	dodatno:,
+	fond: "1+2",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa osnovnim pojmovima razvoja višeslojnih Internet aplikacija baziranih na programskom jeziku Java (Java servlets, JSP, JSF framework).",
+	ishod: "Studenti će biti osposobljeni da projektuju i razviju višeslojne Internet aplikacije potrebne složenosti koristeći najefikasnije metode i tehnologije",
+	terminiPredavanja:[
+		"utorak 9h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici: [
+		"prof. dr Boško Nikolić",
+		"doc. dr Dražen Drašković",
+		"as. ms Sanja Delčev", 
+		"as. ms Jelica Cincović"
+	],
+	labVezbe:null,
+	dodatno:null
+}
+{
+	naziv: "Softverski alati baza podataka",
+	tip: "izborni",
+	smer: "si",
+	semestar: 8,
+	godina: 4,
+	sifra: "13S113SAB",
+	fond: "2+3",
+	espb: 6,
+	cilj: "Uvođenje u softverske alate za razvoj baza podataka.",
+	ishod: "Znanje u vezi korišćenja softverskih alata za razvoj baza podataka.",
+	terminiPredavanja:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"prof. dr Miloš Cvetanović",
+		"as. ms Stefan Tubić",
+		"as. ms Stefan Tubić"
+	],
+	labVezbe:null,
+	dodatno:null
 }

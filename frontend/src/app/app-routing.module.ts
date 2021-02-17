@@ -8,6 +8,8 @@ import { OdsekOstaloComponent } from './odsek-ostalo/odsek-ostalo.component';
 import { OdsekRTIComponent } from './odsek-rti/odsek-rti.component';
 import { OdsekSIComponent } from './odsek-si/odsek-si.component';
 import { PocetnaComponent } from './pocetna/pocetna.component';
+import { PredmetComponent } from './predmet/predmet.component';
+import { ProfilZaposlenogComponent } from './profil-zaposlenog/profil-zaposlenog.component';
 import { ProjektiNaukaComponent } from './projekti-nauka/projekti-nauka.component';
 import { ProjektiComponent } from './projekti/projekti.component';
 import { PromenaLozinkeComponent } from './promena-lozinke/promena-lozinke.component';
@@ -28,6 +30,8 @@ const routes: Routes = [
   {path: "odsekSI", component: OdsekSIComponent},
   {path: "odsekOstalo", component: OdsekOstaloComponent},
   {path: "master", component: MasterComponent},
+  {path: "predmet", component: PredmetComponent},
+  {path: "profil", component: ProfilZaposlenogComponent},
   {path: '**', component: PocetnaComponent } //ako ne postoji ruta
 ];
 

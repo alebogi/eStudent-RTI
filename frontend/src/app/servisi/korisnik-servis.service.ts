@@ -100,4 +100,12 @@ export class KorisnikServisService {
   izlistajZaposlene(){
     return this.http.get(`${this.uri}/dohvatiSveZaposlene`);
   }
+
+  dohvatiZaposlenog(username: string){
+    const data = {
+      username: username
+    }
+
+    return this.http.post(`${this.uri}/dohvatiZaposlenog`, data);
+  }
 }

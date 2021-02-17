@@ -10,12 +10,16 @@
                 <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
-                <br> <h4>Истраживања</h4> <br>
                 <br>
-                <br>
-                На нашем факултету постоје две истраивачке групе. Више о њима можете прочитати на следећим линковима: <br>
-                <a href="http://rti.etf.bg.ac.rs/rti/ebi/"  target="_blank" rel="noopener noreferrer">EBI Group</a> <br> <br>
-                <a href="http://rti.etf.bg.ac.rs/rti/acm/"  target="_blank" rel="noopener noreferrer">ACM Group</a>
+                <b><h4>{{prevedi(zaposleni.name)}} {{prevedi(zaposleni.lastname)}}</h4></b>
+                <br><br>
+                <div class="justify-content-left text-left">
+                   Е-пошта: {{zaposleni.username}}@student.etf.rs<br>
+                   Звање: {{prevedi(zaposleni.title)}}<br>
+                   Адреса: {{prevedi(zaposleni.address)}}<br>
+                   Контакт: {{zaposleni.phone}}<br>
+                   Канцеларија {{prevedi(zaposleni.office)}}<br>
+                </div>
             </div>
         </div>       
     </div>

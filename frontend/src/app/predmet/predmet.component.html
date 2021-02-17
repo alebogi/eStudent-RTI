@@ -1,0 +1,72 @@
+<div id="page-container">
+    <app-myheader></app-myheader>
+    <div id="content-wrap" >
+        <div class="row">
+            <div class="col-sm-1 col-md-1 col-lg-1">
+                <!--empty-->
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+				<app-partneri *ngIf="ulogovaniTip!='zaposleni'"></app-partneri>
+                <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
+                <h4>{{prevedi(predmet.naziv)}} - {{prevedi(predmet.sifra)}}</h4>
+                <br><br>
+                <h5><b>Обавештења о предмету</b></h5>
+                <div class="justify-content-left text-left">
+                    
+                </div>
+                <br><br><h5><b>Информације о предмету</b></h5>
+                <div class="justify-content-left text-left">
+                    <ul>
+                        <li>
+                            Смер: &nbsp; {{prevedi(predmet.smer)}}
+                        </li>
+                        <li>
+                            Тип предмета: &nbsp; {{prevedi(predmet.tip)}}
+                        </li>
+                        <li>
+                            Фонд часова (предавања + вежбе): &nbsp; {{predmet.fond}}
+                        </li>
+                        <li>
+                            ЕСПБ: &nbsp; {{predmet.espb}}
+                        </li>
+                        <li>
+                            Циљ предмета: &nbsp; {{prevedi(predmet.cilj)}}
+                        </li>
+                        <li>
+                            Исход предмета: &nbsp; {{prevedi(predmet.ishod)}}
+                        </li>
+                        <li>
+                            Наставници са предмета: &nbsp; 
+                            <div *ngFor="let nast of predmet.nastavnici"> {{prevedi(nast)}}</div>
+                        </li>
+                    </ul>
+                </div>
+                <br><br><h5><b>Предавања</b></h5>
+                <div class="justify-content-left text-left">
+                    Термини предавања:
+                    <div *ngFor="let ter of predmet.terminiPredavanja"> {{prevedi(ter)}}</div>
+                </div>
+                <br><br><h5><b>Вежбе</b></h5>
+                <div class="justify-content-left text-left">
+                    Термини вежби: 
+                    <div *ngFor="let ter of predmet.terminiVezbe"> {{prevedi(ter)}}</div>
+                </div>
+                <br><br><h5><b>Испитна питања</b></h5>
+                <div class="justify-content-left text-left">
+                    
+                </div>
+                <br><br><h5><b>Лабораторија</b></h5>
+                <div class="justify-content-left text-left">
+                    
+                </div>
+                <br><br><h5><b>Пројекат / Домаћи задатак</b></h5>
+                <div class="justify-content-left text-left">
+                    
+                </div>
+            </div>
+        </div>       
+    </div>
+    <app-myfooter></app-myfooter>
+</div>

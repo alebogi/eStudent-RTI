@@ -13,8 +13,25 @@
                 <br>
                 <h4>Мастер студије</h4>
                 <br>
+                <br>
+                <div >
+                    <h6>Први семестар</h6> 
+                    <div *ngFor='let predm of sviPredmeti' >
+                        <div *ngIf="predm.semestar==1">
+                           <a (click)="preusmeri(predm.sifra)"> {{prevedi(predm.naziv)}}</a>
+                        </div>
+                    </div>
+                    <br><h6>Други семестар</h6>
+                    <div *ngFor='let predm of sviPredmeti'>
+                        <div *ngIf="predm.semestar==2">
+                            <a (click)="preusmeri(predm.sifra)"> {{prevedi(predm.naziv)}}</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </div>
         </div>       
     </div>
     <app-myfooter></app-myfooter>
-</div>
+</div>  

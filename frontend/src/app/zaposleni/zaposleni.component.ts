@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Zaposleni } from '../model/zaposleni.model';
 import { KorisnikServisService } from '../servisi/korisnik-servis.service';
 import { latinicaUcirilicu } from '../app.component'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-zaposleni',
@@ -10,7 +11,8 @@ import { latinicaUcirilicu } from '../app.component'
 })
 export class ZaposleniComponent implements OnInit {
 
-  constructor(private servisKorisnik: KorisnikServisService) { }
+  constructor(private servisKorisnik: KorisnikServisService, private ruter:Router) { }
+  
 
   ulogovan: string;
   ulogovaniTip: string;
@@ -38,8 +40,11 @@ export class ZaposleniComponent implements OnInit {
       }
     })
     
-    
+  }
 
+  preusmeri(str){
+    localStorage.setItem("profil", str);
+    this.ruter.navigate(["/profil"]);
   }
 
 }

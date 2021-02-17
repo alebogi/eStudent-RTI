@@ -12,8 +12,58 @@
             <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
                 <br>
                 <h4>Одсек за РТИ</h4>
+                <br>
+                <br>
+               
+                <div>
+                    <h5><b>Друга година</b> </h5> <br>
+                    <h6>Трећи семестар</h6> 
+                    <div *ngFor='let predm of sviPredmeti' >
+                        <div *ngIf="predm.semestar==3">
+                            <a (click)="preusmeri(predm.sifra)"> {{prevedi(predm.naziv)}}</a>
+                        </div>
+                    </div>
+                    <br><h6>Четврти семестар</h6> 
+                    <div *ngFor='let predm of sviPredmeti'>
+                        <div *ngIf="predm.semestar==4">
+                            <a (click)="preusmeri(predm.sifra)"> {{prevedi(predm.naziv)}}</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h5><b>Трећа година </b></h5> <br>
+                    <h6>Пети семестар</h6> 
+                    <div *ngFor='let predm of sviPredmeti'>
+                        <div *ngIf="predm.semestar==5">
+                            <a (click)="preusmeri(predm.sifra)"> {{prevedi(predm.naziv)}}</a>
+                        </div>
+                    </div>
+                    <br><h6>Шести семестар</h6> 
+                    <div *ngFor='let predm of sviPredmeti'>
+                        <div *ngIf="predm.semestar==6">
+                            <a (click)="preusmeri(predm.sifra)"> {{prevedi(predm.naziv)}}</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h5><b>Четврта година</b> </h5> <br>
+                    <h6>Седми семестар</h6> 
+                    <div *ngFor='let predm of sviPredmeti'>
+                        <div *ngIf="predm.semestar==7">
+                            <a (click)="preusmeri(predm.sifra)"> {{prevedi(predm.naziv)}}</a>
+                        </div>
+                    </div>
+                    <br><h6>Осми семестар</h6> 
+                    <div *ngFor='let predm of sviPredmeti' >
+                        <div *ngIf="predm.semestar==8">
+                            <a (click)="preusmeri(predm.sifra)"> {{prevedi(predm.naziv)}}</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>       
     </div>
     <app-myfooter></app-myfooter>
-</div> 
+</div>  

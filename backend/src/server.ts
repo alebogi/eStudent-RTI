@@ -6,6 +6,7 @@ import student from './model/student';
 import zaposleni from './model/zaposleni';
 import admin from './model/admin';
 import obavestenja from './model/obavestenja';
+import predmeti from './model/predmeti';
 
 const app = express();
 
@@ -178,6 +179,63 @@ router.route('/dohvatiObavestenja').get((req, res)=>{
 })
 
 //-------------------
+// ~~~ PREDMETI ~~~
+
+router.route('/dohvatiPredmeteSI').get((req, res)=>{
+    predmeti.find({"smer":"si"}, (err, pr)=>{
+        if(err) console.log(err);
+        else res.json(pr);
+    })
+})
+
+router.route('/dohvatiPredmeteRTI').get((req, res)=>{
+    predmeti.find({"smer":"rti"}, (err, pr)=>{
+        if(err) console.log(err);
+        else res.json(pr);
+    })
+})
+
+
+router.route('/dohvatiPredmeteOstalo').get((req, res)=>{
+    predmeti.find({"smer":"rti"}, (err, pr)=>{
+        if(err) console.log(err);
+        else res.json(pr);
+    })
+})
+
+router.route('/dohvatiPredmeteMaster').get((req, res)=>{
+    predmeti.find({"smer":"rti"}, (err, pr)=>{
+        if(err) console.log(err);
+        else res.json(pr);
+    })
+})
+
+
+
+router.route('/dohvatiPredmetInfo').post((req, res)=>{
+    let sifra = req.body.sifra;
+
+    predmeti.findOne({"sifra": sifra}, (err, pr)=>{
+        if(err) 
+            console.log(err);
+        else 
+            res.json(pr);
+    })
+});
+
+//-------------------------
+//~~~~ profil zaposlenog ~~~~
+
+router.route('/dohvatiZaposlenog').post((req, res)=>{
+    let username = req.body.username;
+
+    zaposleni.findOne({"username":username}, (err, zaposleni)=>{
+        if(err) 
+            console.log(err);
+        else 
+            res.json(zaposleni);
+    })
+});
 
 app.use('/', router);
 app.listen(4000, () => console.log(`Express server running on port 4000`));
