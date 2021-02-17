@@ -19,6 +19,10 @@ import { IstrazivanjaComponent } from './istrazivanja/istrazivanja.component';
 import { ProjektiNaukaComponent } from './projekti-nauka/projekti-nauka.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { ProjektiComponent } from './projekti/projekti.component';
+import { OdsekRTIComponent } from './odsek-rti/odsek-rti.component';
+import { OdsekSIComponent } from './odsek-si/odsek-si.component';
+import { OdsekOstaloComponent } from './odsek-ostalo/odsek-ostalo.component';
+import { MasterComponent } from './master/master.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { ProjektiComponent } from './projekti/projekti.component';
     IstrazivanjaComponent,
     ProjektiNaukaComponent,
     KontaktComponent,
-    ProjektiComponent
+    ProjektiComponent,
+    OdsekRTIComponent,
+    OdsekSIComponent,
+    OdsekOstaloComponent,
+    MasterComponent
   ],
   imports: [
     BrowserModule,
