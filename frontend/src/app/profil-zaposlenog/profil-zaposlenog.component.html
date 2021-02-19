@@ -13,12 +13,25 @@
                 <br>
                 <b><h4>{{prevedi(zaposleni.name)}} {{prevedi(zaposleni.lastname)}}</h4></b>
                 <br><br>
+                <div *ngIf="zaposleni.photo!=null || zaposleni.photo!=undefined">
+                    <img src="..." alt="">
+                </div>
                 <div class="justify-content-left text-left">
-                   Е-пошта: {{zaposleni.username}}@student.etf.rs<br>
-                   Звање: {{prevedi(zaposleni.title)}}<br>
-                   Адреса: {{prevedi(zaposleni.address)}}<br>
-                   Контакт: {{zaposleni.phone}}<br>
-                   Канцеларија {{prevedi(zaposleni.office)}}<br>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i> &nbsp;Звање: {{prevedi(zaposleni.title)}}<br>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;Е-пошта: {{zaposleni.username}}@etf.bg.ac.rs<br>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Адреса: {{prevedi(zaposleni.address)}}<br>
+                    <div *ngIf="zaposleni.phone!=null || zaposleni.phone!=undefined">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp; Контакт: {{zaposleni.phone}}<br>
+                    </div>                   
+                    <div *ngIf="zaposleni.office!=null || zaposleni.office!=undefined">
+                        <i class="fa fa-building" aria-hidden="true"></i>&nbsp;Канцеларија: {{prevedi(zaposleni.office)}}<br>
+                    </div>
+                    <div *ngIf="zaposleni.website!=null || zaposleni.website!=undefined">
+                        <i class="fa fa-globe" aria-hidden="true"></i>&nbsp; Веб сајт:{{zaposleni.website}}<br>
+                    </div>
+                    <div *ngIf="zaposleni.personal_info!=null || zaposleni.personal_info!=undefined">
+                        <i class="fa fa-info" aria-hidden="true"></i>&nbsp; Лични подаци: {{zaposleni.personal_info}}<br>
+                    </div>               
                 </div>
             </div>
         </div>       

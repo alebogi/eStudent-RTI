@@ -22,6 +22,8 @@ export class RegistracijaComponent implements OnInit {
   ulogovanUsername: string;
   ulogvanImePrezime: string;
 
+  photo: File = null;
+
   constructor(private servisKorisnik: KorisnikServisService) { }
 
   ngOnInit(): void {
@@ -129,8 +131,13 @@ export class RegistracijaComponent implements OnInit {
 
     this.zaposleni.pass_changed = 0;
 
+    const data = {
+      zaposleni : this.zaposleni,
+      slika: this.photo
+    }
+
     //registracija
-    this.servisKorisnik.registracijaZaposleni(this.zaposleni).subscribe(ob=>{
+    this.servisKorisnik.registracijaZaposleni(data).subscribe(ob=>{
       if(ob['user']=='ok'){
         alert("Регистрација успешна! Запослени је додат у базу података.");
         location.reload();

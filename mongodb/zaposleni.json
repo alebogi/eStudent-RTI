@@ -1,7 +1,7 @@
 {
 	username: "nbosko",
 	password: "bosko123",
-	pass_changed: 0,
+	pass_changed: 1,
 	name: "Boško",
 	lastname: "Nikolić",
 	address: "Grčića Milenka 56, Beograd",
@@ -10,6 +10,51 @@
 	personal_info: null,
 	title: "redovni profesor",
 	office: "lola-909",
+	status: "active",
+	photo: null
+}
+{
+	username: "zaki",
+	password: "sifra123",
+	pass_changed: 0,
+	name: "Zaharije",
+	lastname: "Radivojević",
+	address: "Takovska 6, Beograd",
+	phone: "060/3218392",
+	website: null,
+	personal_info: null,
+	title: "redovni profesor",
+	office: "etf-37a",
+	status: "active",
+	photo: null
+}
+{
+	username: "tartalja",
+	password: "sifra123",
+	pass_changed: 0,
+	name: "Igor",
+	lastname: "Tartalja",
+	address: "Topolska 18, Beograd",
+	phone: "060/32183456",
+	website: null,
+	personal_info: null,
+	title: "vanredni profesor",
+	office: "etf-18",
+	status: "active",
+	photo: null
+}
+{
+	username: "milo",
+	password: "sifra123",
+	pass_changed: 0,
+	name: "Milo",
+	lastname: "Tomašević",
+	address: "Milenka 156, Beograd",
+	phone: "060/3218302",
+	website: null,
+	personal_info: null,
+	title: "redovni profesor",
+	office: "etf-54a",
 	status: "active",
 	photo: null
 }

@@ -47,8 +47,8 @@ export class KorisnikServisService {
     return this.http.post(`${this.uri}/registracijaStudent`, data);
   }
 
-  registracijaZaposleni(user){
-    const data = user;
+  registracijaZaposleni(data){
+    //const data = user;
     return this.http.post(`${this.uri}/registracijaZaposleni`, data);
   }
 
@@ -107,5 +107,12 @@ export class KorisnikServisService {
     }
 
     return this.http.post(`${this.uri}/dohvatiZaposlenog`, data);
+  }
+
+  dohvatiImePrezimeNastavnika(username:string){
+    const data = {
+      username: username
+    }
+    return this.http.post(`${this.uri}/dohvatiImePrezimeNastavnika`, data);
   }
 }

@@ -23,6 +23,8 @@ conn.once('open',()=>{
 
 const router = express.Router();
 
+
+
 //-------------------
 
 // ~~~~~~~ LOGOVANJE ~~~~~~~
@@ -82,12 +84,17 @@ router.route('/registracijaStudent').post((req, res)=>{
 
 });
 
+
 router.route('/registracijaZaposleni').post((req, res)=>{
-    let username = req.body.username;
+    let username = req.body.zaposleni.username;
     zaposleni.find({"username":username}, (err, zaposl)=>{
         if(zaposl.length == 0){
             //ne postoji niko sa tim username-om i mozemo da napravimo novog korisnika
-            let novi = new zaposleni(req.body);
+            let novi = new zaposleni(req.body.zaposleni);
+
+            //upload slike
+           
+
             novi.save().
                 then(user=>{
                     res.status(200).json({'user':'ok', 'greska': ""});
@@ -178,6 +185,17 @@ router.route('/dohvatiObavestenja').get((req, res)=>{
     })
 })
 
+
+router.route('/dohvObavestenjaKategorija').get((req, res)=>{
+    var kat = req.body.kategorija;
+    console.log("kkkk")
+    obavestenja.find({"kategorija":kat}, (err, obav)=>{
+        if(err) {
+            console.log(err);
+            console.log("GOVNOOOOOOOOOOOOOOOOOOOOOOO")
+        }else res.json(obav);
+    })
+})
 //-------------------
 // ~~~ PREDMETI ~~~
 
@@ -236,6 +254,16 @@ router.route('/dohvatiZaposlenog').post((req, res)=>{
             res.json(zaposleni);
     })
 });
+
+
+router.route('/dohvatiImePrezimeNastavnika').post((req, res)=>{
+    let username = req.body.username;
+
+    zaposleni.findOne({"username":username}, (err, zap)=>{
+        if(err) console.log(err);
+        else res.json(zap);
+    })
+})
 
 app.use('/', router);
 app.listen(4000, () => console.log(`Express server running on port 4000`));

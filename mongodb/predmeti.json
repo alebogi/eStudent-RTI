@@ -1,27 +1,32 @@
 {
-	naziv: "Matematika 1",
+	naziv: "Programiranje 1",
 	tip: "obavezan",
 	smer: "si",
 	semestar: 1,
 	godina: 1,
-	sifra: "13S081M1",
+	sifra: "13S111P1",
 	fond: "3+2",
 	espb: 5,
-	cilj: "Upoznavanje studenata sa osnovama matematičke logike, opšte i linearne algebre i matematičke analize.",
-	ishod: "Student će lako prepoznavati probleme u stručnim predmetima i primenjivati stečeno znanje, posebno za rešavanje sistema linearnih jednačina i za približna izračunavanja i aproksimaciju funkcija koje se pojavljuju pri matematičkom modelovanju odgovarajućih problema",
+	cilj: "Učenje imperativnog programiranja na jezicima niskog nivoa i višim programskim jezicima.",
+	ishod: "Studenti će biti u stanju da: transformišu izraze Bulove algebre, izračunaju vrednost broja na osnovu prikaza u komplementu dvojke i računaju sa ovakvim brojevima, napišu jednostavan program na simboličkom mašinskom jeziku picoComputer-a, razumeju sintaksne definicije, razvijaju, isprave i testiraju modularne strukturirane programe na višem programskom jeziku i procene njihovu kompleksnost.",
 	terminiPredavanja:[
-		"ponedeljak 8h",
-		"četvrtak 15h"
+		"sreda 18h",
+		"četvrtak 12h"
 	],
 	terminiVezbe:[
 		"ponedeljak 11h",
 		"sreda 15h"
 	],
 	nastavnici:[
-		"prof. dr Nenad Cakić"
+		"milo"
 	],
 	labVezbe:null,
-	dodatno:null
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja1.pptx"],
+	vezbeMaterijali: ["vezbe1"],
+	ispitPitanja: ["ispitni_rok1"],
+	ispitResenja: ["ispitni_rok_resenje1"]
 }
 {
 	naziv: "Programiranje 2",
@@ -43,11 +48,15 @@
 		"petak 8h"
 	],
 	nastavnici: [
-		"prof. dr Milo Tomašević",
-		"prof. dr Jelica Protić"
+		"milo"
 	],
 	labVezbe:null,
-	dodatno:null
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja8.pptx"],
+	vezbeMaterijali: ["vezbe8.pptx"],
+	ispitPitanja: ["ispitni_rok8.pdf"],
+	ispitResenja: ["ispitni_rok_resenje8.pdf"]
 }
 {
 	naziv: "Objektno-orijentisano programiranje 1",
@@ -70,18 +79,23 @@
 	]
 	,
 	nastavnici:[
-		"prof. dr Igor Tartalja"
+		"tartalja"
 	],
 	labVezbe:null,
-	dodatno:null
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja2.pptx"],
+	vezbeMaterijali: ["vezbe2.pptx"],
+	ispitPitanja: ["ispitni_rok2.pdf"],
+	ispitResenja: ["ispitni_rok_resenje2.pdf"]
 }
 {
-	naziv: "Objektno-orijentisano programiranje 2",
+	naziv: "Objektno-orijentisano programiranje 1",
 	tip: "obavezan",
-	smer: "si",
-	semestar: 4,
+	smer: "rti",
+	semestar: 3,
 	godina: 2,
-	sifra: "13S112OO1",
+	sifra: "13E112OO1",
 	fond: "3+2",
 	espb: 6,
 	cilj: "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
@@ -93,12 +107,139 @@
 	terminiVezbe: [
 		"utorak 16h",
 		"petak 8h"
-	],
+	]
+	,
 	nastavnici:[
-		"prof. dr Igor Tartalja"
+		"tartalja"
 	],
 	labVezbe:null,
-	dodatno:null
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja2.pptx"],
+	vezbeMaterijali: ["vezbe2.pptx"],
+	ispitPitanja: ["ispitni_rok2.pdf"],
+	ispitResenja: ["ispitni_rok_resenje2.pdf"]
+}
+{
+	naziv: "Objektno-orijentisano programiranje 1",
+	tip: "obavezan",
+	smer: "ostalo",
+	semestar: 3,
+	godina: 2,
+	sifra: "13OT112OO1",
+	fond: "3+2",
+	espb: 6,
+	cilj: "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
+	ishod: "Po uspešno savladanom predmetu, studenti će biti osposobljeni da: - interpretiraju i primenjuju paradigmu objektno-orijentisanog programiranja; - demonstriraju principe objektno-orijentisanog programiranja na jeziku C++; - rešavaju praktične probleme programiranja na jeziku C++; - koriste važne elemente standardne biblioteke šablona (STL).",
+	terminiPredavanja:  [
+		"utorak 13h",
+		"petak 8h"
+	],
+	terminiVezbe: [
+		"utorak 16h",
+		"petak 8h"
+	]
+	,
+	nastavnici:[
+		"tartalja"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja2.pptx"],
+	vezbeMaterijali: ["vezbe2.pptx"],
+	ispitPitanja: ["ispitni_rok2.pdf"],
+	ispitResenja: ["ispitni_rok_resenje2.pdf"]
+}
+{
+	naziv: "Operativni sistemi 1",
+	tip: "obavezan",
+	smer: "si",
+	semestar: 4,
+	godina: 2,
+	sifra: "13S112OO1",
+	fond: "3+2",
+	espb: 6,
+	cilj: "Naučiti operativne sisteme i uraditi projekat",
+	ishod: "Šizofrena cepanja.",
+	terminiPredavanja:  [
+		"utorak 13h",
+		"petak 8h"
+	],
+	terminiVezbe: [
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"dmilicev"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja3.pptx"],
+	vezbeMaterijali: ["vezbe3.pptx"],
+	ispitPitanja: ["ispitni_rok3.pdf"],
+	ispitResenja: ["ispitni_rok_resenje3.pdf"]
+}
+{
+	naziv: "Operativni sistemi 1",
+	tip: "obavezan",
+	smer: "rti",
+	semestar: 4,
+	godina: 2,
+	sifra: "13E112OO1",
+	fond: "3+2",
+	espb: 6,
+	cilj: "Naučiti operativne sisteme i uraditi projekat",
+	ishod: "Šizofrena cepanja.",
+	terminiPredavanja:  [
+		"utorak 13h",
+		"petak 8h"
+	],
+	terminiVezbe: [
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"dmilicev"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja3.pptx"],
+	vezbeMaterijali: ["vezbe3.pptx"],
+	ispitPitanja: ["ispitni_rok3.pdf"],
+	ispitResenja: ["ispitni_rok_resenje3.pdf"]
+}
+{
+	naziv: "Operativni sistemi 1",
+	tip: "izborni",
+	smer: "ostalo",
+	semestar: 4,
+	godina: 2,
+	sifra: "13OT112OO1",
+	fond: "3+2",
+	espb: 6,
+	cilj: "Naučiti operativne sisteme i uraditi projekat",
+	ishod: "Šizofrena cepanja.",
+	terminiPredavanja:  [
+		"utorak 13h",
+		"petak 8h"
+	],
+	terminiVezbe: [
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"dmilicev"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja3.pptx"],
+	vezbeMaterijali: ["vezbe3.pptx"],
+	ispitPitanja: ["ispitni_rok3.pdf"],
+	ispitResenja: ["ispitni_rok_resenje3.pdf"]
 }
 {
 	naziv: "Računarske mreže 2",
@@ -119,9 +260,70 @@
 		"utorak 16h",
 		"petak 8h"
 	],
-	nastavnici:["prof.dr Pavle Vuletić"],
+	nastavnici:["pavle.vuletic"],
 	labVezbe: "3 lab vezbe",
-	dodatno:null
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja4.pptx"],
+	vezbeMaterijali: ["vezbe4.pptx"],
+	ispitPitanja: ["ispitni_rok4.pdf"],
+	ispitResenja: ["ispitni_rok_resenje4.pdf"]
+}
+{
+	naziv: "Računarske mreže 2",
+	tip: "obavezan",
+	smer: "rti",
+	semestar: 5,
+	godina: 3,
+	sifra: "13S113RM2",
+	fond: "2+2",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa arhitekturom i mehanizmima funkcionisanja Interneta, te naprednim konceptima, protokolima i algoritmima funkcionisanja nekih ključnih Internet servisa i savremenih računarskih mreža.",
+	ishod: "Nakon ovog kursa studenti će u potpunosti razumeti arhitekturu Interneta i modernih mehanizama prosleđivanja paketa, što je ključno za razumevanje načina na koji funkcionišu aplikacije koje rade na Internetu.",
+	terminiPredavanja:[
+		"sreda 19h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:["pavle.vuletic"],
+	labVezbe: "3 lab vezbe",
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja4.pptx"],
+	vezbeMaterijali: ["vezbe4.pptx"],
+	ispitPitanja: ["ispitni_rok4.pdf"],
+	ispitResenja: ["ispitni_rok_resenje4.pdf"]
+}
+{
+	naziv: "Računarske mreže 2",
+	tip: "izborni",
+	smer: "ostalo",
+	semestar: 5,
+	godina: 3,
+	sifra: "13OT113RM2",
+	fond: "2+2",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa arhitekturom i mehanizmima funkcionisanja Interneta, te naprednim konceptima, protokolima i algoritmima funkcionisanja nekih ključnih Internet servisa i savremenih računarskih mreža.",
+	ishod: "Nakon ovog kursa studenti će u potpunosti razumeti arhitekturu Interneta i modernih mehanizama prosleđivanja paketa, što je ključno za razumevanje načina na koji funkcionišu aplikacije koje rade na Internetu.",
+	terminiPredavanja:[
+		"sreda 19h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:["pavle.vuletic"],
+	labVezbe: "3 lab vezbe",
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja4.pptx"],
+	vezbeMaterijali: ["vezbe4.pptx"],
+	ispitPitanja: ["ispitni_rok4.pdf"],
+	ispitResenja: ["ispitni_rok_resenje4.pdf"]
 }
 {
 	naziv: "Konkurentno i distribuirano programiranje",
@@ -142,9 +344,70 @@
 		"utorak 16h",
 		"petak 8h"
 	],
-	nastavnici: ["prof. dr Zaharije Radivojević"],
+	nastavnici: ["zaki"],
 	labVezbe: "3 lab vezbe",
-	dodatno:null
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja5.pptx"],
+	vezbeMaterijali: ["vezbe5.pptx"],
+	ispitPitanja: ["ispitni_rok5.pdf"],
+	ispitResenja: ["ispitni_rok_resenje5.pdf"]
+}
+{
+	naziv: "Konkurentno i distribuirano programiranje",
+	tip: "obavezan",
+	smer: "rti",
+	semestar: 6,
+	godina: 3,
+	sifra: "13E113KDP",
+	fond: "2+2",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa osnovnim konceptima konkurentnog i distribuiranog programiranja",
+	ishod: "Posedovanje osnovnih znanja o konceptima, algoritmima, principima, problemima i rešenjima vezanim za konkurentno i distribuirano programiranja",
+	terminiPredavanja:[
+		"petak 16h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici: ["zaki"],
+	labVezbe: "3 lab vezbe",
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja5.pptx"],
+	vezbeMaterijali: ["vezbe5.pptx"],
+	ispitPitanja: ["ispitni_rok5.pdf"],
+	ispitResenja: ["ispitni_rok_resenje5.pdf"]
+}
+{
+	naziv: "Konkurentno i distribuirano programiranje",
+	tip: "izborni",
+	smer: "ostalo",
+	semestar: 6,
+	godina: 3,
+	sifra: "13OT113KDP",
+	fond: "2+2",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa osnovnim konceptima konkurentnog i distribuiranog programiranja",
+	ishod: "Posedovanje osnovnih znanja o konceptima, algoritmima, principima, problemima i rešenjima vezanim za konkurentno i distribuirano programiranja",
+	terminiPredavanja:[
+		"petak 16h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici: ["zaki"],
+	labVezbe: "3 lab vezbe",
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja5.pptx"],
+	vezbeMaterijali: ["vezbe5"],
+	ispitPitanja: ["ispitni_rok5"],
+	ispitResenja: ["ispitni_rok_resenje5"]
 }
 {
 	naziv: "Programiranje Internet Aplikacija",
@@ -166,25 +429,93 @@
 		"petak 8h"
 	],
 	nastavnici: [
-		"prof. dr Boško Nikolić",
-		"doc. dr Dražen Drašković",
-		"as. ms Sanja Delčev", 
-		"as. ms Jelica Cincović"
+		"nbosko",
+		"drazen.draskovic",
+		"jelica"
 	],
 	labVezbe:null,
-	dodatno:null
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja6.pptx"],
+	vezbeMaterijali: ["vezbe6.pptx"],
+	ispitPitanja: ["ispitni_rok6.pdf"],
+	ispitResenja: ["ispitni_rok_resenje6.pdf"]
 }
 {
-	naziv: "Softverski alati baza podataka",
+	naziv: "Programiranje Internet Aplikacija",
+	tip: "obavezan",
+	smer: "rti",
+	semestar: 7,
+	godina: 4,
+	sifra: "RTI4PIA",
+	fond: "1+2",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa osnovnim pojmovima razvoja višeslojnih Internet aplikacija baziranih na programskom jeziku Java (Java servlets, JSP, JSF framework).",
+	ishod: "Studenti će biti osposobljeni da projektuju i razviju višeslojne Internet aplikacije potrebne složenosti koristeći najefikasnije metode i tehnologije",
+	terminiPredavanja:[
+		"utorak 9h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici: [
+		"nbosko",
+		"drazen.draskovic",
+		"jelica"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja6.pptx"],
+	vezbeMaterijali: ["vezbe6.pptx"],
+	ispitPitanja: ["ispitni_rok6.pdf"],
+	ispitResenja: ["ispitni_rok_resenje6.pdf"]
+}
+{
+	naziv: "Programiranje Internet Aplikacija",
 	tip: "izborni",
+	smer: "ostalo",
+	semestar: 7,
+	godina: 4,
+	sifra: "OT4PIA",
+	fond: "1+2",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa osnovnim pojmovima razvoja višeslojnih Internet aplikacija baziranih na programskom jeziku Java (Java servlets, JSP, JSF framework).",
+	ishod: "Studenti će biti osposobljeni da projektuju i razviju višeslojne Internet aplikacije potrebne složenosti koristeći najefikasnije metode i tehnologije",
+	terminiPredavanja:[
+		"utorak 9h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici: [
+		"nbosko",
+		"drazen.draskovic",
+		"jelica"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja6.pptx"],
+	vezbeMaterijali: ["vezbe6.pptx"],
+	ispitPitanja: ["ispitni_rok6.pdf"],
+	ispitResenja: ["ispitni_rok_resenje6.pdf"]
+}
+{
+	naziv: "Zaštita podataka",
+	tip: "obavezan",
 	smer: "si",
 	semestar: 8,
 	godina: 4,
-	sifra: "13S113SAB",
+	sifra: "13S114ZP",
 	fond: "2+3",
 	espb: 6,
-	cilj: "Uvođenje u softverske alate za razvoj baza podataka.",
-	ishod: "Znanje u vezi korišćenja softverskih alata za razvoj baza podataka.",
+	cilj: "Upoznavanje studenata sa osnovnim konceptima zaštite podataka. Razumevanje osnova kriptografije i sigurnosnih protokola. Upoznavanje sa rizicima u mrežnom okruženju i upoznavanje sa svim nivoima na kojima mere zaštite treba da budu uvedene.",
+	ishod: "Studenti će steći znanja o načinima za odvraćanje, detekciju, sprečavanje i neutralisanje narušavanja sigurnosti.",
 	terminiPredavanja:[
 		"utorak 16h",
 		"petak 8h"
@@ -194,10 +525,73 @@
 		"petak 8h"
 	],
 	nastavnici:[
-		"prof. dr Miloš Cvetanović",
-		"as. ms Stefan Tubić",
-		"as. ms Stefan Tubić"
+		"pavle.vuletic"
 	],
 	labVezbe:null,
-	dodatno:null
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja7.pptx"],
+	vezbeMaterijali: ["vezbe7.pptx"],
+	ispitPitanja: ["ispitni_rok7.pdf"],
+	ispitResenja: ["ispitni_rok_resenje7.pdf"]
+}
+{
+	naziv: "Zaštita podataka",
+	tip: "obavezan",
+	smer: "rti",
+	semestar: 8,
+	godina: 4,
+	sifra: "13E114ZP",
+	fond: "2+3",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa osnovnim konceptima zaštite podataka. Razumevanje osnova kriptografije i sigurnosnih protokola. Upoznavanje sa rizicima u mrežnom okruženju i upoznavanje sa svim nivoima na kojima mere zaštite treba da budu uvedene.",
+	ishod: "Studenti će steći znanja o načinima za odvraćanje, detekciju, sprečavanje i neutralisanje narušavanja sigurnosti.",
+	terminiPredavanja:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"pavle.vuletic"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja7.pptx"],
+	vezbeMaterijali: ["vezbe7.pptx"],
+	ispitPitanja: ["ispitni_rok7.pdf"],
+	ispitResenja: ["ispitni_rok_resenje7.pdf"]
+}
+{
+	naziv: "Zaštita podataka",
+	tip: "obavezan",
+	smer: "ostalo",
+	semestar: 8,
+	godina: 4,
+	sifra: "13OT114ZP",
+	fond: "2+3",
+	espb: 6,
+	cilj: "Upoznavanje studenata sa osnovnim konceptima zaštite podataka. Razumevanje osnova kriptografije i sigurnosnih protokola. Upoznavanje sa rizicima u mrežnom okruženju i upoznavanje sa svim nivoima na kojima mere zaštite treba da budu uvedene.",
+	ishod: "Studenti će steći znanja o načinima za odvraćanje, detekciju, sprečavanje i neutralisanje narušavanja sigurnosti.",
+	terminiPredavanja:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"pavle.vuletic"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja7.pptx"],
+	vezbeMaterijali: ["vezbe7.pptx"],
+	ispitPitanja: ["ispitni_rok7.pdf"],
+	ispitResenja: ["ispitni_rok_resenje7.pdf"]
 }

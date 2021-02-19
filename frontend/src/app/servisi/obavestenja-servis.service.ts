@@ -14,4 +14,12 @@ export class ObavestenjaServisService {
     return this.http.get(`${this.uri}/dohvatiObavestenja`);
   }
 
+  dohvObavestenjaKategorija(kat:string){
+    const data = {
+      katrgorija: kat
+    }
+    return this.http.post(`${this.uri}/dohvObavestenjaKategorija`, data);
+  }
 }
+
+

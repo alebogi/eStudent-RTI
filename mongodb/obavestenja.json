@@ -33,3 +33,18 @@
 	datum: "12-02-2021",
 	tekst: "Ima posla ko hoće da radi."
 }
+{
+	kategorija : "SI4PIA",
+	datum: "09-02-2021",
+	tekst: "Starije je od 7 dana."
+}
+{
+	kategorija : "SI4PIA",
+	datum: "18-02-2021",
+	tekst: "Projekat iz PIE je ogroman."
+}
+{
+	kategorija : "SI4PIA",
+	datum: "17-02-2021",
+	tekst: "sve ok."
+}

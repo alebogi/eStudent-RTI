@@ -14,7 +14,9 @@
                 <br><br>
                 <h5><b>Обавештења о предмету</b></h5>
                 <div class="justify-content-left text-left">
-                    
+                    <div *ngFor="let obav of obavestenjaPredmet">
+                        {{prevedi(obav.tekst)}}
+                    </div>
                 </div>
                 <br><br><h5><b>Информације о предмету</b></h5>
                 <div class="justify-content-left text-left">
@@ -39,7 +41,7 @@
                         </li>
                         <li>
                             Наставници са предмета: &nbsp; 
-                            <div *ngFor="let nast of predmet.nastavnici"> {{prevedi(nast)}}</div>
+                            <div *ngFor="let nast of nastavniciImePrezime"> <a (click)="preusmeriNaNastavnika(nast)">{{nast}}</a> </div>
                         </li>
                     </ul>
                 </div>
