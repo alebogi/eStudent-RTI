@@ -23,4 +23,5 @@ export class Predmeti{
 	projekatMaterijali: Array<Object>;
 	labAktivno: number;
 	projAktivno: number;
+	ispitAktivno: number;
 }

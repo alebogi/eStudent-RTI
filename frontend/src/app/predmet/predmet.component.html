@@ -77,15 +77,17 @@
                         <a href='{{"../../assets/materijali/" + mat}}'><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> {{mat}}</a>
                     </div>
                 </div>
-                <br><hr><br><h5><b>Испитна питања</b></h5>
-                <div class="justify-content-left text-left">
-                    <b>Испитни рокови:</b>
-                    <div *ngFor="let mat of predmet.ispitPitanja"> 
-                        <a href='{{"../../assets/materijali/" + mat}}'><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {{mat}}</a>
-                    </div>
-                    <b>Решења рокова:</b>
-                    <div *ngFor="let mat of predmet.ispitResenja"> 
-                        <a href='{{"../../assets/materijali/" + mat}}'><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {{mat}}</a>
+                <div *ngIf="predmet.ispitAktivno==1">
+                    <br><hr><br><h5><b>Испитна питања</b></h5>
+                    <div class="justify-content-left text-left">
+                        <b>Испитни рокови:</b>
+                        <div *ngFor="let mat of predmet.ispitPitanja"> 
+                            <a href='{{"../../assets/materijali/" + mat}}'><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {{mat}}</a>
+                        </div>
+                        <b>Решења рокова:</b>
+                        <div *ngFor="let mat of predmet.ispitResenja"> 
+                            <a href='{{"../../assets/materijali/" + mat}}'><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {{mat}}</a>
+                        </div>
                     </div>
                 </div>
                 <div *ngIf="predmet.labAktivno==1">

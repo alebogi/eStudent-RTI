@@ -30,7 +30,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Programiranje 2",
@@ -64,7 +65,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Objektno-orijentisano programiranje 1",
@@ -99,7 +101,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Objektno-orijentisano programiranje 1",
@@ -134,7 +137,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Objektno-orijentisano programiranje 1",
@@ -169,7 +173,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Operativni sistemi 1",
@@ -203,7 +208,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Operativni sistemi 1",
@@ -237,7 +243,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Operativni sistemi 1",
@@ -271,7 +278,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Računarske mreže 2",
@@ -303,7 +311,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Računarske mreže 2",
@@ -335,7 +344,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Računarske mreže 2",
@@ -367,7 +377,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Konkurentno i distribuirano programiranje",
@@ -399,7 +410,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Konkurentno i distribuirano programiranje",
@@ -431,7 +443,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Konkurentno i distribuirano programiranje",
@@ -463,7 +476,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Programiranje Internet Aplikacija",
@@ -499,7 +513,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Programiranje Internet Aplikacija",
@@ -535,7 +550,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Programiranje Internet Aplikacija",
@@ -571,7 +587,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Zaštita podataka",
@@ -605,7 +622,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Performanse računarskih sistema",
@@ -639,7 +657,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Zaštita podataka",
@@ -673,7 +692,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Računarstvo u bio-medicini",
@@ -707,7 +727,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Sistemi otporni na otkaze",
@@ -741,7 +762,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Projektovanje računarskih mreža",
@@ -775,7 +797,8 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }
 {
 	naziv: "Genomska informatika",
@@ -809,5 +832,6 @@
 	labVezbeMaterijali: [""],
 	projekatMaterijali: [""],
 	labAktivno: 1,
-	projAktivno: 0
+	projAktivno: 0,
+	ispitAktivno: 1
 }

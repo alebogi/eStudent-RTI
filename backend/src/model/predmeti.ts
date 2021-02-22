@@ -74,6 +74,9 @@ let Predmeti = new Schema({
     },
 	projAktivno: {
         type: Number
+    },
+    ispitAktivno: {
+        type: Number
     }
 })
 
