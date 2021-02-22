@@ -7,6 +7,7 @@ import { Zaposleni } from '../model/zaposleni.model';
 import { KorisnikServisService } from '../servisi/korisnik-servis.service';
 import { ObavestenjaServisService } from '../servisi/obavestenja-servis.service';
 import { PredmetiServisService } from '../servisi/predmeti-servis.service';
+import { ispisiDatum } from '../app.component';
 
 @Component({
   selector: 'app-predmet',
@@ -27,6 +28,7 @@ export class PredmetComponent implements OnInit {
 
   svaObavestenja:Obavestenja[];
   obavestenjaPredmet: Obavestenja[] = [];
+  obavestenjaStarije: Obavestenja[] = [];
 
   constructor(private servis : PredmetiServisService, private ruter:Router, private korservis: KorisnikServisService, private obavServis: ObavestenjaServisService) { }
   
@@ -43,6 +45,10 @@ export class PredmetComponent implements OnInit {
 
   prevedi(str:string){
     return latinicaUcirilicu(str);
+  }
+
+  datumIspis(str:string){
+    return ispisiDatum(str);
   }
 
   dohvatiPredmetInfo(){
@@ -91,22 +97,7 @@ export class PredmetComponent implements OnInit {
   }
 
   dohvatiObavestenja(sifra:string){
-    //ne u bacuj u red one starije od 7 dana
-    // this.obavServis.dohvObavestenjaKategorija(sifra).subscribe((obav: Obavestenja[])=>{
-    //   this.svaObavestenja = obav;
-    //   alert(obav.toString())
-    //   for (let i = 0; i < this.svaObavestenja.length; i++){
-
-    //     if(!this.obavestenjeMladjeOdSedamDana(this.svaObavestenja[i].datum)){
-    //       continue;
-    //     }
-
-      
-
-    //   }
-    
-      
-    // })
+ 
 
     this.obavServis.dohvatiObavestenja().subscribe((obav: Obavestenja[])=>{
       this.svaObavestenja = obav;
@@ -117,6 +108,7 @@ export class PredmetComponent implements OnInit {
         if(this.svaObavestenja[i].kategorija == this.predmetSifra){
           
           if(!this.obavestenjeMladjeOdSedamDana(this.svaObavestenja[i].datum)){
+            this.obavestenjaStarije[this.obavestenjaStarije.length] = this.svaObavestenja[i];
             continue;
           }
           this.obavestenjaPredmet[this.obavestenjaPredmet.length] = this.svaObavestenja[i];

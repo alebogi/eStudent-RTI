@@ -90,6 +90,7 @@
                 <br>
                 <hr>
 
+
                 <div *ngIf="ulogovaniTip=='admin'"> 
                     <br>
                     <h4>Направите налог за запосленог</h4>
@@ -156,7 +157,7 @@
                                 Биографија:
                             </td>
                             <td>
-                                <input type="file" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.personal_info">
+                                <input type="file"  (change)="fileChanged($event);fileSelected()" name="file">
                             </td>
                         </tr>
                         <tr>
@@ -198,12 +199,12 @@
                                 Слика:
                             </td>
                             <td>
-                                <input type="file" [(ngModel)]="zaposleni.photo">
+                                <input type="file"  (change)="photoChanged($event);photoSelected()" name="file">
                             </td>
                         </tr>
                     </table>
                     <br> <br>
-                    <button type="button" class="btn bg-dark" (click)="registerZaposleni()">Потврди</button> <br>
+                    <button type="button" class="btn bg-dark" (click)="uploadPhoto()">Потврди</button> <br>
                     <span class='greska'>{{mssgZaposleni}}</span>
                     <!-- <div class="alert alert-success alert-dismissible fade show" role="alert" class="uspesno" *ngIf='mssgZaposleniUspesno != ""'>
                         {{mssgZaposleniUspesno}}

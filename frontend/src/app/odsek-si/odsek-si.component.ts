@@ -44,7 +44,7 @@ export class OdsekSIComponent implements OnInit {
   }
 
   preusmeri(sifra:string){
-    if(this.ulogovaniTip == "zaposleni"){
+    if(this.ulogovaniTip == "zaposleni" || this.ulogovaniTip == "admin"){
       localStorage.setItem("predmet", sifra);
       this.ruter.navigate(['/predmet']);
     }else if(this.ulogovaniTip == "student"){

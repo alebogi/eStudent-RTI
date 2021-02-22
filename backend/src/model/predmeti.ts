@@ -47,6 +47,33 @@ let Predmeti = new Schema({
     },
 	dodatno: {
         type: String
+    },
+    projekat: {
+        type: String
+    },
+	predavanjaMaterijali:{
+        type: Array
+    }, 
+	vezbeMaterijali: {
+        type: Array
+    }, 
+	ispitPitanja: {
+        type: Array
+    }, 
+	ispitResenja: {
+        type: Array
+    },
+	labVezbeMaterijali: {
+        type: Array
+    },
+	projekatMaterijali: {
+        type: Array
+    },
+	labAktivno: {
+        type: Number
+    },
+	projAktivno: {
+        type: Number
     }
 })
 

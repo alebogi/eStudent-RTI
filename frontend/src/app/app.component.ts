@@ -63,3 +63,13 @@ export function latinicaUcirilicu(word: string){
   }
   return prevod;
 }
+
+export function ispisiDatum(datumStr:string){
+  var datum = new Date(datumStr);
+
+  var dan = datum.getDate();
+  var mesec = datum.getMonth() + 1;
+  var god = datum.getFullYear();
+
+  return dan + "-" + mesec + "-" + god;
+}

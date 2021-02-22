@@ -14,7 +14,7 @@ body{
   
 #content-wrap {
     padding-bottom: 5rem;    /* Footer height */
-    
+    margin-top: 20px;
 }
 
 .greska{

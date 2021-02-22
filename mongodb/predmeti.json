@@ -24,9 +24,13 @@
 	dodatno:null,
 	projekat:null,
 	predavanjaMaterijali: ["predavanja1.pptx"],
-	vezbeMaterijali: ["vezbe1"],
-	ispitPitanja: ["ispitni_rok1"],
-	ispitResenja: ["ispitni_rok_resenje1"]
+	vezbeMaterijali: ["vezbe1.pptx"],
+	ispitPitanja: ["ispitni_rok1.pdf"],
+	ispitResenja: ["ispitni_rok_resenje1.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Programiranje 2",
@@ -56,7 +60,11 @@
 	predavanjaMaterijali: ["predavanja8.pptx"],
 	vezbeMaterijali: ["vezbe8.pptx"],
 	ispitPitanja: ["ispitni_rok8.pdf"],
-	ispitResenja: ["ispitni_rok_resenje8.pdf"]
+	ispitResenja: ["ispitni_rok_resenje8.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Objektno-orijentisano programiranje 1",
@@ -87,7 +95,11 @@
 	predavanjaMaterijali: ["predavanja2.pptx"],
 	vezbeMaterijali: ["vezbe2.pptx"],
 	ispitPitanja: ["ispitni_rok2.pdf"],
-	ispitResenja: ["ispitni_rok_resenje2.pdf"]
+	ispitResenja: ["ispitni_rok_resenje2.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Objektno-orijentisano programiranje 1",
@@ -118,7 +130,11 @@
 	predavanjaMaterijali: ["predavanja2.pptx"],
 	vezbeMaterijali: ["vezbe2.pptx"],
 	ispitPitanja: ["ispitni_rok2.pdf"],
-	ispitResenja: ["ispitni_rok_resenje2.pdf"]
+	ispitResenja: ["ispitni_rok_resenje2.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Objektno-orijentisano programiranje 1",
@@ -149,7 +165,11 @@
 	predavanjaMaterijali: ["predavanja2.pptx"],
 	vezbeMaterijali: ["vezbe2.pptx"],
 	ispitPitanja: ["ispitni_rok2.pdf"],
-	ispitResenja: ["ispitni_rok_resenje2.pdf"]
+	ispitResenja: ["ispitni_rok_resenje2.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Operativni sistemi 1",
@@ -179,7 +199,11 @@
 	predavanjaMaterijali: ["predavanja3.pptx"],
 	vezbeMaterijali: ["vezbe3.pptx"],
 	ispitPitanja: ["ispitni_rok3.pdf"],
-	ispitResenja: ["ispitni_rok_resenje3.pdf"]
+	ispitResenja: ["ispitni_rok_resenje3.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Operativni sistemi 1",
@@ -209,7 +233,11 @@
 	predavanjaMaterijali: ["predavanja3.pptx"],
 	vezbeMaterijali: ["vezbe3.pptx"],
 	ispitPitanja: ["ispitni_rok3.pdf"],
-	ispitResenja: ["ispitni_rok_resenje3.pdf"]
+	ispitResenja: ["ispitni_rok_resenje3.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Operativni sistemi 1",
@@ -239,7 +267,11 @@
 	predavanjaMaterijali: ["predavanja3.pptx"],
 	vezbeMaterijali: ["vezbe3.pptx"],
 	ispitPitanja: ["ispitni_rok3.pdf"],
-	ispitResenja: ["ispitni_rok_resenje3.pdf"]
+	ispitResenja: ["ispitni_rok_resenje3.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Računarske mreže 2",
@@ -267,14 +299,18 @@
 	predavanjaMaterijali: ["predavanja4.pptx"],
 	vezbeMaterijali: ["vezbe4.pptx"],
 	ispitPitanja: ["ispitni_rok4.pdf"],
-	ispitResenja: ["ispitni_rok_resenje4.pdf"]
+	ispitResenja: ["ispitni_rok_resenje4.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Računarske mreže 2",
 	tip: "obavezan",
 	smer: "rti",
-	semestar: 5,
-	godina: 3,
+	semestar: 7,
+	godina: 4,
 	sifra: "13S113RM2",
 	fond: "2+2",
 	espb: 6,
@@ -295,7 +331,11 @@
 	predavanjaMaterijali: ["predavanja4.pptx"],
 	vezbeMaterijali: ["vezbe4.pptx"],
 	ispitPitanja: ["ispitni_rok4.pdf"],
-	ispitResenja: ["ispitni_rok_resenje4.pdf"]
+	ispitResenja: ["ispitni_rok_resenje4.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Računarske mreže 2",
@@ -323,7 +363,11 @@
 	predavanjaMaterijali: ["predavanja4.pptx"],
 	vezbeMaterijali: ["vezbe4.pptx"],
 	ispitPitanja: ["ispitni_rok4.pdf"],
-	ispitResenja: ["ispitni_rok_resenje4.pdf"]
+	ispitResenja: ["ispitni_rok_resenje4.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Konkurentno i distribuirano programiranje",
@@ -351,13 +395,17 @@
 	predavanjaMaterijali: ["predavanja5.pptx"],
 	vezbeMaterijali: ["vezbe5.pptx"],
 	ispitPitanja: ["ispitni_rok5.pdf"],
-	ispitResenja: ["ispitni_rok_resenje5.pdf"]
+	ispitResenja: ["ispitni_rok_resenje5.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Konkurentno i distribuirano programiranje",
 	tip: "obavezan",
 	smer: "rti",
-	semestar: 6,
+	semestar: 5,
 	godina: 3,
 	sifra: "13E113KDP",
 	fond: "2+2",
@@ -379,7 +427,11 @@
 	predavanjaMaterijali: ["predavanja5.pptx"],
 	vezbeMaterijali: ["vezbe5.pptx"],
 	ispitPitanja: ["ispitni_rok5.pdf"],
-	ispitResenja: ["ispitni_rok_resenje5.pdf"]
+	ispitResenja: ["ispitni_rok_resenje5.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Konkurentno i distribuirano programiranje",
@@ -405,9 +457,13 @@
 	dodatno:null,
 	projekat:null,
 	predavanjaMaterijali: ["predavanja5.pptx"],
-	vezbeMaterijali: ["vezbe5"],
-	ispitPitanja: ["ispitni_rok5"],
-	ispitResenja: ["ispitni_rok_resenje5"]
+	vezbeMaterijali: ["vezbe5.pptx"],
+	ispitPitanja: ["ispitni_rok5.pdf"],
+	ispitResenja: ["ispitni_rok_resenje5.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Programiranje Internet Aplikacija",
@@ -439,14 +495,18 @@
 	predavanjaMaterijali: ["predavanja6.pptx"],
 	vezbeMaterijali: ["vezbe6.pptx"],
 	ispitPitanja: ["ispitni_rok6.pdf"],
-	ispitResenja: ["ispitni_rok_resenje6.pdf"]
+	ispitResenja: ["ispitni_rok_resenje6.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Programiranje Internet Aplikacija",
 	tip: "obavezan",
 	smer: "rti",
-	semestar: 7,
-	godina: 4,
+	semestar: 6,
+	godina: 3,
 	sifra: "RTI4PIA",
 	fond: "1+2",
 	espb: 6,
@@ -471,7 +531,11 @@
 	predavanjaMaterijali: ["predavanja6.pptx"],
 	vezbeMaterijali: ["vezbe6.pptx"],
 	ispitPitanja: ["ispitni_rok6.pdf"],
-	ispitResenja: ["ispitni_rok_resenje6.pdf"]
+	ispitResenja: ["ispitni_rok_resenje6.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Programiranje Internet Aplikacija",
@@ -503,7 +567,11 @@
 	predavanjaMaterijali: ["predavanja6.pptx"],
 	vezbeMaterijali: ["vezbe6.pptx"],
 	ispitPitanja: ["ispitni_rok6.pdf"],
-	ispitResenja: ["ispitni_rok_resenje6.pdf"]
+	ispitResenja: ["ispitni_rok_resenje6.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Zaštita podataka",
@@ -533,19 +601,23 @@
 	predavanjaMaterijali: ["predavanja7.pptx"],
 	vezbeMaterijali: ["vezbe7.pptx"],
 	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"]
+	ispitResenja: ["ispitni_rok_resenje7.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
-	naziv: "Zaštita podataka",
+	naziv: "Performanse računarskih sistema",
 	tip: "obavezan",
 	smer: "rti",
 	semestar: 8,
 	godina: 4,
-	sifra: "13E114ZP",
+	sifra: "13E114PRS",
 	fond: "2+3",
 	espb: 6,
-	cilj: "Upoznavanje studenata sa osnovnim konceptima zaštite podataka. Razumevanje osnova kriptografije i sigurnosnih protokola. Upoznavanje sa rizicima u mrežnom okruženju i upoznavanje sa svim nivoima na kojima mere zaštite treba da budu uvedene.",
-	ishod: "Studenti će steći znanja o načinima za odvraćanje, detekciju, sprečavanje i neutralisanje narušavanja sigurnosti.",
+	cilj: "Učenje osnovnih koncepata analize računarskih performansi i oblasti njihove primene.",
+	ishod: "Studenti će biti u stanju da: odaberu odgovarajuću tehniku modeliranja u zavisnosti od karakteristika računarske komponente ili sistema, postave apstraktan model, navedu pretpostavke i aproksimacije za konkretan model, izračunaju indikatore performansi sistema na osnovu datih parametara, kritički diskutuju dobijene numeričke pokazatelje performansi pri interpretaciji rezultata analize.",
 	terminiPredavanja:[
 		"utorak 16h",
 		"petak 8h"
@@ -555,7 +627,7 @@
 		"petak 8h"
 	],
 	nastavnici:[
-		"pavle.vuletic"
+		"jeca"
 	],
 	labVezbe:null,
 	dodatno:null,
@@ -563,7 +635,11 @@
 	predavanjaMaterijali: ["predavanja7.pptx"],
 	vezbeMaterijali: ["vezbe7.pptx"],
 	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"]
+	ispitResenja: ["ispitni_rok_resenje7.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }
 {
 	naziv: "Zaštita podataka",
@@ -593,5 +669,145 @@
 	predavanjaMaterijali: ["predavanja7.pptx"],
 	vezbeMaterijali: ["vezbe7.pptx"],
 	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"]
+	ispitResenja: ["ispitni_rok_resenje7.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
+}
+{
+	naziv: "Računarstvo u bio-medicini",
+	tip: "obavezan",
+	smer: "master",
+	semestar: 1,
+	godina: 1,
+	sifra: "13M111RBM",
+	fond: "2+3",
+	espb: 6,
+	cilj: "Zbližavanje sa primenama informatike u medicini kroz pregled upotrebe u raznim oblastima zdravstva; upoznavanje sa konceptima, relevantnim standardima i problemima koji se javljaju u praksi.",
+	ishod: "Sticanje sveobuhvatnog pregleda oblasti medicinske informatike uz dobijanje polaznih informacija potrebnih za produbljivanje i praktičnu primenu znanja u pojedinačnim podoblastima.",
+	terminiPredavanja:[
+		"utorak 8h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 10h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"nbosko"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja7.pptx"],
+	vezbeMaterijali: ["vezbe7.pptx"],
+	ispitPitanja: ["ispitni_rok7.pdf"],
+	ispitResenja: ["ispitni_rok_resenje7.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
+}
+{
+	naziv: "Sistemi otporni na otkaze",
+	tip: "obavezan",
+	smer: "master",
+	semestar: 1,
+	godina: 1,
+	sifra: "13M111SON",
+	fond: "2+3",
+	espb: 6,
+	cilj: "Učenje hardverskih i softverskih mehanizama i tehnika smanjenja osetljivosti na otkaze i osposobljavanje studenata da modeliraju, projektuju i vrednuju takve sisteme.",
+	ishod: "Ovladavanje metodologijom i tehnikama modeliranja, projektovanja i vrednovanja sistema sa smanjenom osetljivošću na otkaze.",
+	terminiPredavanja:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"drazen.draskovic"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja7.pptx"],
+	vezbeMaterijali: ["vezbe7.pptx"],
+	ispitPitanja: ["ispitni_rok7.pdf"],
+	ispitResenja: ["ispitni_rok_resenje7.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
+}
+{
+	naziv: "Projektovanje računarskih mreža",
+	tip: "obavezan",
+	smer: "master",
+	semestar: 2,
+	godina: 1,
+	sifra: "13M111PRM",
+	fond: "2+3",
+	espb: 6,
+	cilj: "Cilj je da se studenti obuče za samostalni praktičan rad na projektovanju računarskih mreža i konfigurisanju mrežnih uređaja.",
+	ishod: "Predmet nudi teorijsku osnovu i potrebno znanje za projektovanje računarskih mreža i rad na mrežnim uređajim. Savladavanjem znanja iz ovog predmeta kroz intenzivni rad na simulatoru računarskih mreža, studenti stiču praktičnu veštinu u konfigurisanju komunikacionih protokola i servisa na rešavanju konkretnog problema.",
+	terminiPredavanja:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"pavle.vuletic"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja7.pptx"],
+	vezbeMaterijali: ["vezbe7.pptx"],
+	ispitPitanja: ["ispitni_rok7.pdf"],
+	ispitResenja: ["ispitni_rok_resenje7.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
+}
+{
+	naziv: "Genomska informatika",
+	tip: "obavezan",
+	smer: "master",
+	semestar: 2,
+	godina: 1,
+	sifra: "13M111GI",
+	fond: "2+3",
+	espb: 6,
+	cilj: "U okviru ovog predmeta predstavljeni su osnovni metodi računarske analize podataka dobijenih iz genoma, sa ciljem izvođenja biološki značajnih zaključaka. Biće ukazano na prednosti i mane ovih metoda i na značajne parametre koji utiču na rezultate ovih analiza.",
+	ishod: "Studenti će razumeti principe dizajna algoritama za obradu bioloških podataka i kako oni rade. Biće sposobni da analiziraju probleme i primene odgovarajuće metode.",
+	terminiPredavanja:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	terminiVezbe:[
+		"utorak 16h",
+		"petak 8h"
+	],
+	nastavnici:[
+		"milo"
+	],
+	labVezbe:null,
+	dodatno:null,
+	projekat:null,
+	predavanjaMaterijali: ["predavanja7.pptx"],
+	vezbeMaterijali: ["vezbe7.pptx"],
+	ispitPitanja: ["ispitni_rok7.pdf"],
+	ispitResenja: ["ispitni_rok_resenje7.pdf"],
+	labVezbeMaterijali: [""],
+	projekatMaterijali: [""],
+	labAktivno: 1,
+	projAktivno: 0
 }

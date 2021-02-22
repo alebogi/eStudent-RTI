@@ -14,4 +14,13 @@ export class Predmeti{
 	nastavnici:Array<Object>;
 	labVezbe: string;
 	dodatno: string;
+	projekat:string;
+	predavanjaMaterijali: Array<Object>;
+	vezbeMaterijali: Array<Object>;
+	ispitPitanja: Array<Object>;
+	ispitResenja: Array<Object>;
+	labVezbeMaterijali: Array<Object>;
+	projekatMaterijali: Array<Object>;
+	labAktivno: number;
+	projAktivno: number;
 }

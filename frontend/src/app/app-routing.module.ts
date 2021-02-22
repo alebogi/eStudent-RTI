@@ -32,7 +32,7 @@ const routes: Routes = [
   {path: "master", component: MasterComponent},
   {path: "predmet", component: PredmetComponent},
   {path: "profil", component: ProfilZaposlenogComponent},
-  {path: '**', component: PocetnaComponent } //ako ne postoji ruta
+  //{path: '**', component: PocetnaComponent } //ako ne postoji ruta
 ];
 
 @NgModule({

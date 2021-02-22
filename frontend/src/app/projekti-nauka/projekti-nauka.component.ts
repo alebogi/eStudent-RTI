@@ -21,7 +21,8 @@ export class ProjektiNaukaComponent implements OnInit {
     this.ulogvanImePrezime = localStorage.getItem("ulogovan_imeprezime");
   }
 
-  preusmeri(){
-    
+  preusmeri(str:string){
+    localStorage.setItem("profil", str);
+    this.ruter.navigate(["/profil"]);
   }
 }

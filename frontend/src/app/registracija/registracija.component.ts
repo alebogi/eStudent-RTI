@@ -22,7 +22,10 @@ export class RegistracijaComponent implements OnInit {
   ulogovanUsername: string;
   ulogvanImePrezime: string;
 
-  photo: File = null;
+  photo: File;
+  photoName: string;
+  biography: File;
+  biographyName: string;
 
   constructor(private servisKorisnik: KorisnikServisService) { }
 
@@ -38,6 +41,41 @@ export class RegistracijaComponent implements OnInit {
     this.ulogovaniTip = localStorage.getItem("ulogovaniTip");
     this.ulogovanUsername = localStorage.getItem("ulogovan_username");
     this.ulogvanImePrezime = localStorage.getItem("ulogovan_imeprezime");
+  }
+
+  photoChanged(event){
+    this.photo = event.target.files[0];
+  }
+
+  photoSelected(event){
+    this.photoName = this.photo.name;
+    
+  }
+
+  fileChanged(event){
+    this.biography = event.target.files[0];
+  }
+
+  fileSelected(event){
+    this.biographyName = this.biography.name;
+    
+  }
+
+  uploadFile(){
+    this.servisKorisnik.uploadFile(this.biography).subscribe(res=>{
+      console.log("USPEH:)");
+      if(res["ret"]=="ok")
+        alert("Uspesan upload fajla");
+        
+    });
+  }
+
+  uploadPhoto(){
+    this.servisKorisnik.uploadPhoto(this.photo).subscribe(res=>{
+      if(res["ret"]=="ok")
+        alert("Uspesan upload slike");
+        
+    });
   }
 
   registerStudent(){
@@ -98,6 +136,8 @@ export class RegistracijaComponent implements OnInit {
     })
   }
 
+  
+
   registerZaposleni(){
     let greska = false;
     this.mssgZaposleniUspesno = "";
@@ -136,11 +176,17 @@ export class RegistracijaComponent implements OnInit {
       slika: this.photo
     }
 
+    
+
     //registracija
     this.servisKorisnik.registracijaZaposleni(data).subscribe(ob=>{
       if(ob['user']=='ok'){
+        this.uploadPhoto();
+        this.uploadFile();
+
         alert("Регистрација успешна! Запослени је додат у базу података.");
         location.reload();
+
         //this.mssgZaposleniUspesno = "Регистрација успешна! Запослени је додат у базу података.";
       }else if(ob['user']=='no'){
         this.mssgZaposleni = 'Неуспешна регистрација.';

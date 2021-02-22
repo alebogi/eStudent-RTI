@@ -29,6 +29,21 @@
 	photo: null
 }
 {
+	username: "slavko.gajin",
+	password: "sifra123",
+	pass_changed: 0,
+	name: "Slavko",
+	lastname: "Gajin",
+	address: "Jurija Gagarina 6, Beograd",
+	phone: "060/1288392",
+	website: null,
+	personal_info: null,
+	title: "vanredni profesor",
+	office: "lola-914",
+	status: "active",
+	photo: null
+}
+{
 	username: "tartalja",
 	password: "sifra123",
 	pass_changed: 0,
@@ -55,6 +70,21 @@
 	personal_info: null,
 	title: "redovni profesor",
 	office: "etf-54a",
+	status: "active",
+	photo: null
+}
+{
+	username: "jeca",
+	password: "jeca123",
+	pass_changed: 0,
+	name: "Jelica",
+	lastname: "Protić",
+	address: "šilerova 7, Beograd",
+	phone: "060/3218456",
+	website: "",
+	personal_info: null,
+	title: "redovni profesor",
+	office: "etf-18",
 	status: "active",
 	photo: null
 }

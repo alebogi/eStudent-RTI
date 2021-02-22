@@ -3,6 +3,7 @@ import { Obavestenja } from '../model/obavestenja.model';
 import { ObavestenjaServisService } from '../servisi/obavestenja-servis.service';
 import { latinicaUcirilicu } from '../app.component'
 import { stringify } from '@angular/compiler/src/util';
+import { ispisiDatum } from '../app.component';
 
 @Component({
   selector: 'app-obavestenja',
@@ -55,6 +56,10 @@ export class ObavestenjaComponent implements OnInit {
     }
 
     return result;
+  }
+
+  datumIspis(str:string){
+    return ispisiDatum(str);
   }
 
   /**

@@ -14,34 +14,34 @@
                 <h5>Позиви за студентнска такмичења</h5><br>
                 <div *ngIf="takmicenja==true">
                     <div *ngFor='let elem of takmicenjaNiz'>
-                         &nbsp;&nbsp; {{elem.tekst}} <br>
+                        <i>{{datumIspis(elem.datum)}}</i> - {{elem.tekst}} <br>
                     </div>
                 </div>
                 <div *ngIf="takmicenja==false">
                     Тренутно нема актуелних позива за такмичења.<br>
                 </div>
-                <br><h5>Обавештења о конференцијама</h5><br>
+                <br><hr><br><h5>Обавештења о конференцијама</h5><br>
                 <div *ngIf="konferencije==true">
                     <div *ngFor='let elem of konferencijeNiz'>
-                        {{elem.tekst}} <br>
+                        <i>{{datumIspis(elem.datum)}}</i> - {{elem.tekst}} <br>
                     </div>
                 </div>
                 <div *ngIf="konferencije==false">
                     Тренутно нема актуелних обавештења о конференцијама.<br>
                 </div>
-                <br><h5>Понуде за праксу</h5><br>
+                <br><hr><br><h5>Понуде за праксу</h5><br>
                 <div *ngIf="praksa==true">
                     <div *ngFor='let elem of praksaNiz'>
-                        {{elem.tekst}} <br>
+                        <i>{{datumIspis(elem.datum)}}</i> -  {{elem.tekst}} <br>
                     </div>
                 </div>
                 <div *ngIf="praksa==false">
                     Тренутно нема актуелних понуда за праксу.<br>
                 </div>
-                <br><h5>Понуде за посао</h5><br>
+                <br><hr><br><h5>Понуде за посао</h5><br>
                 <div *ngIf="posao==true">
                     <div *ngFor='let elem of posaoNiz'>
-                        {{elem.tekst}} <br>
+                        <i>{{datumIspis(elem.datum)}}</i> -  {{elem.tekst}} <br>
                     </div>
                 </div>
                 <div *ngIf="posao==false">

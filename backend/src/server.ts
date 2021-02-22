@@ -23,8 +23,44 @@ conn.once('open',()=>{
 
 const router = express.Router();
 
+const multer = require('multer');
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, './uploads/');
+    },
+    filename: function (req, file, cb) {
+      cb(null, file.originalname);
+    }
+  });
+const upload = multer({ storage: storage }).single('file');
+ 
+app.post('/uploadPhoto', (req, res) => {
+      upload(req, res, (err) => {
+        
+        if (err) {
+            console.log(err);
+        }
+        console.log("Uspesan upload slike");
+        res.status(200).json({"ret":"ok"});
+    });
+  });
 
+app.post('/uploadFile', (req, res) => {
+upload(req, res, (err) => {
+    
+    if (err) {
+        console.log(err);
+    }
+    console.log("Uspesan upload fajla");
+    res.status(200).json({"ret":"ok"});
+});
+});
 
+ const path = require("path");  
+// console.log(path)
+// app.use("/uploads", express.static(path.join("backend/uploads"))); 
+app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'public')));  
 //-------------------
 
 // ~~~~~~~ LOGOVANJE ~~~~~~~
@@ -215,14 +251,14 @@ router.route('/dohvatiPredmeteRTI').get((req, res)=>{
 
 
 router.route('/dohvatiPredmeteOstalo').get((req, res)=>{
-    predmeti.find({"smer":"rti"}, (err, pr)=>{
+    predmeti.find({"smer":"ostalo"}, (err, pr)=>{
         if(err) console.log(err);
         else res.json(pr);
     })
 })
 
 router.route('/dohvatiPredmeteMaster').get((req, res)=>{
-    predmeti.find({"smer":"rti"}, (err, pr)=>{
+    predmeti.find({"smer":"master"}, (err, pr)=>{
         if(err) console.log(err);
         else res.json(pr);
     })

@@ -115,4 +115,17 @@ export class KorisnikServisService {
     }
     return this.http.post(`${this.uri}/dohvatiImePrezimeNastavnika`, data);
   }
+
+  uploadPhoto(photo: File){
+    const uploadData = new FormData();
+    uploadData.append('file', photo,photo.name);
+    return this.http.post('http://localhost:4000/uploadPhoto', uploadData)
+     
+  }
+
+  uploadFile(file: File){
+    const uploadData = new FormData();
+    uploadData.append('file', file, file.name);
+    return this.http.post('http://localhost:4000/uploadFile', uploadData)
+  }
 }
