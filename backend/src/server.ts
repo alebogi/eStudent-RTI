@@ -301,5 +301,27 @@ router.route('/dohvatiImePrezimeNastavnika').post((req, res)=>{
     })
 })
 
+
+//~~~~~~~ IZMENA STUDENATA  ~~~~~~~~~~~
+
+router.route('/dohvatiSveStudente').get((req, res)=>{
+    student.find({}, (err, s)=>{
+        if(err) console.log(err);
+        else res.json(s);
+    })
+});
+
+router.route('/dohvatiStudenta').post((req, res)=>{
+    let username = req.body.username;
+
+    student.findOne({"username":username}, (err, s)=>{
+        if(err) 
+            console.log(err);
+        else 
+            res.json(s);
+    })
+});
+
+
 app.use('/', router);
 app.listen(4000, () => console.log(`Express server running on port 4000`));

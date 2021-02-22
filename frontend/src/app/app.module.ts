@@ -25,6 +25,10 @@ import { OdsekOstaloComponent } from './odsek-ostalo/odsek-ostalo.component';
 import { MasterComponent } from './master/master.component';
 import { PredmetComponent } from './predmet/predmet.component';
 import { ProfilZaposlenogComponent } from './profil-zaposlenog/profil-zaposlenog.component';
+import { DodavanjePredmetaComponent } from './dodavanje-predmeta/dodavanje-predmeta.component';
+import { IzmenaStudentaComponent } from './izmena-studenta/izmena-studenta.component';
+import { IzmenaZaposlenogComponent } from './izmena-zaposlenog/izmena-zaposlenog.component';
+import { IzmenaPredmetaComponent } from './izmena-predmeta/izmena-predmeta.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +52,11 @@ import { ProfilZaposlenogComponent } from './profil-zaposlenog/profil-zaposlenog
     OdsekOstaloComponent,
     MasterComponent,
     PredmetComponent,
-    ProfilZaposlenogComponent
+    ProfilZaposlenogComponent,
+    DodavanjePredmetaComponent,
+    IzmenaStudentaComponent,
+    IzmenaZaposlenogComponent,
+    IzmenaPredmetaComponent
   ],
   imports: [
     BrowserModule,

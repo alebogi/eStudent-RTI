@@ -128,4 +128,16 @@ export class KorisnikServisService {
     uploadData.append('file', file, file.name);
     return this.http.post('http://localhost:4000/uploadFile', uploadData)
   }
+
+  izlistajStudente(){
+    return this.http.get(`${this.uri}/dohvatiSveStudente`);
+  }
+
+  dohvatiStudenta(username: string){
+    const data = {
+      username: username
+    }
+
+    return this.http.post(`${this.uri}/dohvatiStudenta`, data);
+  }
 }

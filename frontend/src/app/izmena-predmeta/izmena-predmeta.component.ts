@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-kontakt',
-  templateUrl: './kontakt.component.html',
-  styleUrls: ['./kontakt.component.css']
+  selector: 'app-izmena-predmeta',
+  templateUrl: './izmena-predmeta.component.html',
+  styleUrls: ['./izmena-predmeta.component.css']
 })
-export class KontaktComponent implements OnInit {
+export class IzmenaPredmetaComponent implements OnInit {
+
+  constructor() { }
+
   ulogovan: string;
   ulogovaniTip: string;
   ulogovanUsername: string;
   ulogvanImePrezime: string;
-
-  constructor(private ruter:Router) { }
 
   ngOnInit(): void {
     this.ulogovan = localStorage.getItem("ulogovan");
@@ -21,8 +21,4 @@ export class KontaktComponent implements OnInit {
     this.ulogvanImePrezime = localStorage.getItem("ulogovan_imeprezime");
   }
 
-  preusmeri(str:string){
-    localStorage.setItem("profil", str);
-    this.ruter.navigate(["/profil"]);
-  }
 }

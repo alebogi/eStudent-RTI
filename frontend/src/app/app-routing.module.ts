@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DodavanjePredmetaComponent } from './dodavanje-predmeta/dodavanje-predmeta.component';
 import { IstrazivanjaComponent } from './istrazivanja/istrazivanja.component';
+import { IzmenaPredmetaComponent } from './izmena-predmeta/izmena-predmeta.component';
+import { IzmenaStudentaComponent } from './izmena-studenta/izmena-studenta.component';
+import { IzmenaZaposlenogComponent } from './izmena-zaposlenog/izmena-zaposlenog.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { MasterComponent } from './master/master.component';
 import { ObavestenjaComponent } from './obavestenja/obavestenja.component';
@@ -32,6 +36,10 @@ const routes: Routes = [
   {path: "master", component: MasterComponent},
   {path: "predmet", component: PredmetComponent},
   {path: "profil", component: ProfilZaposlenogComponent},
+  {path: "dodavanjePredmeta", component: DodavanjePredmetaComponent},
+  {path: "izmenaStudenta", component: IzmenaStudentaComponent},
+  {path: "izmenaZaposlenog", component: IzmenaZaposlenogComponent},
+  {path: "izmenaPredmeta", component: IzmenaPredmetaComponent}
   //{path: '**', component: PocetnaComponent } //ako ne postoji ruta
 ];
 
