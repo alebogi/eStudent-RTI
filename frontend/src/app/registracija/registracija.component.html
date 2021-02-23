@@ -73,8 +73,8 @@
                             Статус: *
                         </td>
                         <td>
-                            <input type="radio" name="status" value="aktivan" [(ngModel)]="student.status"> Активан 
-                            <input type="radio" name="status" value="neaktivan" [(ngModel)]="student.status"> Неактиван
+                            <input type="radio" name="status" value="active" [(ngModel)]="student.status"> Активан 
+                            <input type="radio" name="status" value="nonactive" [(ngModel)]="student.status"> Неактиван
                         </td>
                     </tr>
                 </table>
@@ -166,14 +166,14 @@
                             </td>
                             <td>
                                 <select name="zvanje" [(ngModel)]="zaposleni.title" required>
-                                    <option value="redovni_profesor">Редовни професор</option>
-                                    <option value="vanredni_profesor">Ванредни професор</option>
+                                    <option value="redovni profesor">Редовни професор</option>
+                                    <option value="vanredni profesor">Ванредни професор</option>
                                     <option value="docent">Доцент</option>
                                     <option value="asistent">Асистент</option>
                                     <option value="saradnik">Сарадник у настави</option>
-                                    <option value="lab_tehnicar">Лаб. техничар</option>
-                                    <option value="lab_inzenjer">Лаб. инжењер</option>
-                                    <option value="istrazivac">Истраживач</option>
+                                    <option value="lab. tehničar">Лаб. техничар</option>
+                                    <option value="lab. inž.">Лаб. инжењер</option>
+                                    <option value="istraživač">Истраживач</option>
                                 </select>
                             </td>
                         </tr>
@@ -190,8 +190,8 @@
                                 Статус: *
                             </td>
                             <td>
-                                <input type="radio" name="statusZaposl" value="aktivan" [(ngModel)]="zaposleni.status"> Активан 
-                                <input type="radio" name="statusZaposl" value="neaktivan" [(ngModel)]="zaposleni.status"> Неактиван
+                                <input type="radio" name="statusZaposl" value="active" [(ngModel)]="zaposleni.status"> Активан 
+                                <input type="radio" name="statusZaposl" value="nonactive" [(ngModel)]="zaposleni.status"> Неактиван
                             </td>
                         </tr>
                         <tr>

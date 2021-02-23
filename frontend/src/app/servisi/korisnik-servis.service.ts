@@ -140,4 +140,42 @@ export class KorisnikServisService {
 
     return this.http.post(`${this.uri}/dohvatiStudenta`, data);
   }
+
+  izmeniStudenta(username: string, stud: Student){
+    const data = {
+      s: stud,
+      username: username
+    }
+
+    return this.http.post(`${this.uri}/izmeniStudenta`, data);
+  }
+
+  obrisiStudenta(username: string){
+    const data = {
+      username: username
+    }
+
+    return this.http.post(`${this.uri}/obrisiStudenta`, data);
+  }
+
+  izmeniZaposlenog(username: string, z: Zaposleni){
+    const data = {
+      z: z,
+      username: username
+    }
+
+    return this.http.post(`${this.uri}/izmeniZaposlenog`, data);
+  }
+
+  obrisiZaposlenog(username: string){
+    const data = {
+      username: username
+    }
+
+    return this.http.post(`${this.uri}/obrisiZaposlenog`, data);
+  }
+
+
 }
+
+

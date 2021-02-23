@@ -322,6 +322,70 @@ router.route('/dohvatiStudenta').post((req, res)=>{
     })
 });
 
+router.route('/izmeniStudenta').post((req, res)=>{
+    let username = req.body.username;
+    
+    student.collection.updateOne({'username':username}, { $set: {
+                                                "username" : req.body.s.username,
+                                                "password" : req.body.s.password,
+                                                "pass_changed" : req.body.s.pass_changed,
+                                                "index" : req.body.s.index,
+                                                "study_type" : req.body.s.study_type,
+                                                "name" : req.body.s.name,
+                                                "lastname" : req.body.s.lastname,
+                                                "status" : req.body.s.status
+                                            }
+    }, (r) => {
+            res.json(r);
+        });
+      
+});
+
+router.route('/obrisiStudenta').post(
+    (req, res)=>{
+        let username = req.body.username;
+        student.deleteOne({"username":username},(err)=>{
+            res.json(err);
+            if(err) console.log(err);
+        });
+    }
+);
+
+//------- izmena zaposlenog ----
+
+router.route('/izmeniZaposlenog').post((req, res)=>{
+    let username = req.body.username;
+    
+    zaposleni.collection.updateOne({'username':username}, { $set: {
+                                                "username" : req.body.z.username,
+                                                "password" : req.body.z.password,
+                                                "pass_changed" : req.body.z.pass_changed,
+                                                "name" : req.body.z.name,
+                                                "lastname" : req.body.z.lastname,
+                                                "address" : req.body.z.address,
+                                                "phone" : req.body.z.phone,
+                                                "website" : req.body.z.website,
+                                                "personal_info" : req.body.z.personal_info,
+                                                "title" : req.body.z.title,
+                                                "office" : req.body.z.office,
+                                                "status" : req.body.z.status,
+                                                "photo" : req.body.z.photo
+                                            }
+    }, (r) => {
+            res.json(r);
+        });
+      
+});
+
+router.route('/obrisiZaposlenog').post(
+    (req, res)=>{
+        let username = req.body.username;
+        zaposleni.deleteOne({"username":username},(err)=>{
+            res.json(err);
+            if(err) console.log(err);
+        });
+    }
+);
 
 app.use('/', router);
 app.listen(4000, () => console.log(`Express server running on port 4000`));

@@ -9,8 +9,132 @@
 				<app-partneri *ngIf="ulogovaniTip!='zaposleni'"></app-partneri>
                 <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
+            <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">Одаберите студента чији налог желите да измените: <br>
+                <select [(ngModel)]="selektovanZaposleniUsername">
+                    <option value={{z.username}} *ngFor="let z of zaposleniNiz"> {{prevedi(z.name)}} {{prevedi(z.lastname)}}</option>
+                </select>
+                &nbsp;&nbsp;
+                <button type="button" class="btn bg-dark" (click)="odaberiZaposlenog()">Одабери</button> <br>
+                <br><br>
                 <h4><b>Измена налога запосленог</b></h4>
+                <br><br>
+                <table>
+                    <tr>
+                        <td>
+                            Корисничко име: *
+                        </td>
+                        <td>
+                            <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="selektovanZaposleni.username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Шифра: * 
+                        </td>
+                        <td>
+                            <input type="password" required errormessage="Поље не сме бити празно" [(ngModel)]="selektovanZaposleni.password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Име: *
+                        </td>
+                        <td>
+                            <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="selektovanZaposleni.name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Презиме: *
+                        </td>
+                        <td>
+                            <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="selektovanZaposleni.lastname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Адреса: *
+                        </td>
+                        <td>
+                            <input type="text" required errormessage="Поље не сме бити празно" placeholder="Улица и број, град" [(ngModel)]="selektovanZaposleni.address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Мобилни телефон:
+                        </td>
+                        <td>
+                            <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="selektovanZaposleni.phone" placeholder="060/1234567">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Веб страница:
+                        </td>
+                        <td>
+                            <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="selektovanZaposleni.website">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Биографија:
+                        </td>
+                        <td>
+                            <input type="file"  (change)="fileChanged($event);fileSelected()" name="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Звање: *
+                        </td>
+                        <td>
+                            <select name="zvanje" [(ngModel)]="selektovanZaposleni.title" required>
+                                <option value="redovni profesor">Редовни професор</option>
+                                <option value="vanredni profesor">Ванредни професор</option>
+                                <option value="docent">Доцент</option>
+                                <option value="asistent">Асистент</option>
+                                <option value="saradnik">Сарадник у настави</option>
+                                <option value="lab. tehničar">Лаб. техничар</option>
+                                <option value="lab. inž.">Лаб. инжењер</option>
+                                <option value="istraživač">Истраживач</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Канцеларија: 
+                        </td>
+                        <td>
+                            <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="selektovanZaposleni.office">
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td>
+                            Статус: *
+                        </td>
+                        <td>
+                            <input type="radio" name="statusZaposl" value="active" [(ngModel)]="selektovanZaposleni.status"> Активан 
+                            <input type="radio" name="statusZaposl" value="nonactive" [(ngModel)]="selektovanZaposleni.status"> Неактиван
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Слика:
+                        </td>
+                        <td>
+                            <input type="file"  (change)="photoChanged($event);photoSelected()" name="file">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <span style="color: red;">{{mssg}}</span> <br>
+                <button type="button" class="btn bg-dark" (click)="izmeniZaposlenog()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Измени налог</button> <br>
+                <br><br>
+                <h4><b>Брисање налога запосленог</b></h4>
+                <br>
+                Приликом брисања налога запосленог обрисаћете све информације везане за тог запосленог. <br> <br>
+                <span *ngIf="selected==true" style="color: red;">Кликом на дугме обрисаћете налог запосленог са корисничким именом  {{selektovanZaposleni.username}}</span> <br><br>
+                <button type="button" class="btn bg-dark" (click)="obrisiZaposlenog()"><i class="fa fa-trash-o" aria-hidden="true"></i> Обриши налог</button> <br>
             </div>
         </div>       
     </div>

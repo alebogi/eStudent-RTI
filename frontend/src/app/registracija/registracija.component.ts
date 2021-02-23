@@ -105,7 +105,31 @@ export class RegistracijaComponent implements OnInit {
 
     //provera usaglasenosti inicijala, indeksa i username-a
     let i = this.student.name.charAt(0).toLowerCase();
+    if(i == 'č' ||  i == 'ć' ){
+      i  = 'c';
+    }
+    if(i == 'š' ){
+      i  = 's';
+    }
+    if(i == 'đ'){
+      i  = 'd';
+    }
+    if(i == 'ž'){
+      i  = 'z';
+    }
     let p = this.student.lastname.charAt(0).toLowerCase();
+    if(p == 'č' ||  p == 'ć' ){
+      p  = 'c';
+    }
+    if(p == 'š' ){
+      p  = 's';
+    }
+    if(p == 'đ'){
+      p  = 'd';
+    }
+    if(p == 'ž'){
+      p  = 'z';
+    }
     let gggg = this.student.index.slice(0, 4);
     let gg = gggg.slice(2);
     let bbbb = this.student.index.slice(5, 9);

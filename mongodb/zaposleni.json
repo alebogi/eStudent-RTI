@@ -220,6 +220,6 @@
 	personal_info: null,
 	title: "istraživač",
 	office: "p-25",
-	status: "non_active",
+	status: "nonactive",
 	photo: null
 }
