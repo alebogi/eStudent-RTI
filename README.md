@@ -44,7 +44,7 @@ tsc
 npm run serve	
 ```
 	
-Running application demands internet connection, beacouse of Bootstrap CDN.	
+Running application demands internet connection, because of Bootstrap CDN.	
 
 	
 ### Built with
