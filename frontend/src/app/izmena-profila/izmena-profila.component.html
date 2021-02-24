@@ -1,0 +1,115 @@
+<div id="page-container">
+    <app-myheader></app-myheader>
+    <div id="content-wrap" >
+        <div class="row">
+            <div class="col-sm-1 col-md-1 col-lg-1">
+                <!--empty-->
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+				<app-partneri *ngIf="ulogovaniTip!='zaposleni'"></app-partneri>
+                <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
+                <h4><b>Измени свој профил</b></h4>
+                <br><br>
+                <table>
+                    <tr>
+                        <td>
+                            Име: *
+                        </td>
+                        <td>
+                            <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Презиме: *
+                        </td>
+                        <td>
+                            <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.lastname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Адреса: *
+                        </td>
+                        <td>
+                            <input type="text" required errormessage="Поље не сме бити празно" placeholder="Улица и број, град" [(ngModel)]="zaposleni.address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Мобилни телефон:
+                        </td>
+                        <td>
+                            <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.phone" placeholder="060/1234567">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Веб страница:
+                        </td>
+                        <td>
+                            <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.website">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Биографија:
+                        </td>
+                        <td>
+                            <input type="file"  (change)="fileChanged($event);fileSelected()" name="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Звање: *
+                        </td>
+                        <td>
+                            <select name="zvanje" [(ngModel)]="zaposleni.title" required>
+                                <option value="redovni profesor">Редовни професор</option>
+                                <option value="vanredni profesor">Ванредни професор</option>
+                                <option value="docent">Доцент</option>
+                                <option value="asistent">Асистент</option>
+                                <option value="saradnik">Сарадник у настави</option>
+                                <option value="lab. tehničar">Лаб. техничар</option>
+                                <option value="lab. inž.">Лаб. инжењер</option>
+                                <option value="istraživač">Истраживач</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Канцеларија: 
+                        </td>
+                        <td>
+                            <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.office">
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td>
+                            Статус: *
+                        </td>
+                        <td>
+                            <input type="radio" name="statusZaposl" value="active" [(ngModel)]="zaposleni.status"> Активан 
+                            <input type="radio" name="statusZaposl" value="nonactive" [(ngModel)]="zaposleni.status"> Неактиван
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Слика:
+                        </td>
+                        <td>
+                            <input type="file"  (change)="photoChanged($event);photoSelected()" name="file">
+                        </td>
+                    </tr>
+                </table>
+                <br> <br>
+                <button type="button" class="btn bg-dark" (click)="izmeni()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Измени</button> <br>
+                <span class='greska'>{{mssgZaposleni}}</span>
+                <br><br><br>
+            </div>
+        </div>       
+    </div>
+    <app-myfooter></app-myfooter>
+</div>   

@@ -29,6 +29,8 @@ import { DodavanjePredmetaComponent } from './dodavanje-predmeta/dodavanje-predm
 import { IzmenaStudentaComponent } from './izmena-studenta/izmena-studenta.component';
 import { IzmenaZaposlenogComponent } from './izmena-zaposlenog/izmena-zaposlenog.component';
 import { IzmenaPredmetaComponent } from './izmena-predmeta/izmena-predmeta.component';
+import { IzmenaProfilaComponent } from './izmena-profila/izmena-profila.component';
+import { MojiPredmetiComponent } from './moji-predmeti/moji-predmeti.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { IzmenaPredmetaComponent } from './izmena-predmeta/izmena-predmeta.compo
     DodavanjePredmetaComponent,
     IzmenaStudentaComponent,
     IzmenaZaposlenogComponent,
-    IzmenaPredmetaComponent
+    IzmenaPredmetaComponent,
+    IzmenaProfilaComponent,
+    MojiPredmetiComponent
   ],
   imports: [
     BrowserModule,

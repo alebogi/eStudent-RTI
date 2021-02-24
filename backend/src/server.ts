@@ -59,8 +59,8 @@ upload(req, res, (err) => {
  const path = require("path");  
 // console.log(path)
 // app.use("/uploads", express.static(path.join("backend/uploads"))); 
-app.use(express.static(path.join(__dirname, 'dist')));
-app.use(express.static(path.join(__dirname, 'public')));  
+//app.use(express.static(path.join(__dirname, 'dist')));
+//app.use(express.static(path.join(__dirname, 'public')));  
 //-------------------
 
 // ~~~~~~~ LOGOVANJE ~~~~~~~
@@ -203,7 +203,7 @@ router.route('/promenaLozinkeAdmin').post((req, res)=>{
      res.json({"mssg":"ok"})
 });
 
-//~~~~~~~ Dohvatanje zaposlenih  ~~~~~~~~~~~
+//~~~~~~~ DOHVATANJE ZAPOSLENIH  ~~~~~~~~~~~
 
 router.route('/dohvatiSveZaposlene').get((req, res)=>{
     zaposleni.find({}, (err, zaposl)=>{
@@ -278,7 +278,7 @@ router.route('/dohvatiPredmetInfo').post((req, res)=>{
 });
 
 //-------------------------
-//~~~~ profil zaposlenog ~~~~
+//~~~~ PROFIL ZAPOSLENOG ~~~~
 
 router.route('/dohvatiZaposlenog').post((req, res)=>{
     let username = req.body.username;
@@ -351,7 +351,7 @@ router.route('/obrisiStudenta').post(
     }
 );
 
-//------- izmena zaposlenog ----
+//~~~~~~~~ IZMENA ZAPOSLENOG ~~~~~~~~
 
 router.route('/izmeniZaposlenog').post((req, res)=>{
     let username = req.body.username;
@@ -387,5 +387,82 @@ router.route('/obrisiZaposlenog').post(
     }
 );
 
+//~~~~~~~~ DODAVANJE PREDMETA I IZMENA PREDMETA ~~~~~~~~
+
+router.route('/dodajPredmet').post((req, res)=>{
+    let sifra = req.body.p.sifra;
+    predmeti.find({"sifra":sifra}, (err, p)=>{
+        if(p.length == 0){
+            let novi = new predmeti(req.body.p);
+            novi.save().then(user=>{
+                    res.status(200).json({'p':'ok', 'greska': ""});
+                }).catch(err=>{
+                    res.status(400).json({'p':'no', 'greska': ""});
+                })            
+        } else{
+            res.json({'p':'no', "greska":"Sifra vec postoji."});
+        }
+    });
+
+});
+
+
+
+router.route('/dohvatiPredmeteSVE').get((req, res)=>{
+    predmeti.find({}, (err, pr)=>{
+        if(err) console.log(err);
+        else res.json(pr);
+    })
+});
+
+
+router.route('/obrisiPredmet').post(
+    (req, res)=>{
+        let sifra = req.body.sifra;
+        predmeti.deleteOne({"sifra":sifra},(err)=>{
+            res.json(err);
+            if(err) console.log(err);
+        });
+    }
+);
+
+router.route('/izmeniPredmet').post((req, res)=>{
+    let sifra = req.body.sifra;
+    
+    predmeti.collection.updateOne({'sifra':sifra}, { $set: {
+                                                    naziv: req.body.predmet.naziv,
+                                                    tip: req.body.predmet.tip,
+                                                    smer: req.body.predmet.smer,
+                                                    semestar: req.body.predmet.semestar,
+                                                    godina: req.body.predmet.godina,
+                                                    sifra: req.body.predmet.sifra,
+                                                    fond: req.body.predmet.fond,
+                                                    espb: req.body.predmet.espb,
+                                                    cilj: req.body.predmet.cilj,
+                                                    ishod: req.body.predmet.ishod,
+                                                    terminiPredavanja:  req.body.predmet.terminiPredavanja,
+                                                    terminiVezbe: req.body.predmet.terminiVezbe,
+                                                    nastavnici: req.body.predmet.nastavnici,
+                                                    labVezbe: req.body.predmet.labVezbe,
+                                                    dodatno: req.body.predmet.dodatno,
+                                                    projekat: req.body.predmet.projekat,
+                                                    predavanjaMaterijali: req.body.predmet.predavanjaMaterijali,
+                                                    vezbeMaterijali: req.body.predmet.vezbeMaterijali,
+                                                    ispitPitanja: req.body.predmet.ispitPitanja,
+                                                    ispitResenja: req.body.predmet.ispitResenja,
+                                                    labVezbeMaterijali: req.body.predmet.labVezbeMaterijali,
+                                                    projekatMaterijali: req.body.predmet.projekatMaterijali,
+                                                    labAktivno: req.body.predmet.labAktivno,
+                                                    projAktivno: req.body.predmet.projAktivno,
+                                                    ispitAktivno: req.body.predmet.ispitAktivno
+                                            }
+    }, (r) => {
+            res.json(r);
+        });
+      
+});
+
+
+//---------------
 app.use('/', router);
 app.listen(4000, () => console.log(`Express server running on port 4000`));

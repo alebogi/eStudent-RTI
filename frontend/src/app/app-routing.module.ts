@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { DodavanjePredmetaComponent } from './dodavanje-predmeta/dodavanje-predmeta.component';
 import { IstrazivanjaComponent } from './istrazivanja/istrazivanja.component';
 import { IzmenaPredmetaComponent } from './izmena-predmeta/izmena-predmeta.component';
+import { IzmenaProfilaComponent } from './izmena-profila/izmena-profila.component';
 import { IzmenaStudentaComponent } from './izmena-studenta/izmena-studenta.component';
 import { IzmenaZaposlenogComponent } from './izmena-zaposlenog/izmena-zaposlenog.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { MasterComponent } from './master/master.component';
+import { MojiPredmetiComponent } from './moji-predmeti/moji-predmeti.component';
 import { ObavestenjaComponent } from './obavestenja/obavestenja.component';
 import { OdsekOstaloComponent } from './odsek-ostalo/odsek-ostalo.component';
 import { OdsekRTIComponent } from './odsek-rti/odsek-rti.component';
@@ -39,7 +41,9 @@ const routes: Routes = [
   {path: "dodavanjePredmeta", component: DodavanjePredmetaComponent},
   {path: "izmenaStudenta", component: IzmenaStudentaComponent},
   {path: "izmenaZaposlenog", component: IzmenaZaposlenogComponent},
-  {path: "izmenaPredmeta", component: IzmenaPredmetaComponent}
+  {path: "izmenaPredmeta", component: IzmenaPredmetaComponent},
+  {path: "mojProfil", component: IzmenaProfilaComponent},
+  {path: "mojiPredmeti", component: MojiPredmetiComponent}
   //{path: '**', component: PocetnaComponent } //ako ne postoji ruta
 ];
 

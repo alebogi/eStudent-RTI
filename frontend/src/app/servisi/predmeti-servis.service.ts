@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Predmeti } from '../model/predmeti.model';
 
 @Injectable({
   providedIn: 'root'
@@ -25,5 +26,33 @@ export class PredmetiServisService {
   dohvatiPredmetInfo(sifra: string){
     const data = {sifra: sifra};
     return this.http.post(`${this.uri}/dohvatiPredmetInfo`, data);
+  }
+
+  dodajPredmet(pred: Predmeti){
+    const data = {
+      p: pred
+    };
+    return this.http.post(`${this.uri}/dodajPredmet`, data);
+  }
+
+  izlistajPredmete(){
+    return this.http.get(`${this.uri}/dohvatiPredmeteSVE`);
+  }
+
+  obrisiPredmet(sifra: string){
+    const data = {
+      sifra: sifra
+    }
+
+    return this.http.post(`${this.uri}/obrisiPredmet`, data);
+  }
+
+  izmeniPredmet(sifra: string, predmet: Predmeti){
+    const data = {
+      sifra: sifra,
+      predmet: predmet
+    }
+
+    return this.http.post(`${this.uri}/izmeniPredmet`, data);
   }
 }

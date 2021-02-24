@@ -11,6 +11,169 @@
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
                 <h4><b>Додавање предмета</b></h4>
+                <br><br>
+                <table class="justify-content-left text-left">
+                    <tr>
+                        <td>
+                            Назив предмета:
+                        </td>
+                        <td>
+                            <input type="text" [(ngModel)]="predmet.naziv">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Шифра предмета:
+                        </td>
+                        <td>
+                            <input type="text" [(ngModel)]="predmet.sifra">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Тип предмета:
+                        </td>
+                        <td>
+                            <select [(ngModel)]="predmet.tip">
+                                <option value="obavezan">Обавезан</option>
+                                <option value="izborni">Изборни</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Смер предмета:
+                        </td>
+                        <td>
+                            <select [(ngModel)]="predmet.smer">
+                                <option value="si">СИ</option>
+                                <option value="rti">РТИ</option>
+                                <option value="master">Мастер</option>
+                                <option value="ostalo">Остало</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Семестар одржавања предмета:
+                        </td>
+                        <td>
+                            <input *ngIf="predmet.smer!='master'" type="number"  [(ngModel)]="predmet.semestar" min="1" max="8">
+                            <input *ngIf="predmet.smer=='master'" type="number"  [(ngModel)]="predmet.semestar" min="1" max="2">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Број ЕСПБ:
+                        </td>
+                        <td>
+                            <input type="number" [(ngModel)]="predmet.espb" min="1" max="60">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Циљ предмета:
+                        </td>
+                        <td>
+                            <textarea [(ngModel)]="predmet.cilj" rows="4" cols="50">
+  
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Исход предмета:
+                        </td>
+                        <td>
+                            <textarea [(ngModel)]="predmet.ishod" rows="4" cols="50">
+  
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Фонд часова:
+                        </td>
+                        <td>
+                            Број термина за предавања: <input type="number" [(ngModel)]="brojTerminaPredavanja" min="1" max="5" (change)="brTerminaPredavanjaUneseno()">
+                            <br>
+                            Број термина за вежбе: <input type="number" [(ngModel)]="brojTerminaVezbe" min="1" max="5" (change)="brTerminaVezbeUneseno()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Термини предавања:
+                        </td>
+                        <td>
+                            Дан:&nbsp;<select [(ngModel)]="terminPredavanjaDan[0]">
+                                <option value="ponedeljak">понедељак</option>
+                                <option value="utorak">уторак</option>
+                                <option value="sreda">среда</option>
+                                <option value="četvrtak">четвртак</option>
+                                <option value="petak">петак</option>
+                            </select>
+                            &nbsp;Сати:&nbsp;<input type="number" [(ngModel)]="terminPredavanjaSat[0]" min="8" max="20">
+                        </td>
+                    </tr>
+                    <tr *ngFor="let termin of nizZaIter; let i=index" >
+                        <td>
+
+                        </td>
+                        <td >
+                            Дан:&nbsp;<select [(ngModel)]="terminPredavanjaDan[i + 1]">
+                                <option value="ponedeljak">понедељак</option>
+                                <option value="utorak">уторак</option>
+                                <option value="sreda">среда</option>
+                                <option value="četvrtak">четвртак</option>
+                                <option value="petak">петак</option>
+                            </select>
+                            &nbsp;Сати:&nbsp;<input type="number" [(ngModel)]="terminPredavanjaSat[i+ 1]" min="8" max="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Термини вежби:
+                        </td>
+                        <td>
+                            Дан:&nbsp;<select [(ngModel)]="terminVezbiDan[0]">
+                                <option value="ponedeljak">понедељак</option>
+                                <option value="utorak">уторак</option>
+                                <option value="sreda">среда</option>
+                                <option value="četvrtak">четвртак</option>
+                                <option value="petak">петак</option>
+                            </select>
+                            &nbsp;Сати:&nbsp;<input type="number" [(ngModel)]="terminVezbiSat[0]" min="8" max="20">
+                        </td>
+                    </tr>
+                    <tr *ngFor="let termin of nizZaIter2; let i=index" >
+                        <td>
+
+                        </td>
+                        <td >
+                            Дан:&nbsp;<select [(ngModel)]="terminVezbiDan[i+ 1]">
+                                <option value="ponedeljak">понедељак</option>
+                                <option value="utorak">уторак</option>
+                                <option value="sreda">среда</option>
+                                <option value="četvrtak">четвртак</option>
+                                <option value="petak">петак</option>
+                            </select>
+                            &nbsp;Сати:&nbsp;<input type="number" [(ngModel)]="terminVezbiSat[i+ 1]" min="8" max="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Наставници:
+                        </td>
+                        <td>
+                            <select [(ngModel)]="selektovanZaposleniUsername" multiple>
+                                <option value={{z.username}} *ngFor="let z of profNiz"> {{prevedi(z.name)}} {{prevedi(z.lastname)}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <span style="color: red;">{{mssg}}</span> <br>
+                <button type="button" class="btn bg-dark" (click)="dodaj()"><i class="fa fa-plus" aria-hidden="true"></i> Додај предмет</button> <br>
             </div>
         </div>       
     </div>
