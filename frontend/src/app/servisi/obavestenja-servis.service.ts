@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Obavestenja } from '../model/obavestenja.model';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +20,39 @@ export class ObavestenjaServisService {
       katrgorija: kat
     }
     return this.http.post(`${this.uri}/dohvObavestenjaKategorija`, data);
+  }
+
+  dodajVest(v: Obavestenja){
+    const data = {
+      vest: v
+    };
+    return this.http.post(`${this.uri}/dodajVest`, data);
+  }
+
+
+  obrisiObavestenje(id){
+    const data = {
+      id: id
+    }
+
+    return this.http.post(`${this.uri}/obrisiObavestenje`, data);
+  }
+
+  dohvatiVest(id){
+    const data = {
+      id: id
+    }
+    return this.http.post(`${this.uri}/dohvatiVest`, data);
+  }
+
+
+  izmeniVest(id: string, vst: Obavestenja){
+    const data = {
+      v: vst,
+      id: id
+    }
+
+    return this.http.post(`${this.uri}/izmeniVest`, data);
   }
 }
 

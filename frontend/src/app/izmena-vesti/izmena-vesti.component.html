@@ -1,0 +1,96 @@
+<div id="page-container">
+    <app-myheader></app-myheader>
+    <div id="content-wrap" >
+        <div class="row">
+            <div class="col-sm-1 col-md-1 col-lg-1">
+                <!--empty-->
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+				<app-partneri *ngIf="ulogovaniTip!='zaposleni'"></app-partneri>
+                <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
+                <h4><b>Измена вести</b></h4>
+                <br>
+                Изаберите вест за измену <br>
+                <select  [(ngModel)]="selektovanaVestIzmena">
+                    <option value="{{vst.naslov}}" *ngFor="let vst of vestiSaMojihPredmeta"> {{prevedi(vst.naslov)}}</option>
+                </select>
+                &nbsp;&nbsp;
+                <button type="button" class="btn bg-dark" (click)="odaberi()">Одабери</button> <br>
+                <br><br>
+                <table>
+                    <tr>
+                        <td>Нaслов вести:</td>
+                        <td>
+                            <input type="text" [(ngModel)]="vest.naslov">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Текст вести:</td>
+                        <td>
+                            <textarea [(ngModel)]="vest.tekst" rows="6" cols="50">
+  
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Датум вести: </td>
+                        <td>
+                            Стари датум (dd-mm-yyyy): {{datumStari}} <br>
+                            Нови: <input type="date" [(ngModel)]="datumUnos">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Фајлови за вест:
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr *ngFor="let m of nizMaterijalaObavestnja">
+                        <td>
+                            {{m.nazivFajla}}
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-dark" (click)="obrisiFajl(m.nazivFajla)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Број фајлова за доадавање:</td> 
+                        <td>
+                            <input type="number" [(ngModel)]="brFajlova" min="0" (change)="brFajlovaUneseno()">
+                        </td>
+                    </tr>
+                    <tr *ngFor="let f of nizZaIter; let i=index">
+                        <td></td> 
+                        <td>
+                            <input type="file" (change)="fileChanged($event,i)" name="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Категорија вести:</td>
+                        <td>
+                            <select  [(ngModel)]="vest.kategorija">
+                                <option value="{{pr.sifra}}" *ngFor="let pr of mojiPredmetiNiz"> {{prevedi(pr.naziv)}} - {{prevedi(pr.sifra)}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <button type="button" class="btn bg-dark" (click)="izmeni()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Измени вест</button> <br>
+                <br>
+                <hr>
+                <br>
+                <h4><b>Брисање вести</b></h4>
+                <br>
+                Изаберите вест за брисање <br>
+                <select  [(ngModel)]="selektovanaVestBrisanje">
+                    <option value="{{vest.timestamp}}" *ngFor="let vest of vestiMoje"> {{prevedi(vest.naslov)}}</option>
+                </select> 
+                <br><br>
+                <button type="button" class="btn bg-dark" (click)="obrisi()"><i class="fa fa-trash-o" aria-hidden="true"></i> Обриши вест</button> <br> <br>
+            </div>
+        </div>       
+    </div>
+    <app-myfooter></app-myfooter>
+</div>

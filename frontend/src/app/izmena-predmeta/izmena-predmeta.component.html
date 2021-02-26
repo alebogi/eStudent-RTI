@@ -11,7 +11,7 @@
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
                 <select  [(ngModel)]="selektovanPredmetSifra">
-                    <option value="{{pr.sifra}}" *ngFor="let pr of predmetiNiz"> {{pr.naziv}} - {{pr.sifra}}</option>
+                    <option value="{{pr.sifra}}" *ngFor="let pr of predmetiNiz"> {{prevedi(pr.naziv)}} - {{prevedi(pr.sifra)}}</option>
                 </select>
                 &nbsp;&nbsp;
                 <button type="button" class="btn bg-dark" (click)="odaberiPredmet()">Одабери</button> <br>

@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { latinicaUcirilicu } from '../app.component';
+import { Materijal } from '../model/materijal.model';
 import { Predmeti } from '../model/predmeti.model';
 import { Zaposleni } from '../model/zaposleni.model';
 import { KorisnikServisService } from '../servisi/korisnik-servis.service';
+import { MaterijaliServisService } from '../servisi/materijali-servis.service';
 import { PredmetiServisService } from '../servisi/predmeti-servis.service';
+import {saveAs} from "file-saver";
 
 @Component({
   selector: 'app-moji-predmeti',
@@ -12,7 +15,7 @@ import { PredmetiServisService } from '../servisi/predmeti-servis.service';
 })
 export class MojiPredmetiComponent implements OnInit {
 
-  constructor(private servisKorisnik: KorisnikServisService, private servisPredmeti: PredmetiServisService) { }
+  constructor(private servisKorisnik: KorisnikServisService, private servisPredmeti: PredmetiServisService, private servisMaterijali: MaterijaliServisService) { }
 
   ngOnInit(): void {
     this.ulogovan = localStorage.getItem("ulogovan");
@@ -47,11 +50,38 @@ export class MojiPredmetiComponent implements OnInit {
 
   
   predmetiNiz: Predmeti[];
+  mojiPredmetiNiz: Predmeti[] = [];
   selektovanPredmetSifra: string = "";
+
+
+  nizMaterijalaPredavanja: Materijal[] = [];
+  nizMaterijalaVezbe: Materijal[] = [];
+  nizMaterijalaObavestenja: Materijal[] = [];
+  nizMaterijalaIspit: Materijal[] = [];
+  nizMaterijalaLab: Materijal[] = [];
+  
+  materijal: File[] = [];
+  materijalName: string[] = [];
+  nizFajlovaZaBazu: Materijal[] = [];
+
+  nizZaIterPr: number[];
+  brFajlovaPr:number = 0;
+  nizZaIterVezbe: number[];
+  brFajlovaVezbe:number = 0;
+  nizZaIterIspit: number[];
+  brFajlovaIspit:number = 0;
+  nizZaIterLab: number[];
+  brFajlovaLab:number = 0;
+
 
   prevedi(str:string){
     return latinicaUcirilicu(str);
   }
+
+  public navigateToSection(section: string) {
+    window.location.hash = '';
+    window.location.hash = section;
+}
 
   /**
    * Izlistava predmete na kojima je angazovan ulogvani nastavnik.
@@ -60,13 +90,156 @@ export class MojiPredmetiComponent implements OnInit {
     this.servisPredmeti.izlistajPredmete().subscribe((pred: Predmeti[])=>{
       this.predmetiNiz = pred;
 
+      this.predmetiNiz.forEach(pred => {
+        pred.nastavnici.forEach(nast => {
+          if (nast == this.ulogovanUsername){
+            this.mojiPredmetiNiz.push(pred);
+          }
+        });
+      });
       
       
     })
   }
 
+  dohvatiFajlovePredavanja(){
+    this.servisMaterijali.dohvatiFajlove(this.selektovanPredmetSifra, "predavanja").subscribe((m: Materijal[])=>{
+      this.nizMaterijalaPredavanja = m;
+    })
+  }
+
+  dohvatiFajloveVezbe(){
+    this.servisMaterijali.dohvatiFajlove(this.selektovanPredmetSifra, "vezbe").subscribe((m: Materijal[])=>{
+      this.nizMaterijalaVezbe = m;
+
+    })
+  }
+
+  dohvatiFajloveObavestenja(){
+    this.servisMaterijali.dohvatiFajlove(this.selektovanPredmetSifra, "obavestenje").subscribe((m: Materijal[])=>{
+      this.nizMaterijalaObavestenja = m;
+
+    })
+  }
+
+  dohvatiFajloveIspit(){
+    this.servisMaterijali.dohvatiFajlove(this.selektovanPredmetSifra, "ispit").subscribe((m: Materijal[])=>{
+      this.nizMaterijalaIspit = m;
+
+    })
+  }
+
+  dohvatiFajloveLab(){
+    this.servisMaterijali.dohvatiFajlove(this.selektovanPredmetSifra, "lab").subscribe((m: Materijal[])=>{
+      this.nizMaterijalaLab = m;
+
+    })
+  }
+
+  obrisiFajl(naziv){
+    this.servisMaterijali.obrisiFajl(naziv).subscribe((err : any)=>{
+      alert("Фајл је успешно обрисан.");
+      location.reload();
+    });
+  }
   
   
+  pretvoriUKB(br){
+    var r = br / 1024;
+   // r = parseFloat(r.toFixed(2))
+    return r;
+  }
+
+  fileChanged(event, i, kat){
+    var m = new Materijal;
+    m.sifraPredmeta = this.selektovanPredmetSifra;
+    m.nazivFajla = event.target.files[0].name;
+    m.tip = m.nazivFajla.split(".")[1];
+    var dat = new Date();
+    var dan = dat.getDate();
+    var mesec = dat.getMonth() + 1;
+    var god = dat.getFullYear();
+    var str = mesec + "-" + dan + "-" + god;
+    m.datumPostavljanja = str;
+    m.postavio = this.ulogovanUsername;
+    m.postavioImePrezime = this.ulogvanImePrezime;
+    m.velicina = event.target.files[0].size;
+    m.kategorija = kat;
+
+
+    if(this.materijal[i] == undefined){
+      this.materijal.push(event.target.files[0]);
+      this.materijalName.push(event.target.files[0].name)
+      this.nizFajlovaZaBazu.push(m);
+    }else{
+      this.materijal[i] = event.target.files[0];
+      this.materijalName[i] = event.target.files[0].name;
+      this.nizFajlovaZaBazu[i] = m;
+    }
+    
+  }
+
+  brFajlovaUnesenoPr(){
+    this.nizZaIterPr = [];
+    for(let i = 0; i < this.brFajlovaPr; i++){   
+      this.nizZaIterPr.push(1);
+    }
+  }
+  brFajlovaUnesenoVezbe(){
+    this.nizZaIterVezbe = [];
+    for(let i = 0; i < this.brFajlovaVezbe; i++){   
+      this.nizZaIterVezbe.push(1);
+    }
+  }
+  brFajlovaUnesenoIspit(){
+    this.nizZaIterIspit = [];
+    for(let i = 0; i < this.brFajlovaIspit; i++){   
+      this.nizZaIterIspit.push(1);
+    }
+  }
+  brFajlovaUnesenoLab(){
+    this.nizZaIterLab = [];
+    for(let i = 0; i < this.brFajlovaLab; i++){   
+      this.nizZaIterLab.push(1);
+    }
+  }
+
+  dodajFajlove(){
+    if(this.materijalName.length != 0){
+      for(let i = 0; i < this.materijalName.length; i++){ 
+        this.uploadFile(i);
+      }
+      this.nizFajlovaZaBazu.forEach(element => {
+        this.servisMaterijali.dodajFajl(element).subscribe(ob=>{
+          if(ob['m']=='ok'){
+            alert( "Додавање успешно!! Материјали су додати у базу података.");
+            location.reload();
+          }else if(ob['m']=='no'){
+            this.mssg = 'Неуспешно додавање материјала.';
+          }
+        })
+      });
+      location.reload();
+      
+    }
+  }
+
+  preuzmi(naziv){
+    this.servisMaterijali.downloadFile(naziv).subscribe(blob => {
+           saveAs(blob, naziv);
+       } )
+  }
+
+  uploadFile(i){
+    this.servisKorisnik.uploadFile(this.materijal[i]).subscribe(res=>{
+      
+      if(res["ret"]=="ok")
+        alert("Фајл(ови) успешно додат(и) на сервер.");
+       else{
+         alert("Неуспешно додавање на сервер.")
+       } 
+    });
+  }
 
   brTerminaPredavanjaUneseno(){
     this.nizZaIter = [];
@@ -102,6 +275,12 @@ export class MojiPredmetiComponent implements OnInit {
         this.terminVezbiDan[i] = this.predmet.terminiVezbe[i].toString().split(" ")[0];
         this.terminVezbiSat[i] = parseInt(this.predmet.terminiVezbe[i].toString().split(" ")[1]);
       }
+
+      this.dohvatiFajloveObavestenja();
+      this.dohvatiFajlovePredavanja();
+      this.dohvatiFajloveVezbe();
+      this.dohvatiFajloveIspit();
+      this.dohvatiFajloveLab();
     })
   }
 
@@ -131,21 +310,10 @@ export class MojiPredmetiComponent implements OnInit {
       this.predmet.godina = 4;
     }
 
-    this.predmet.labVezbe = null;
-    this.predmet.dodatno = null;
-    this.predmet.projekat = null;
-    this.predmet.predavanjaMaterijali =  [];
-    this.predmet.vezbeMaterijali = [];
-    this.predmet.ispitPitanja = [];
-    this.predmet.ispitResenja = [];
-    this.predmet.labVezbeMaterijali = [];
-    this.predmet.projekatMaterijali = [];
-    this.predmet.labAktivno = 1;
-    this.predmet.projAktivno = 0;
-    this.predmet.ispitAktivno = 0;
-    this.predmet.terminiPredavanja = [];
-    this.predmet.terminiVezbe = [];
-    //this.predmet.nastavnici = [];
+  
+     this.predmet.terminiPredavanja = [];
+     this.predmet.terminiVezbe = [];
+    
 
     this.predmet.fond = this.brojTerminaPredavanja + "+" + this.brojTerminaVezbe;
 
@@ -161,9 +329,7 @@ export class MojiPredmetiComponent implements OnInit {
       this.predmet.terminiVezbe.push(ter)
     }
 
-    // for(var i = 0; i < this.selektovanZaposleniUsername.length; i++){
-    //   this.predmet.nastavnici[i] = this.selektovanZaposleniUsername[i];
-    // }
+   
 
     this.servisPredmeti.izmeniPredmet(this.selektovanPredmetSifra, this.predmet).subscribe((err : any)=>{
       alert("Предмет је успешно измењен.");

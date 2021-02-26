@@ -40,12 +40,12 @@ export class ObavestenjaComponent implements OnInit {
   }
 
   //proverava da li je obavestenje mladje od tri meseca ili nije
-  mladjiOdTriMeseca(datum: Date){
+  mladjiOdTriMeseca(datum: string){ //Date
     var result = false;
 
     var danasnjiDatum = new Date();
-    datum = new Date(datum)
-    var diffInMs = danasnjiDatum.getTime() - datum.getTime();
+    var dat = new Date(datum)
+    var diffInMs = danasnjiDatum.getTime() - dat.getTime();
     var msInDay = 1000*60*60*24;
     var diffInDays = diffInMs / msInDay;
 

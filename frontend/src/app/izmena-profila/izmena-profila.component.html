@@ -13,22 +13,7 @@
                 <h4><b>Измени свој профил</b></h4>
                 <br><br>
                 <table>
-                    <tr>
-                        <td>
-                            Име: *
-                        </td>
-                        <td>
-                            <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.name">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Презиме: *
-                        </td>
-                        <td>
-                            <input type="text" required errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.lastname">
-                        </td>
-                    </tr>
+                    
                     <tr>
                         <td>
                             Адреса: *
@@ -58,26 +43,10 @@
                             Биографија:
                         </td>
                         <td>
-                            <input type="file"  (change)="fileChanged($event);fileSelected()" name="file">
+                            <input type="file"  (change)="fileChanged($event)" name="file">
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            Звање: *
-                        </td>
-                        <td>
-                            <select name="zvanje" [(ngModel)]="zaposleni.title" required>
-                                <option value="redovni profesor">Редовни професор</option>
-                                <option value="vanredni profesor">Ванредни професор</option>
-                                <option value="docent">Доцент</option>
-                                <option value="asistent">Асистент</option>
-                                <option value="saradnik">Сарадник у настави</option>
-                                <option value="lab. tehničar">Лаб. техничар</option>
-                                <option value="lab. inž.">Лаб. инжењер</option>
-                                <option value="istraživač">Истраживач</option>
-                            </select>
-                        </td>
-                    </tr>
+                    
                     <tr>
                         <td>
                             Канцеларија: 
@@ -86,21 +55,13 @@
                             <input type="text" errormessage="Поље не сме бити празно" [(ngModel)]="zaposleni.office">
                         </td>
                     </tr>  
-                    <tr>
-                        <td>
-                            Статус: *
-                        </td>
-                        <td>
-                            <input type="radio" name="statusZaposl" value="active" [(ngModel)]="zaposleni.status"> Активан 
-                            <input type="radio" name="statusZaposl" value="nonactive" [(ngModel)]="zaposleni.status"> Неактиван
-                        </td>
-                    </tr>
+                    
                     <tr>
                         <td>
                             Слика:
                         </td>
                         <td>
-                            <input type="file"  (change)="photoChanged($event);photoSelected()" name="file">
+                            <input type="file"  (change)="photoChanged($event)" name="file">
                         </td>
                     </tr>
                 </table>

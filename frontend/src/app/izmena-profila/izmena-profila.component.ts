@@ -43,21 +43,17 @@ export class IzmenaProfilaComponent implements OnInit {
   //--------------
   photoChanged(event){
     this.photo = event.target.files[0];
+    this.photoName = this.photo.name;
   }
 
-  photoSelected(){
-    this.photoName = this.photo.name;
-    
-  }
+  
 
   fileChanged(event){
     this.biography = event.target.files[0];
+    this.biographyName = this.biography.name;
   }
 
-  fileSelected(){
-    this.biographyName = this.biography.name;
-    
-  }
+  
 
   uploadFile(){
     this.servisKorisnik.uploadFile(this.biography).subscribe(res=>{
@@ -111,11 +107,16 @@ export class IzmenaProfilaComponent implements OnInit {
     }
 
     
-
-    const data = {
-      zaposleni : this.zaposleni,
-      slika: this.photo
+    if(this.photo != undefined){
+      this.zaposleni.photo = this.photoName;
+      this.uploadPhoto()
     }
+
+    if(this.biography != undefined){
+      this.zaposleni.personal_info = this.biographyName;
+      this.uploadFile()
+    }
+
 
     //izmena
     this.servisKorisnik.izmeniZaposlenog(this.ulogovanUsername, this.zaposleni).subscribe((err : any)=>{

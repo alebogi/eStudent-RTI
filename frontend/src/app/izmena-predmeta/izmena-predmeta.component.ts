@@ -138,21 +138,7 @@ export class IzmenaPredmetaComponent implements OnInit {
       this.predmet.godina = 4;
     }
 
-    this.predmet.labVezbe = null;
-    this.predmet.dodatno = null;
-    this.predmet.projekat = null;
-    this.predmet.predavanjaMaterijali =  [];
-    this.predmet.vezbeMaterijali = [];
-    this.predmet.ispitPitanja = [];
-    this.predmet.ispitResenja = [];
-    this.predmet.labVezbeMaterijali = [];
-    this.predmet.projekatMaterijali = [];
-    this.predmet.labAktivno = 1;
-    this.predmet.projAktivno = 0;
-    this.predmet.ispitAktivno = 0;
-    this.predmet.terminiPredavanja = [];
-    this.predmet.terminiVezbe = [];
-    //this.predmet.nastavnici = [];
+    
 
     this.predmet.fond = this.brojTerminaPredavanja + "+" + this.brojTerminaVezbe;
 
@@ -168,9 +154,7 @@ export class IzmenaPredmetaComponent implements OnInit {
       this.predmet.terminiVezbe.push(ter)
     }
 
-    // for(var i = 0; i < this.selektovanZaposleniUsername.length; i++){
-    //   this.predmet.nastavnici[i] = this.selektovanZaposleniUsername[i];
-    // }
+    
 
     this.servisPredmeti.izmeniPredmet(this.selektovanPredmetSifra, this.predmet).subscribe((err : any)=>{
       alert("Предмет је успешно измењен.");

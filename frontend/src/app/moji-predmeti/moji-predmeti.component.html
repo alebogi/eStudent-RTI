@@ -10,14 +10,21 @@
                 <app-meni-zaposleni *ngIf="ulogovaniTip=='zaposleni'"></app-meni-zaposleni>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center text-center">
+                <br><h4><b>Моји предмети</b></h4>
+                <br><br>
+                Изаберите предмет за измену <br>
                 <select  [(ngModel)]="selektovanPredmetSifra">
-                    <option value="{{pr.sifra}}" *ngFor="let pr of predmetiNiz"> {{pr.naziv}} - {{pr.sifra}}</option>
+                    <option value="{{pr.sifra}}" *ngFor="let pr of mojiPredmetiNiz"> {{prevedi(pr.naziv)}} - {{prevedi(pr.sifra)}}</option>
                 </select>
                 &nbsp;&nbsp;
                 <button type="button" class="btn bg-dark" (click)="odaberiPredmet()">Одабери</button> <br>
                 <br><br>
-                <br><h4><b>Моји предмети</b></h4>
+                <br><h4><b>Измена предмета</b></h4>
+                <br> Пречице: <br>
+                <a  (click)="navigateToSection('info')">Измена основних информација</a> &nbsp;|&nbsp; <a  (click)="navigateToSection('predavanja')">Измена предавања</a>&nbsp;|&nbsp;
+                <a  (click)="navigateToSection('vezbe')">Измена вежби</a> &nbsp;|&nbsp; <a  (click)="navigateToSection('ispitnaPitanja')">Измена испитних питања</a> &nbsp;|&nbsp; <a  (click)="navigateToSection('lab')">Измена лаб. вежби</a> &nbsp;&nbsp;
                 <br><br>
+                <h5 id="info"><b>Информације о предмету</b></h5> <br>
                 <table class="justify-content-left text-left">
                     <tr>
                         <td>
@@ -170,7 +177,298 @@
                 </table> 
                 <span style="color: red;">{{mssg}}</span> <br>
                 <button type="button" class="btn bg-dark" (click)="izmeni()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Измени предмет</button> <br>
+                <br>
+                <hr>
+                <br>
+                <h5 id="predavanja"><b>Предавања</b></h5> <br>
+                
+                <table class="table">
+                    <tr>
+                        <td>
+                           <b> Назив фајла</b>
+                        </td>
+                        <td>
+                            <b>Тип фајла</b>
+                        </td>
+                        <td>
+                            <b>Датум постављања</b>
+                        </td>
+                        <td>
+                            <b>Величина фајла (КВ)</b>
+                        </td>
+                        <td>
+                            <b>Поставио</b>
+                        </td>
+                        <td>
+                            <b>Обриши фајл</b>
+                        </td>
+                        <td>
+                            <b>Преузми фајл</b>
+                        </td>
+                    </tr>
+                    <tr *ngFor="let m of nizMaterijalaPredavanja">
+                        <td>
+                            {{m.nazivFajla}}
+                        </td>
+                        <td>
+                            {{m.tip}}
+                        </td>
+                        <td>
+                             {{m.datumPostavljanja}}
+                        </td>
+                        <td>
+                            {{pretvoriUKB(m.velicina)}}
+                        </td>
+                        <td>
+                            {{prevedi(m.postavioImePrezime)}}
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-dark" (click)="obrisiFajl(m.nazivFajla)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-dark" (click)="preuzmi(m.nazivFajla)"><i class="fa fa-download" aria-hidden="true"></i></button>
+                        </td>
+                    </tr>
+                </table>
+                <h5><b>Додавање фајлова-предавања</b></h5>
+                <table>
+                    <tr>
+                        <td>Број фајлова за доадавање:</td> 
+                        <td>
+                            <input type="number" [(ngModel)]="brFajlovaPr" min="0" (change)="brFajlovaUnesenoPr()">
+                        </td>
+                    </tr>
+                    <tr *ngFor="let f of nizZaIterPr; let i=index">
+                        <td></td> 
+                        <td>
+                            <input type="file" (change)="fileChanged($event,i, 'predavanja')" name="file">
+                        </td>
+                    </tr>
+                </table> <br>
+                <button type="button" class="btn bg-dark" (click)="dodajFajlove()"><i class="fa fa-plus" aria-hidden="true"></i> Додај</button>
+                <br>
+                <hr>
+                <br>
+                <h5 id="vezbe"><b>Вежбе</b></h5> <br>
+
+                <table class="table">
+                    <tr>
+                        <td>
+                           <b> Назив фајла</b>
+                        </td>
+                        <td>
+                            <b>Тип фајла</b>
+                        </td>
+                        <td>
+                            <b>Датум постављања</b>
+                        </td>
+                        <td>
+                            <b>Величина фајла (КВ)</b>
+                        </td>
+                        <td>
+                            <b>Поставио</b>
+                        </td>
+                        <td>
+                            <b>Обриши фајл</b>
+                        </td>
+                        <td>
+                            <b>Преузми фајл</b>
+                        </td>
+                    </tr>
+                    <tr *ngFor="let m of nizMaterijalaVezbe">
+                        <td>
+                            {{m.nazivFajla}}
+                        </td>
+                        <td>
+                            {{m.tip}}
+                        </td>
+                        <td>
+                             {{m.datumPostavljanja}}
+                        </td>
+                        <td>
+                            {{pretvoriUKB(m.velicina)}}
+                        </td>
+                        <td>
+                            {{prevedi(m.postavioImePrezime)}}
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-dark" (click)="obrisiFajl(m.nazivFajla)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-dark" (click)="preuzmi(m.nazivFajla)"><i class="fa fa-download" aria-hidden="true"></i></button>
+                        </td>
+                    </tr>
+                </table>
+                <h5><b>Додавање фајлова-вежбе</b></h5>
+                <table>
+                    <tr>
+                        <td>Број фајлова за доадавање:</td> 
+                        <td>
+                            <input type="number" [(ngModel)]="brFajlovaVezbe" min="0" (change)="brFajlovaUnesenoVezbe()">
+                        </td>
+                    </tr>
+                    <tr *ngFor="let f of nizZaIterVezbe; let i=index">
+                        <td></td> 
+                        <td>
+                            <input type="file" (change)="fileChanged($event,i, 'vezbe')" name="file">
+                        </td>
+                    </tr>
+                </table><br>
+                <button type="button" class="btn bg-dark" (click)="dodajFajlove()"><i class="fa fa-plus" aria-hidden="true"></i> Додај</button>
+
+                <br>
+                <hr>
+                <br>
+                <h5 id="ispitnaPitanja"><b>Испитна питања</b></h5> <br>
+
+                <table class="table">
+                    <tr>
+                        <td>
+                           <b> Назив фајла</b>
+                        </td>
+                        <td>
+                            <b>Тип фајла</b>
+                        </td>
+                        <td>
+                            <b>Датум постављања</b>
+                        </td>
+                        <td>
+                            <b>Величина фајла (КВ)</b>
+                        </td>
+                        <td>
+                            <b>Поставио</b>
+                        </td>
+                        <td>
+                            <b>Обриши фајл</b>
+                        </td>
+                        <td>
+                            <b>Преузми фајл</b>
+                        </td>
+                    </tr>
+                    <tr *ngFor="let m of nizMaterijalaIspit">
+                        <td>
+                            {{m.nazivFajla}}
+                        </td>
+                        <td>
+                            {{m.tip}}
+                        </td>
+                        <td>
+                             {{m.datumPostavljanja}}
+                        </td>
+                        <td>
+                            {{pretvoriUKB(m.velicina)}}
+                        </td>
+                        <td>
+                            {{prevedi(m.postavioImePrezime)}}
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-dark" (click)="obrisiFajl(m.nazivFajla)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-dark" (click)="preuzmi(m.nazivFajla)"><i class="fa fa-download" aria-hidden="true"></i></button>
+                        </td>
+                    </tr>
+                </table>
+                <h5><b>Додавање фајлова-испитни рокови</b></h5>
+                <table>
+                    <tr>
+                        <td>Број фајлова за доадавање:</td> 
+                        <td>
+                            <input type="number" [(ngModel)]="brFajlovaIspit" min="0" (change)="brFajlovaUnesenoIspit()">
+                        </td>
+                    </tr>
+                    <tr *ngFor="let f of nizZaIterIspit; let i=index">
+                        <td></td> 
+                        <td>
+                            <input type="file" (change)="fileChanged($event,i, 'ispit')" name="file">
+                        </td>
+                    </tr>
+                </table><br>
+                <button type="button" class="btn bg-dark" (click)="dodajFajlove()"><i class="fa fa-plus" aria-hidden="true"></i> Додај</button>
+
+                <br>
+                <hr>
+                <br>
+                <h5 id="lab"><b>Лабораторија</b></h5> <br>
+                <table class="table">
+                    <tr>
+                        <td>
+                           <b> Назив фајла</b>
+                        </td>
+                        <td>
+                            <b>Тип фајла</b>
+                        </td>
+                        <td>
+                            <b>Датум постављања</b>
+                        </td>
+                        <td>
+                            <b>Величина фајла (КВ)</b>
+                        </td>
+                        <td>
+                            <b>Поставио</b>
+                        </td>
+                        <td>
+                            <b>Обриши фајл</b>
+                        </td>
+                        <td>
+                            <b>Преузми фајл</b>
+                        </td>
+                    </tr>
+                    <tr *ngFor="let m of nizMaterijalaLab">
+                        <td>
+                            {{m.nazivFajla}}
+                        </td>
+                        <td>
+                            {{m.tip}}
+                        </td>
+                        <td>
+                             {{m.datumPostavljanja}}
+                        </td>
+                        <td>
+                            {{pretvoriUKB(m.velicina)}}
+                        </td>
+                        <td>
+                            {{prevedi(m.postavioImePrezime)}}
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-dark" (click)="obrisiFajl(m.nazivFajla)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-dark" (click)="preuzmi(m.nazivFajla)"><i class="fa fa-download" aria-hidden="true"></i></button>
+                        </td>
+                    </tr>
+                </table>
+                <h5><b>Додавање фајлова-лабораторија</b></h5>
+                <table>
+                    <tr>
+                        <td>Број фајлова за доадавање:</td> 
+                        <td>
+                            <input type="number" [(ngModel)]="brFajlovaLab" min="0" (change)="brFajlovaUnesenoLab()">
+                        </td>
+                    </tr>
+                    <tr *ngFor="let f of nizZaIterLab; let i=index">
+                        <td></td> 
+                        <td>
+                            <input type="file" (change)="fileChanged($event,i, 'lab')" name="file">
+                        </td>
+                    </tr>
+                </table><br>
+                <button type="button" class="btn bg-dark" (click)="dodajFajlove()"><i class="fa fa-plus" aria-hidden="true"></i> Додај</button>
                 <br><br>
+                <table>
+                    <tr>
+                        <td>
+                            Информације о лабу:
+                        </td>
+                        <td>
+                            <textarea [(ngModel)]="predmet.labVezbe" rows="6" cols="50">
+  
+                            </textarea>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <button type="button" class="btn bg-dark" (click)="izmeni()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Измени предмет</button> <br><br><br><br>
             </div>
         </div>       
     </div>

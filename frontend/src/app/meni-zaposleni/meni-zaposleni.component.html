@@ -8,13 +8,16 @@
       <a class="nav-link" [routerLink]="['/mojiPredmeti']" routerLinkActive="router-link-active" >Моји предмети</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Вести</a>
+      <a class="nav-link" [routerLink]="['/dodavanjeVesti']" routerLinkActive="router-link-active" >Додавање</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" >Вести</a>
       <ul  style="list-style-type: circle;">
         <li class="nav-item">
-          <a class="nav-link" href="#">Додавање</a>
+          <a class="nav-link" [routerLink]="['/dodavanjeVesti']" routerLinkActive="router-link-active" >Додавање</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Измена</a>
+          <a class="nav-link" [routerLink]="['/izmenaVesti']" routerLinkActive="router-link-active" >Измена</a>
         </li>        
       </ul>
     </li>

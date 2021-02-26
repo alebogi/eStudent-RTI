@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { latinicaUcirilicu } from '../app.component';
 import { Zaposleni } from '../model/zaposleni.model';
 import { KorisnikServisService } from '../servisi/korisnik-servis.service';
+import { MaterijaliServisService } from '../servisi/materijali-servis.service';
+import {saveAs} from "file-saver";
 
 @Component({
   selector: 'app-profil-zaposlenog',
@@ -18,7 +20,9 @@ export class ProfilZaposlenogComponent implements OnInit {
   zaposleniUsername: string;
   zaposleni: Zaposleni;
 
-  constructor(private servis : KorisnikServisService, private ruter:Router) { }
+  slika: any;
+
+  constructor(private servis : KorisnikServisService, private ruter:Router, private servisMaterijali:MaterijaliServisService) { }
 
   ngOnInit(): void {
     this.ulogovan = localStorage.getItem("ulogovan");
@@ -37,9 +41,38 @@ export class ProfilZaposlenogComponent implements OnInit {
     this.servis.dohvatiZaposlenog(this.zaposleniUsername).subscribe((odg:Zaposleni)=>{
       if(odg){
         this.zaposleni = odg;
+        if(this.zaposleni.photo!=null && this.zaposleni.photo!=undefined){
+          this.prikaziSliku()
+        }
       }else{
         this.zaposleni = null;
       }
     })
+  }
+
+
+  createImageFromBlob(image: Blob) {
+    let reader = new FileReader();
+    reader.addEventListener("load", () => {
+       this.slika = reader.result;
+    }, false);
+ 
+    if (image) {
+       reader.readAsDataURL(image);
+    }
+  }
+
+  prikaziSliku(){
+    this.servisMaterijali.downloadFile(this.zaposleni.photo).subscribe(blob=>{
+      //saveAs(blob, this.user.username+".jpg");
+      this.createImageFromBlob(blob);
+      //this.slika = blob;
+    })
+  }
+
+  preuzmi(naziv){
+    this.servisMaterijali.downloadFile(naziv).subscribe(blob => {
+           saveAs(blob, naziv);
+       } )
   }
 }

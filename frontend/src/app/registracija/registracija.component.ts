@@ -45,21 +45,17 @@ export class RegistracijaComponent implements OnInit {
 
   photoChanged(event){
     this.photo = event.target.files[0];
+    this.photoName = this.photo.name;
   }
 
-  photoSelected(event){
-    this.photoName = this.photo.name;
-    
-  }
+  
 
   fileChanged(event){
     this.biography = event.target.files[0];
+    this.biographyName = this.biography.name;
   }
 
-  fileSelected(event){
-    this.biographyName = this.biography.name;
-    
-  }
+  
 
   uploadFile(){
     this.servisKorisnik.uploadFile(this.biography).subscribe(res=>{
@@ -195,13 +191,22 @@ export class RegistracijaComponent implements OnInit {
 
     this.zaposleni.pass_changed = 0;
 
+    
+
+    if(this.photo!=undefined){
+      this.zaposleni.photo = this.photoName;
+      this.uploadPhoto()
+    }
+    if(this.biography!=undefined){
+      this.zaposleni.personal_info = this.biographyName;
+      this.uploadFile()
+    }
+
     const data = {
       zaposleni : this.zaposleni,
       slika: this.photo
     }
-
     
-
     //registracija
     this.servisKorisnik.registracijaZaposleni(data).subscribe(ob=>{
       if(ob['user']=='ok'){

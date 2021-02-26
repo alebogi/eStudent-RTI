@@ -7,10 +7,22 @@ let Obavestenja = new Schema({
         type: String
     },
     datum: {
-        type: Date
+        type: String
     },
 	tekst: {
         type: String
+    },
+    naslov: {
+        type: String
+    },
+	autor: {
+        type: String
+    },
+	materijali: {
+        type: Array
+    },
+    timestamp:{
+        type: Number
     }
 })
 

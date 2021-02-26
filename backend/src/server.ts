@@ -7,6 +7,7 @@ import zaposleni from './model/zaposleni';
 import admin from './model/admin';
 import obavestenja from './model/obavestenja';
 import predmeti from './model/predmeti';
+import materijal from './model/materijal';
 
 const app = express();
 
@@ -56,11 +57,7 @@ upload(req, res, (err) => {
 });
 });
 
- const path = require("path");  
-// console.log(path)
-// app.use("/uploads", express.static(path.join("backend/uploads"))); 
-//app.use(express.static(path.join(__dirname, 'dist')));
-//app.use(express.static(path.join(__dirname, 'public')));  
+   
 //-------------------
 
 // ~~~~~~~ LOGOVANJE ~~~~~~~
@@ -222,16 +219,55 @@ router.route('/dohvatiObavestenja').get((req, res)=>{
 })
 
 
-router.route('/dohvObavestenjaKategorija').get((req, res)=>{
+router.route('/dohvObavestenjaKategorija').post((req, res)=>{
     var kat = req.body.kategorija;
     console.log("kkkk")
     obavestenja.find({"kategorija":kat}, (err, obav)=>{
         if(err) {
             console.log(err);
-            console.log("GOVNOOOOOOOOOOOOOOOOOOOOOOO")
+            console.log("ZASTO OVO NE RADIIIIII")
         }else res.json(obav);
     })
 })
+
+
+router.route('/obrisiObavestenje').post(
+    (req, res)=>{
+        let id = req.body.id;
+        obavestenja.deleteOne({"timestamp":id},(err)=>{
+            res.json(err);
+            if(err) console.log(err);
+        });
+    }
+);
+
+router.route('/dohvatiVest').post((req, res)=>{
+    let id = req.body.id;
+
+    obavestenja.findOne({"naslov":id}, (err, s)=>{
+        if(err) 
+            console.log(err);
+        else 
+            res.json(s);
+    })
+});
+
+router.route('/izmeniVest').post((req, res)=>{
+    let id = req.body.id;
+    obavestenja.collection.updateOne({'naslov':id}, { $set: {
+                                                "autor" : req.body.v.autor,
+                                                "naslov" : req.body.v.naslov,
+                                                "tekst" : req.body.v.tekst,
+                                                "kategorija" : req.body.v.kategorija,
+                                                "datum" : req.body.v.datum,
+                                                "materijali" : req.body.v.materijali
+                                            }
+    }, (r) => {
+            res.json(r);
+        });
+      
+});
+
 //-------------------
 // ~~~ PREDMETI ~~~
 
@@ -462,7 +498,62 @@ router.route('/izmeniPredmet').post((req, res)=>{
       
 });
 
+//~~~~~~~~~~~ DODAVANJE I IZMENA VESTI KOD ZAPOSLENG ~~~~~~~~~~~~~~~~
+
+router.route('/dodajVest').post((req, res)=>{
+    let vest = new obavestenja(req.body.vest);
+    vest.save().
+        then(user=>{
+            res.status(200).json({'v':'ok'});
+        }).catch(err=>{
+            res.status(400).json({'v':'no'});
+        })
+
+});
+
+//~~~~~~~~~~~~~~~~~~ FAJLOVI ~~~~~~~~~~~
+app.post('/download', (req,res)=>{
+    let filename = req.body.filename;
+ 
+     res.sendFile(req.body.filename, { root: "./uploads/"});
+    })
+
+
+
+router.route('/dodajFajl').post((req, res)=>{
+    let mat = new materijal(req.body.m);
+    mat.save().
+        then(user=>{
+            res.status(200).json({'m':'ok'});
+        }).catch(err=>{
+            res.status(400).json({'m':'no'});
+        })
+
+});
+
+router.route('/dohvatiFajlove').post((req, res)=>{
+    let sifraPredmeta = req.body.sifraPredmeta;
+    let kategorija = req.body.kategorija;
+    materijal.find({"sifraPredmeta":sifraPredmeta, "kategorija":kategorija}, (err, f)=>{
+        if(err) 
+            console.log(err);
+        else 
+            res.json(f);
+    })
+});
+
+router.route('/obrisiFajl').post(
+    (req, res)=>{
+        let naziv = req.body.naziv;
+        materijal.deleteOne({"nazivFajla":naziv},(err)=>{
+            res.json(err);
+            if(err) console.log(err);
+        });
+    }
+);
 
 //---------------
 app.use('/', router);
 app.listen(4000, () => console.log(`Express server running on port 4000`));
+
+

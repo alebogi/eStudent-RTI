@@ -8,6 +8,7 @@ import { KorisnikServisService } from '../servisi/korisnik-servis.service';
 import { ObavestenjaServisService } from '../servisi/obavestenja-servis.service';
 import { PredmetiServisService } from '../servisi/predmeti-servis.service';
 import { ispisiDatum } from '../app.component';
+import {saveAs} from "file-saver";
 
 @Component({
   selector: 'app-predmet',
@@ -121,14 +122,14 @@ export class PredmetComponent implements OnInit {
     })
   }
 
-  obavestenjeMladjeOdSedamDana(datum: Date){
+  obavestenjeMladjeOdSedamDana(datum: string){
     var result = false;
 
     var result = false;
 
     var danasnjiDatum = new Date();
-    datum = new Date(datum)
-    var diffInMs = danasnjiDatum.getTime() - datum.getTime();
+    var dat = new Date(datum)
+    var diffInMs = danasnjiDatum.getTime() - dat.getTime();
     var msInDay = 1000*60*60*24;
     var diffInDays = diffInMs / msInDay;
 
@@ -140,5 +141,13 @@ export class PredmetComponent implements OnInit {
 
     return result;
   }
+
+  //-------------------------------
+  // download(){
+  //   this.korservis.downloadFile("template.txt").subscribe(blob => {
+  //     saveAs(blob, "smrd.txt");
+  // }
+  //   )
+  // }
 }
 

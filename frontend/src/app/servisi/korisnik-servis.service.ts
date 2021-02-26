@@ -175,6 +175,7 @@ export class KorisnikServisService {
     return this.http.post(`${this.uri}/obrisiZaposlenog`, data);
   }
 
+  
 
 }
 

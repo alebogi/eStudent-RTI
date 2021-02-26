@@ -14,7 +14,7 @@
                 <b><h4>{{prevedi(zaposleni.name)}} {{prevedi(zaposleni.lastname)}}</h4></b>
                 <br><br>
                 <div *ngIf="zaposleni.photo!=null || zaposleni.photo!=undefined">
-                    <img src="..." alt="">
+                    <img [src]="slika" alt="">
                 </div>
                 <div class="justify-content-left text-left">
                     <i class="fa fa-graduation-cap" aria-hidden="true"></i> &nbsp;Звање: {{prevedi(zaposleni.title)}}<br>
@@ -30,7 +30,7 @@
                         <i class="fa fa-globe" aria-hidden="true"></i>&nbsp; Веб сајт:{{zaposleni.website}}<br>
                     </div>
                     <div *ngIf="zaposleni.personal_info!=null || zaposleni.personal_info!=undefined">
-                        <i class="fa fa-info" aria-hidden="true"></i>&nbsp; Лични подаци: {{zaposleni.personal_info}}<br>
+                        <i class="fa fa-info" aria-hidden="true"></i>&nbsp; Лични подаци: <button type="button" class="btn bg-dark" (click)="preuzmi(zaposleni.personal_info)"><i class="fa fa-download" aria-hidden="true"></i></button><br>
                     </div>               
                 </div>
             </div>
