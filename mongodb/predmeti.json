@@ -1,837 +1,1249 @@
+/* 1 */
 {
-	naziv: "Programiranje 1",
-	tip: "obavezan",
-	smer: "si",
-	semestar: 1,
-	godina: 1,
-	sifra: "13S111P1",
-	fond: "2+2",
-	espb: 5,
-	cilj: "Učenje imperativnog programiranja na jezicima niskog nivoa i višim programskim jezicima.",
-	ishod: "Studenti će biti u stanju da: transformišu izraze Bulove algebre, izračunaju vrednost broja na osnovu prikaza u komplementu dvojke i računaju sa ovakvim brojevima, napišu jednostavan program na simboličkom mašinskom jeziku picoComputer-a, razumeju sintaksne definicije, razvijaju, isprave i testiraju modularne strukturirane programe na višem programskom jeziku i procene njihovu kompleksnost.",
-	terminiPredavanja:[
-		"sreda 18h",
-		"četvrtak 12h"
-	],
-	terminiVezbe:[
-		"ponedeljak 11h",
-		"sreda 15h"
-	],
-	nastavnici:[
-		"milo"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja1.pptx"],
-	vezbeMaterijali: ["vezbe1.pptx"],
-	ispitPitanja: ["ispitni_rok1.pdf"],
-	ispitResenja: ["ispitni_rok_resenje1.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d199b2b3bb4b8bcec60"),
+    "naziv" : "Programiranje 1",
+    "tip" : "obavezan",
+    "smer" : "si",
+    "semestar" : 1,
+    "godina" : 1,
+    "sifra" : "13S111P1",
+    "fond" : "2+2",
+    "espb" : 5,
+    "cilj" : "Učenje imperativnog programiranja na jezicima niskog nivoa i višim programskim jezicima.",
+    "ishod" : "Studenti će biti u stanju da: transformišu izraze Bulove algebre, izračunaju vrednost broja na osnovu prikaza u komplementu dvojke i računaju sa ovakvim brojevima, napišu jednostavan program na simboličkom mašinskom jeziku picoComputer-a, razumeju sintaksne definicije, razvijaju, isprave i testiraju modularne strukturirane programe na višem programskom jeziku i procene njihovu kompleksnost.",
+    "terminiPredavanja" : [ 
+        "sreda 18h", 
+        "četvrtak 12h"
+    ],
+    "terminiVezbe" : [ 
+        "ponedeljak 11h", 
+        "sreda 15h"
+    ],
+    "nastavnici" : [ 
+        "milo"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja1.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe1.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok1.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje1.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 2 */
 {
-	naziv: "Programiranje 2",
-	tip: "obavezan",
-	smer: "si",
-	semestar: 2,
-	godina: 1,
-	sifra: "13S111P2",
-	fond: "2+2",
-	espb: 5,
-	cilj: "Učenje imperativnog programiranja na jezicima niskog nivoa i višim programskim jezicima.",
-	ishod: "Studenti će biti u stanju da: transformišu izraze Bulove algebre, izračunaju vrednost broja na osnovu prikaza u komplementu dvojke i računaju sa ovakvim brojevima, napišu jednostavan program na simboličkom mašinskom jeziku picoComputer-a, razumeju sintaksne definicije, razvijaju, isprave i testiraju modularne strukturirane programe na višem programskom jeziku i procene njihovu kompleksnost.",
-	terminiPredavanja: [
-		"ponedeljak 15h",
-		"sreda 15h"
-	],
-	terminiVezbe: [
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici: [
-		"milo"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja8.pptx"],
-	vezbeMaterijali: ["vezbe8.pptx"],
-	ispitPitanja: ["ispitni_rok8.pdf"],
-	ispitResenja: ["ispitni_rok_resenje8.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d199b2b3bb4b8bcec63"),
+    "naziv" : "Programiranje 2",
+    "tip" : "obavezan",
+    "smer" : "si",
+    "semestar" : 2,
+    "godina" : 1,
+    "sifra" : "13S111P2",
+    "fond" : "2+2",
+    "espb" : 5,
+    "cilj" : "Učenje imperativnog programiranja na jezicima niskog nivoa i višim programskim jezicima.",
+    "ishod" : "Studenti će biti u stanju da: transformišu izraze Bulove algebre, izračunaju vrednost broja na osnovu prikaza u komplementu dvojke i računaju sa ovakvim brojevima, napišu jednostavan program na simboličkom mašinskom jeziku picoComputer-a, razumeju sintaksne definicije, razvijaju, isprave i testiraju modularne strukturirane programe na višem programskom jeziku i procene njihovu kompleksnost.",
+    "terminiPredavanja" : [ 
+        "ponedeljak 15h", 
+        "sreda 15h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "milo"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja8.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe8.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok8.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje8.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 3 */
 {
-	naziv: "Objektno-orijentisano programiranje 1",
-	tip: "obavezan",
-	smer: "si",
-	semestar: 3,
-	godina: 2,
-	sifra: "13S112OO1",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
-	ishod: "Po uspešno savladanom predmetu, studenti će biti osposobljeni da: - interpretiraju i primenjuju paradigmu objektno-orijentisanog programiranja; - demonstriraju principe objektno-orijentisanog programiranja na jeziku C++; - rešavaju praktične probleme programiranja na jeziku C++; - koriste važne elemente standardne biblioteke šablona (STL).",
-	terminiPredavanja:  [
-		"utorak 13h",
-		"petak 8h"
-	],
-	terminiVezbe: [
-		"utorak 16h",
-		"petak 8h"
-	]
-	,
-	nastavnici:[
-		"tartalja"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja2.pptx"],
-	vezbeMaterijali: ["vezbe2.pptx"],
-	ispitPitanja: ["ispitni_rok2.pdf"],
-	ispitResenja: ["ispitni_rok_resenje2.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d199b2b3bb4b8bcec66"),
+    "naziv" : "Objektno-orijentisano programiranje 1",
+    "tip" : "obavezan",
+    "smer" : "si",
+    "semestar" : 3,
+    "godina" : 2,
+    "sifra" : "13S112OO1",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
+    "ishod" : "Po uspešno savladanom predmetu, studenti će biti osposobljeni da: - interpretiraju i primenjuju paradigmu objektno-orijentisanog programiranja; - demonstriraju principe objektno-orijentisanog programiranja na jeziku C++; - rešavaju praktične probleme programiranja na jeziku C++; - koriste važne elemente standardne biblioteke šablona (STL).",
+    "terminiPredavanja" : [ 
+        "utorak 13h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "tartalja"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja2.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe2.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok2.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje2.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 4 */
 {
-	naziv: "Objektno-orijentisano programiranje 1",
-	tip: "obavezan",
-	smer: "rti",
-	semestar: 3,
-	godina: 2,
-	sifra: "13E112OO1",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
-	ishod: "Po uspešno savladanom predmetu, studenti će biti osposobljeni da: - interpretiraju i primenjuju paradigmu objektno-orijentisanog programiranja; - demonstriraju principe objektno-orijentisanog programiranja na jeziku C++; - rešavaju praktične probleme programiranja na jeziku C++; - koriste važne elemente standardne biblioteke šablona (STL).",
-	terminiPredavanja:  [
-		"utorak 13h",
-		"petak 8h"
-	],
-	terminiVezbe: [
-		"utorak 16h",
-		"petak 8h"
-	]
-	,
-	nastavnici:[
-		"tartalja"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja2.pptx"],
-	vezbeMaterijali: ["vezbe2.pptx"],
-	ispitPitanja: ["ispitni_rok2.pdf"],
-	ispitResenja: ["ispitni_rok_resenje2.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d199b2b3bb4b8bcec69"),
+    "naziv" : "Objektno-orijentisano programiranje 1",
+    "tip" : "obavezan",
+    "smer" : "rti",
+    "semestar" : 3,
+    "godina" : 2,
+    "sifra" : "13E112OO1",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
+    "ishod" : "Po uspešno savladanom predmetu, studenti će biti osposobljeni da: - interpretiraju i primenjuju paradigmu objektno-orijentisanog programiranja; - demonstriraju principe objektno-orijentisanog programiranja na jeziku C++; - rešavaju praktične probleme programiranja na jeziku C++; - koriste važne elemente standardne biblioteke šablona (STL).",
+    "terminiPredavanja" : [ 
+        "utorak 13h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "tartalja"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja2.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe2.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok2.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje2.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 5 */
 {
-	naziv: "Objektno-orijentisano programiranje 1",
-	tip: "obavezan",
-	smer: "ostalo",
-	semestar: 3,
-	godina: 2,
-	sifra: "13OT112OO1",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
-	ishod: "Po uspešno savladanom predmetu, studenti će biti osposobljeni da: - interpretiraju i primenjuju paradigmu objektno-orijentisanog programiranja; - demonstriraju principe objektno-orijentisanog programiranja na jeziku C++; - rešavaju praktične probleme programiranja na jeziku C++; - koriste važne elemente standardne biblioteke šablona (STL).",
-	terminiPredavanja:  [
-		"utorak 13h",
-		"petak 8h"
-	],
-	terminiVezbe: [
-		"utorak 16h",
-		"petak 8h"
-	]
-	,
-	nastavnici:[
-		"tartalja"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja2.pptx"],
-	vezbeMaterijali: ["vezbe2.pptx"],
-	ispitPitanja: ["ispitni_rok2.pdf"],
-	ispitResenja: ["ispitni_rok_resenje2.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d199b2b3bb4b8bcec6c"),
+    "naziv" : "Objektno-orijentisano programiranje 1",
+    "tip" : "obavezan",
+    "smer" : "ostalo",
+    "semestar" : 3,
+    "godina" : 2,
+    "sifra" : "13OT112OO1",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Razumevanje i ovladavanje osnovnim principima objektno-orijentisanog programiranja, kao što su apstrakcija, kapsulacija, nasleđivanje i polimorfizam.",
+    "ishod" : "Po uspešno savladanom predmetu, studenti će biti osposobljeni da: - interpretiraju i primenjuju paradigmu objektno-orijentisanog programiranja; - demonstriraju principe objektno-orijentisanog programiranja na jeziku C++; - rešavaju praktične probleme programiranja na jeziku C++; - koriste važne elemente standardne biblioteke šablona (STL).",
+    "terminiPredavanja" : [ 
+        "utorak 13h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "tartalja"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja2.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe2.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok2.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje2.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 6 */
 {
-	naziv: "Operativni sistemi 1",
-	tip: "obavezan",
-	smer: "si",
-	semestar: 4,
-	godina: 2,
-	sifra: "13S112OO1",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Naučiti operativne sisteme i uraditi projekat",
-	ishod: "Šizofrena cepanja.",
-	terminiPredavanja:  [
-		"utorak 13h",
-		"petak 8h"
-	],
-	terminiVezbe: [
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"dmilicev"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja3.pptx"],
-	vezbeMaterijali: ["vezbe3.pptx"],
-	ispitPitanja: ["ispitni_rok3.pdf"],
-	ispitResenja: ["ispitni_rok_resenje3.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d199b2b3bb4b8bcec6f"),
+    "naziv" : "Operativni sistemi 1",
+    "tip" : "obavezan",
+    "smer" : "si",
+    "semestar" : 4,
+    "godina" : 2,
+    "sifra" : "13S112OO1",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Naučiti operativne sisteme i uraditi projekat",
+    "ishod" : "Šizofrena cepanja.",
+    "terminiPredavanja" : [ 
+        "utorak 13h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "dmilicev"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja3.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe3.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok3.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje3.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 7 */
 {
-	naziv: "Operativni sistemi 1",
-	tip: "obavezan",
-	smer: "rti",
-	semestar: 4,
-	godina: 2,
-	sifra: "13E112OO1",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Naučiti operativne sisteme i uraditi projekat",
-	ishod: "Šizofrena cepanja.",
-	terminiPredavanja:  [
-		"utorak 13h",
-		"petak 8h"
-	],
-	terminiVezbe: [
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"dmilicev"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja3.pptx"],
-	vezbeMaterijali: ["vezbe3.pptx"],
-	ispitPitanja: ["ispitni_rok3.pdf"],
-	ispitResenja: ["ispitni_rok_resenje3.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec72"),
+    "naziv" : "Operativni sistemi 1",
+    "tip" : "obavezan",
+    "smer" : "rti",
+    "semestar" : 4,
+    "godina" : 2,
+    "sifra" : "13E112OO1",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Naučiti operativne sisteme i uraditi projekat",
+    "ishod" : "Šizofrena cepanja.",
+    "terminiPredavanja" : [ 
+        "utorak 13h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "dmilicev"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja3.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe3.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok3.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje3.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 8 */
 {
-	naziv: "Operativni sistemi 1",
-	tip: "izborni",
-	smer: "ostalo",
-	semestar: 4,
-	godina: 2,
-	sifra: "13OT112OO1",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Naučiti operativne sisteme i uraditi projekat",
-	ishod: "Šizofrena cepanja.",
-	terminiPredavanja:  [
-		"utorak 13h",
-		"petak 8h"
-	],
-	terminiVezbe: [
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"dmilicev"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja3.pptx"],
-	vezbeMaterijali: ["vezbe3.pptx"],
-	ispitPitanja: ["ispitni_rok3.pdf"],
-	ispitResenja: ["ispitni_rok_resenje3.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec76"),
+    "naziv" : "Operativni sistemi 1",
+    "tip" : "izborni",
+    "smer" : "ostalo",
+    "semestar" : 4,
+    "godina" : 2,
+    "sifra" : "13OT112OO1",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Naučiti operativne sisteme i uraditi projekat",
+    "ishod" : "Šizofrena cepanja.",
+    "terminiPredavanja" : [ 
+        "utorak 13h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "dmilicev"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja3.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe3.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok3.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje3.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 9 */
 {
-	naziv: "Računarske mreže 2",
-	tip: "izborni",
-	smer: "si",
-	semestar: 5,
-	godina: 3,
-	sifra: "13S113RM2",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa arhitekturom i mehanizmima funkcionisanja Interneta, te naprednim konceptima, protokolima i algoritmima funkcionisanja nekih ključnih Internet servisa i savremenih računarskih mreža.",
-	ishod: "Nakon ovog kursa studenti će u potpunosti razumeti arhitekturu Interneta i modernih mehanizama prosleđivanja paketa, što je ključno za razumevanje načina na koji funkcionišu aplikacije koje rade na Internetu.",
-	terminiPredavanja:[
-		"sreda 19h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:["pavle.vuletic"],
-	labVezbe: "3 lab vezbe",
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja4.pptx"],
-	vezbeMaterijali: ["vezbe4.pptx"],
-	ispitPitanja: ["ispitni_rok4.pdf"],
-	ispitResenja: ["ispitni_rok_resenje4.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec79"),
+    "naziv" : "Računarske mreže 2",
+    "tip" : "izborni",
+    "smer" : "si",
+    "semestar" : 5,
+    "godina" : 3,
+    "sifra" : "13S113RM2",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa arhitekturom i mehanizmima funkcionisanja Interneta, te naprednim konceptima, protokolima i algoritmima funkcionisanja nekih ključnih Internet servisa i savremenih računarskih mreža.",
+    "ishod" : "Nakon ovog kursa studenti će u potpunosti razumeti arhitekturu Interneta i modernih mehanizama prosleđivanja paketa, što je ključno za razumevanje načina na koji funkcionišu aplikacije koje rade na Internetu.",
+    "terminiPredavanja" : [ 
+        "sreda 19h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "pavle.vuletic"
+    ],
+    "labVezbe" : "3 lab vezbe",
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja4.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe4.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok4.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje4.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 10 */
 {
-	naziv: "Računarske mreže 2",
-	tip: "obavezan",
-	smer: "rti",
-	semestar: 7,
-	godina: 4,
-	sifra: "13S113RM2",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa arhitekturom i mehanizmima funkcionisanja Interneta, te naprednim konceptima, protokolima i algoritmima funkcionisanja nekih ključnih Internet servisa i savremenih računarskih mreža.",
-	ishod: "Nakon ovog kursa studenti će u potpunosti razumeti arhitekturu Interneta i modernih mehanizama prosleđivanja paketa, što je ključno za razumevanje načina na koji funkcionišu aplikacije koje rade na Internetu.",
-	terminiPredavanja:[
-		"sreda 19h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:["pavle.vuletic"],
-	labVezbe: "3 lab vezbe",
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja4.pptx"],
-	vezbeMaterijali: ["vezbe4.pptx"],
-	ispitPitanja: ["ispitni_rok4.pdf"],
-	ispitResenja: ["ispitni_rok_resenje4.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec7c"),
+    "naziv" : "Računarske mreže 2",
+    "tip" : "obavezan",
+    "smer" : "rti",
+    "semestar" : 7,
+    "godina" : 4,
+    "sifra" : "13S113RM2",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa arhitekturom i mehanizmima funkcionisanja Interneta, te naprednim konceptima, protokolima i algoritmima funkcionisanja nekih ključnih Internet servisa i savremenih računarskih mreža.",
+    "ishod" : "Nakon ovog kursa studenti će u potpunosti razumeti arhitekturu Interneta i modernih mehanizama prosleđivanja paketa, što je ključno za razumevanje načina na koji funkcionišu aplikacije koje rade na Internetu.",
+    "terminiPredavanja" : [ 
+        "sreda 19h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "pavle.vuletic"
+    ],
+    "labVezbe" : "3 lab vezbe",
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja4.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe4.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok4.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje4.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 11 */
 {
-	naziv: "Računarske mreže 2",
-	tip: "izborni",
-	smer: "ostalo",
-	semestar: 5,
-	godina: 3,
-	sifra: "13OT113RM2",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa arhitekturom i mehanizmima funkcionisanja Interneta, te naprednim konceptima, protokolima i algoritmima funkcionisanja nekih ključnih Internet servisa i savremenih računarskih mreža.",
-	ishod: "Nakon ovog kursa studenti će u potpunosti razumeti arhitekturu Interneta i modernih mehanizama prosleđivanja paketa, što je ključno za razumevanje načina na koji funkcionišu aplikacije koje rade na Internetu.",
-	terminiPredavanja:[
-		"sreda 19h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:["pavle.vuletic"],
-	labVezbe: "3 lab vezbe",
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja4.pptx"],
-	vezbeMaterijali: ["vezbe4.pptx"],
-	ispitPitanja: ["ispitni_rok4.pdf"],
-	ispitResenja: ["ispitni_rok_resenje4.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec7f"),
+    "naziv" : "Računarske mreže 2",
+    "tip" : "izborni",
+    "smer" : "ostalo",
+    "semestar" : 5,
+    "godina" : 3,
+    "sifra" : "13OT113RM2",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa arhitekturom i mehanizmima funkcionisanja Interneta, te naprednim konceptima, protokolima i algoritmima funkcionisanja nekih ključnih Internet servisa i savremenih računarskih mreža.",
+    "ishod" : "Nakon ovog kursa studenti će u potpunosti razumeti arhitekturu Interneta i modernih mehanizama prosleđivanja paketa, što je ključno za razumevanje načina na koji funkcionišu aplikacije koje rade na Internetu.",
+    "terminiPredavanja" : [ 
+        "sreda 19h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "pavle.vuletic"
+    ],
+    "labVezbe" : "3 lab vezbe",
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja4.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe4.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok4.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje4.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 12 */
 {
-	naziv: "Konkurentno i distribuirano programiranje",
-	tip: "obavezan",
-	smer: "si",
-	semestar: 6,
-	godina: 3,
-	sifra: "13S113KDP",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa osnovnim konceptima konkurentnog i distribuiranog programiranja",
-	ishod: "Posedovanje osnovnih znanja o konceptima, algoritmima, principima, problemima i rešenjima vezanim za konkurentno i distribuirano programiranja",
-	terminiPredavanja:[
-		"petak 16h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici: ["zaki"],
-	labVezbe: "3 lab vezbe",
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja5.pptx"],
-	vezbeMaterijali: ["vezbe5.pptx"],
-	ispitPitanja: ["ispitni_rok5.pdf"],
-	ispitResenja: ["ispitni_rok_resenje5.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec82"),
+    "naziv" : "Konkurentno i distribuirano programiranje",
+    "tip" : "obavezan",
+    "smer" : "si",
+    "semestar" : 6,
+    "godina" : 3,
+    "sifra" : "13S113KDP",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa osnovnim konceptima konkurentnog i distribuiranog programiranja",
+    "ishod" : "Posedovanje osnovnih znanja o konceptima, algoritmima, principima, problemima i rešenjima vezanim za konkurentno i distribuirano programiranja",
+    "terminiPredavanja" : [ 
+        "petak 16h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "zaki"
+    ],
+    "labVezbe" : "3 lab vezbe",
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja5.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe5.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok5.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje5.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 13 */
 {
-	naziv: "Konkurentno i distribuirano programiranje",
-	tip: "obavezan",
-	smer: "rti",
-	semestar: 5,
-	godina: 3,
-	sifra: "13E113KDP",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa osnovnim konceptima konkurentnog i distribuiranog programiranja",
-	ishod: "Posedovanje osnovnih znanja o konceptima, algoritmima, principima, problemima i rešenjima vezanim za konkurentno i distribuirano programiranja",
-	terminiPredavanja:[
-		"petak 16h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici: ["zaki"],
-	labVezbe: "3 lab vezbe",
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja5.pptx"],
-	vezbeMaterijali: ["vezbe5.pptx"],
-	ispitPitanja: ["ispitni_rok5.pdf"],
-	ispitResenja: ["ispitni_rok_resenje5.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec85"),
+    "naziv" : "Konkurentno i distribuirano programiranje",
+    "tip" : "obavezan",
+    "smer" : "rti",
+    "semestar" : 5,
+    "godina" : 3,
+    "sifra" : "13E113KDP",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa osnovnim konceptima konkurentnog i distribuiranog programiranja",
+    "ishod" : "Posedovanje osnovnih znanja o konceptima, algoritmima, principima, problemima i rešenjima vezanim za konkurentno i distribuirano programiranja",
+    "terminiPredavanja" : [ 
+        "petak 16h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "zaki"
+    ],
+    "labVezbe" : "3 lab vezbe",
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja5.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe5.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok5.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje5.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 14 */
 {
-	naziv: "Konkurentno i distribuirano programiranje",
-	tip: "izborni",
-	smer: "ostalo",
-	semestar: 6,
-	godina: 3,
-	sifra: "13OT113KDP",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa osnovnim konceptima konkurentnog i distribuiranog programiranja",
-	ishod: "Posedovanje osnovnih znanja o konceptima, algoritmima, principima, problemima i rešenjima vezanim za konkurentno i distribuirano programiranja",
-	terminiPredavanja:[
-		"petak 16h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici: ["zaki"],
-	labVezbe: "3 lab vezbe",
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja5.pptx"],
-	vezbeMaterijali: ["vezbe5.pptx"],
-	ispitPitanja: ["ispitni_rok5.pdf"],
-	ispitResenja: ["ispitni_rok_resenje5.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec88"),
+    "naziv" : "Konkurentno i distribuirano programiranje",
+    "tip" : "izborni",
+    "smer" : "ostalo",
+    "semestar" : 6,
+    "godina" : 3,
+    "sifra" : "13OT113KDP",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa osnovnim konceptima konkurentnog i distribuiranog programiranja",
+    "ishod" : "Posedovanje osnovnih znanja o konceptima, algoritmima, principima, problemima i rešenjima vezanim za konkurentno i distribuirano programiranja",
+    "terminiPredavanja" : [ 
+        "petak 16h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "zaki"
+    ],
+    "labVezbe" : "3 lab vezbe",
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja5.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe5.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok5.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje5.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 15 */
 {
-	naziv: "Programiranje Internet Aplikacija",
-	tip: "obavezan",
-	smer: "si",
-	semestar: 7,
-	godina: 4,
-	sifra: "SI4PIA",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa osnovnim pojmovima razvoja višeslojnih Internet aplikacija baziranih na programskom jeziku Java (Java servlets, JSP, JSF framework).",
-	ishod: "Studenti će biti osposobljeni da projektuju i razviju višeslojne Internet aplikacije potrebne složenosti koristeći najefikasnije metode i tehnologije",
-	terminiPredavanja:[
-		"utorak 9h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici: [
-		"nbosko",
-		"drazen.draskovic",
-		"jelica"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja6.pptx"],
-	vezbeMaterijali: ["vezbe6.pptx"],
-	ispitPitanja: ["ispitni_rok6.pdf"],
-	ispitResenja: ["ispitni_rok_resenje6.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec8b"),
+    "naziv" : "Programiranje Internet Aplikacija",
+    "tip" : "obavezan",
+    "smer" : "si",
+    "semestar" : 7,
+    "godina" : 4,
+    "sifra" : "SI4PIA",
+    "fond" : "3+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa osnovnim pojmovima razvoja višeslojnih Internet aplikacija baziranih na programskom jeziku Java (Java servlets, JSP, JSF framework).",
+    "ishod" : "Studenti će biti osposobljeni da projektuju i razviju višeslojne Internet aplikacije potrebne složenosti koristeći najefikasnije metode i tehnologije",
+    "terminiPredavanja" : [ 
+        "utorak 9h", 
+        "petak 8h", 
+        "četvrtak 20h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "nbosko", 
+        "drazen.draskovic", 
+        "jelica"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja6.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe6.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok6.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje6.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 16 */
 {
-	naziv: "Programiranje Internet Aplikacija",
-	tip: "obavezan",
-	smer: "rti",
-	semestar: 6,
-	godina: 3,
-	sifra: "RTI4PIA",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa osnovnim pojmovima razvoja višeslojnih Internet aplikacija baziranih na programskom jeziku Java (Java servlets, JSP, JSF framework).",
-	ishod: "Studenti će biti osposobljeni da projektuju i razviju višeslojne Internet aplikacije potrebne složenosti koristeći najefikasnije metode i tehnologije",
-	terminiPredavanja:[
-		"utorak 9h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici: [
-		"nbosko",
-		"drazen.draskovic",
-		"jelica"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja6.pptx"],
-	vezbeMaterijali: ["vezbe6.pptx"],
-	ispitPitanja: ["ispitni_rok6.pdf"],
-	ispitResenja: ["ispitni_rok_resenje6.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec8e"),
+    "naziv" : "Programiranje Internet Aplikacija",
+    "tip" : "obavezan",
+    "smer" : "rti",
+    "semestar" : 6,
+    "godina" : 3,
+    "sifra" : "RTI4PIA",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa osnovnim pojmovima razvoja višeslojnih Internet aplikacija baziranih na programskom jeziku Java (Java servlets, JSP, JSF framework).",
+    "ishod" : "Studenti će biti osposobljeni da projektuju i razviju višeslojne Internet aplikacije potrebne složenosti koristeći najefikasnije metode i tehnologije",
+    "terminiPredavanja" : [ 
+        "utorak 9h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "nbosko", 
+        "drazen.draskovic", 
+        "jelica"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja6.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe6.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok6.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje6.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 17 */
 {
-	naziv: "Programiranje Internet Aplikacija",
-	tip: "izborni",
-	smer: "ostalo",
-	semestar: 7,
-	godina: 4,
-	sifra: "OT4PIA",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa osnovnim pojmovima razvoja višeslojnih Internet aplikacija baziranih na programskom jeziku Java (Java servlets, JSP, JSF framework).",
-	ishod: "Studenti će biti osposobljeni da projektuju i razviju višeslojne Internet aplikacije potrebne složenosti koristeći najefikasnije metode i tehnologije",
-	terminiPredavanja:[
-		"utorak 9h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici: [
-		"nbosko",
-		"drazen.draskovic",
-		"jelica"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja6.pptx"],
-	vezbeMaterijali: ["vezbe6.pptx"],
-	ispitPitanja: ["ispitni_rok6.pdf"],
-	ispitResenja: ["ispitni_rok_resenje6.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec91"),
+    "naziv" : "Programiranje Internet Aplikacija",
+    "tip" : "izborni",
+    "smer" : "ostalo",
+    "semestar" : 7,
+    "godina" : 4,
+    "sifra" : "OT4PIA",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa osnovnim pojmovima razvoja višeslojnih Internet aplikacija baziranih na programskom jeziku Java (Java servlets, JSP, JSF framework).",
+    "ishod" : "Studenti će biti osposobljeni da projektuju i razviju višeslojne Internet aplikacije potrebne složenosti koristeći najefikasnije metode i tehnologije",
+    "terminiPredavanja" : [ 
+        "utorak 9h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "nbosko", 
+        "drazen.draskovic", 
+        "jelica"
+    ],
+    "labVezbe" : "lab je smor",
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja6.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe6.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok6.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje6.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 18 */
 {
-	naziv: "Zaštita podataka",
-	tip: "obavezan",
-	smer: "si",
-	semestar: 8,
-	godina: 4,
-	sifra: "13S114ZP",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa osnovnim konceptima zaštite podataka. Razumevanje osnova kriptografije i sigurnosnih protokola. Upoznavanje sa rizicima u mrežnom okruženju i upoznavanje sa svim nivoima na kojima mere zaštite treba da budu uvedene.",
-	ishod: "Studenti će steći znanja o načinima za odvraćanje, detekciju, sprečavanje i neutralisanje narušavanja sigurnosti.",
-	terminiPredavanja:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"pavle.vuletic"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja7.pptx"],
-	vezbeMaterijali: ["vezbe7.pptx"],
-	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec94"),
+    "naziv" : "Zaštita podataka",
+    "tip" : "obavezan",
+    "smer" : "si",
+    "semestar" : 8,
+    "godina" : 4,
+    "sifra" : "13S114ZP",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa osnovnim konceptima zaštite podataka. Razumevanje osnova kriptografije i sigurnosnih protokola. Upoznavanje sa rizicima u mrežnom okruženju i upoznavanje sa svim nivoima na kojima mere zaštite treba da budu uvedene.",
+    "ishod" : "Studenti će steći znanja o načinima za odvraćanje, detekciju, sprečavanje i neutralisanje narušavanja sigurnosti.",
+    "terminiPredavanja" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "pavle.vuletic"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja7.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe7.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok7.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje7.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 19 */
 {
-	naziv: "Performanse računarskih sistema",
-	tip: "obavezan",
-	smer: "rti",
-	semestar: 8,
-	godina: 4,
-	sifra: "13E114PRS",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Učenje osnovnih koncepata analize računarskih performansi i oblasti njihove primene.",
-	ishod: "Studenti će biti u stanju da: odaberu odgovarajuću tehniku modeliranja u zavisnosti od karakteristika računarske komponente ili sistema, postave apstraktan model, navedu pretpostavke i aproksimacije za konkretan model, izračunaju indikatore performansi sistema na osnovu datih parametara, kritički diskutuju dobijene numeričke pokazatelje performansi pri interpretaciji rezultata analize.",
-	terminiPredavanja:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"jeca"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja7.pptx"],
-	vezbeMaterijali: ["vezbe7.pptx"],
-	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec97"),
+    "naziv" : "Performanse računarskih sistema",
+    "tip" : "obavezan",
+    "smer" : "rti",
+    "semestar" : 8,
+    "godina" : 4,
+    "sifra" : "13E114PRS",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Učenje osnovnih koncepata analize računarskih performansi i oblasti njihove primene.",
+    "ishod" : "Studenti će biti u stanju da: odaberu odgovarajuću tehniku modeliranja u zavisnosti od karakteristika računarske komponente ili sistema, postave apstraktan model, navedu pretpostavke i aproksimacije za konkretan model, izračunaju indikatore performansi sistema na osnovu datih parametara, kritički diskutuju dobijene numeričke pokazatelje performansi pri interpretaciji rezultata analize.",
+    "terminiPredavanja" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "jeca"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja7.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe7.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok7.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje7.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 20 */
 {
-	naziv: "Zaštita podataka",
-	tip: "obavezan",
-	smer: "ostalo",
-	semestar: 8,
-	godina: 4,
-	sifra: "13OT114ZP",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Upoznavanje studenata sa osnovnim konceptima zaštite podataka. Razumevanje osnova kriptografije i sigurnosnih protokola. Upoznavanje sa rizicima u mrežnom okruženju i upoznavanje sa svim nivoima na kojima mere zaštite treba da budu uvedene.",
-	ishod: "Studenti će steći znanja o načinima za odvraćanje, detekciju, sprečavanje i neutralisanje narušavanja sigurnosti.",
-	terminiPredavanja:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"pavle.vuletic"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja7.pptx"],
-	vezbeMaterijali: ["vezbe7.pptx"],
-	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec9a"),
+    "naziv" : "Zaštita podataka",
+    "tip" : "obavezan",
+    "smer" : "ostalo",
+    "semestar" : 8,
+    "godina" : 4,
+    "sifra" : "13OT114ZP",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Upoznavanje studenata sa osnovnim konceptima zaštite podataka. Razumevanje osnova kriptografije i sigurnosnih protokola. Upoznavanje sa rizicima u mrežnom okruženju i upoznavanje sa svim nivoima na kojima mere zaštite treba da budu uvedene.",
+    "ishod" : "Studenti će steći znanja o načinima za odvraćanje, detekciju, sprečavanje i neutralisanje narušavanja sigurnosti.",
+    "terminiPredavanja" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "pavle.vuletic"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja7.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe7.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok7.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje7.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 21 */
 {
-	naziv: "Računarstvo u bio-medicini",
-	tip: "obavezan",
-	smer: "master",
-	semestar: 1,
-	godina: 1,
-	sifra: "13M111RBM",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Zbližavanje sa primenama informatike u medicini kroz pregled upotrebe u raznim oblastima zdravstva; upoznavanje sa konceptima, relevantnim standardima i problemima koji se javljaju u praksi.",
-	ishod: "Sticanje sveobuhvatnog pregleda oblasti medicinske informatike uz dobijanje polaznih informacija potrebnih za produbljivanje i praktičnu primenu znanja u pojedinačnim podoblastima.",
-	terminiPredavanja:[
-		"utorak 8h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 10h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"nbosko"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja7.pptx"],
-	vezbeMaterijali: ["vezbe7.pptx"],
-	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bcec9d"),
+    "naziv" : "Računarstvo u bio-medicini",
+    "tip" : "obavezan",
+    "smer" : "master",
+    "semestar" : 1,
+    "godina" : 1,
+    "sifra" : "13M111RBM",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Zbližavanje sa primenama informatike u medicini kroz pregled upotrebe u raznim oblastima zdravstva; upoznavanje sa konceptima, relevantnim standardima i problemima koji se javljaju u praksi.",
+    "ishod" : "Sticanje sveobuhvatnog pregleda oblasti medicinske informatike uz dobijanje polaznih informacija potrebnih za produbljivanje i praktičnu primenu znanja u pojedinačnim podoblastima.",
+    "terminiPredavanja" : [ 
+        "utorak 8h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 10h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "nbosko"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja7.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe7.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok7.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje7.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 22 */
 {
-	naziv: "Sistemi otporni na otkaze",
-	tip: "obavezan",
-	smer: "master",
-	semestar: 1,
-	godina: 1,
-	sifra: "13M111SON",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Učenje hardverskih i softverskih mehanizama i tehnika smanjenja osetljivosti na otkaze i osposobljavanje studenata da modeliraju, projektuju i vrednuju takve sisteme.",
-	ishod: "Ovladavanje metodologijom i tehnikama modeliranja, projektovanja i vrednovanja sistema sa smanjenom osetljivošću na otkaze.",
-	terminiPredavanja:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"drazen.draskovic"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja7.pptx"],
-	vezbeMaterijali: ["vezbe7.pptx"],
-	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bceca0"),
+    "naziv" : "Sistemi otporni na otkaze",
+    "tip" : "obavezan",
+    "smer" : "master",
+    "semestar" : 1,
+    "godina" : 1,
+    "sifra" : "13M111SON",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Učenje hardverskih i softverskih mehanizama i tehnika smanjenja osetljivosti na otkaze i osposobljavanje studenata da modeliraju, projektuju i vrednuju takve sisteme.",
+    "ishod" : "Ovladavanje metodologijom i tehnikama modeliranja, projektovanja i vrednovanja sistema sa smanjenom osetljivošću na otkaze.",
+    "terminiPredavanja" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "drazen.draskovic"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja7.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe7.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok7.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje7.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 23 */
 {
-	naziv: "Projektovanje računarskih mreža",
-	tip: "obavezan",
-	smer: "master",
-	semestar: 2,
-	godina: 1,
-	sifra: "13M111PRM",
-	fond: "2+2",
-	espb: 6,
-	cilj: "Cilj je da se studenti obuče za samostalni praktičan rad na projektovanju računarskih mreža i konfigurisanju mrežnih uređaja.",
-	ishod: "Predmet nudi teorijsku osnovu i potrebno znanje za projektovanje računarskih mreža i rad na mrežnim uređajim. Savladavanjem znanja iz ovog predmeta kroz intenzivni rad na simulatoru računarskih mreža, studenti stiču praktičnu veštinu u konfigurisanju komunikacionih protokola i servisa na rešavanju konkretnog problema.",
-	terminiPredavanja:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"pavle.vuletic"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja7.pptx"],
-	vezbeMaterijali: ["vezbe7.pptx"],
-	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bceca3"),
+    "naziv" : "Projektovanje računarskih mreža",
+    "tip" : "obavezan",
+    "smer" : "master",
+    "semestar" : 2,
+    "godina" : 1,
+    "sifra" : "13M111PRM",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "Cilj je da se studenti obuče za samostalni praktičan rad na projektovanju računarskih mreža i konfigurisanju mrežnih uređaja.",
+    "ishod" : "Predmet nudi teorijsku osnovu i potrebno znanje za projektovanje računarskih mreža i rad na mrežnim uređajim. Savladavanjem znanja iz ovog predmeta kroz intenzivni rad na simulatoru računarskih mreža, studenti stiču praktičnu veštinu u konfigurisanju komunikacionih protokola i servisa na rešavanju konkretnog problema.",
+    "terminiPredavanja" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "pavle.vuletic"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja7.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe7.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok7.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje7.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
 }
+
+/* 24 */
 {
-	naziv: "Genomska informatika",
-	tip: "obavezan",
-	smer: "master",
-	semestar: 2,
-	godina: 1,
-	sifra: "13M111GI",
-	fond: "2+2",
-	espb: 6,
-	cilj: "U okviru ovog predmeta predstavljeni su osnovni metodi računarske analize podataka dobijenih iz genoma, sa ciljem izvođenja biološki značajnih zaključaka. Biće ukazano na prednosti i mane ovih metoda i na značajne parametre koji utiču na rezultate ovih analiza.",
-	ishod: "Studenti će razumeti principe dizajna algoritama za obradu bioloških podataka i kako oni rade. Biće sposobni da analiziraju probleme i primene odgovarajuće metode.",
-	terminiPredavanja:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	terminiVezbe:[
-		"utorak 16h",
-		"petak 8h"
-	],
-	nastavnici:[
-		"milo"
-	],
-	labVezbe:null,
-	dodatno:null,
-	projekat:null,
-	predavanjaMaterijali: ["predavanja7.pptx"],
-	vezbeMaterijali: ["vezbe7.pptx"],
-	ispitPitanja: ["ispitni_rok7.pdf"],
-	ispitResenja: ["ispitni_rok_resenje7.pdf"],
-	labVezbeMaterijali: [""],
-	projekatMaterijali: [""],
-	labAktivno: 1,
-	projAktivno: 0,
-	ispitAktivno: 1
+    "_id" : ObjectId("60365d1a9b2b3bb4b8bceca6"),
+    "naziv" : "Genomska informatika",
+    "tip" : "obavezan",
+    "smer" : "master",
+    "semestar" : 2,
+    "godina" : 1,
+    "sifra" : "13M111GI",
+    "fond" : "2+2",
+    "espb" : 6,
+    "cilj" : "U okviru ovog predmeta predstavljeni su osnovni metodi računarske analize podataka dobijenih iz genoma, sa ciljem izvođenja biološki značajnih zaključaka. Biće ukazano na prednosti i mane ovih metoda i na značajne parametre koji utiču na rezultate ovih analiza.",
+    "ishod" : "Studenti će razumeti principe dizajna algoritama za obradu bioloških podataka i kako oni rade. Biće sposobni da analiziraju probleme i primene odgovarajuće metode.",
+    "terminiPredavanja" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "utorak 16h", 
+        "petak 8h"
+    ],
+    "nastavnici" : [ 
+        "milo"
+    ],
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "predavanjaMaterijali" : [ 
+        "predavanja7.pptx"
+    ],
+    "vezbeMaterijali" : [ 
+        "vezbe7.pptx"
+    ],
+    "ispitPitanja" : [ 
+        "ispitni_rok7.pdf"
+    ],
+    "ispitResenja" : [ 
+        "ispitni_rok_resenje7.pdf"
+    ],
+    "labVezbeMaterijali" : [ 
+        ""
+    ],
+    "projekatMaterijali" : [ 
+        ""
+    ],
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 1
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("6038d7bc2c3ccf3cec162f98"),
+    "terminiPredavanja" : [ 
+        "sreda 9h", 
+        "ponedeljak 8h"
+    ],
+    "terminiVezbe" : [ 
+        "četvrtak 8h", 
+        "petak 8h", 
+        "ponedeljak 11h"
+    ],
+    "nastavnici" : [ 
+        "nbosko", 
+        "slavko.gajin", 
+        "novizap", 
+        "zikapavlovic"
+    ],
+    "predavanjaMaterijali" : [],
+    "vezbeMaterijali" : [],
+    "ispitPitanja" : [],
+    "ispitResenja" : [],
+    "labVezbeMaterijali" : [],
+    "projekatMaterijali" : [],
+    "naziv" : "Moj predmet",
+    "sifra" : "SI3MOJ",
+    "tip" : "izborni",
+    "smer" : "si",
+    "semestar" : 6,
+    "espb" : 7,
+    "cilj" : "Cilj je da se vidi upis u bazu.",
+    "ishod" : "Ishod je uspesan upis.",
+    "godina" : 3,
+    "labVezbe" : null,
+    "dodatno" : null,
+    "projekat" : null,
+    "labAktivno" : 1,
+    "projAktivno" : 0,
+    "ispitAktivno" : 0,
+    "fond" : "2+3",
+    "__v" : 0
 }

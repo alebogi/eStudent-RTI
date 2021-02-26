@@ -1,50 +1,154 @@
+/* 1 */
 {
-	kategorija : "takmicenja",
-	datum: "01-02-2021",
-	tekst: "Organizuje se hakaton u prostorijama Nordeusa 14.03.2021. Za više informacija pogledati sajt Nordeusa."
+    "_id" : ObjectId("6033fde79b2b3bb4b8bcbc29"),
+    "kategorija" : "takmicenja",
+    "datum" : "01-02-2021",
+    "tekst" : "Organizuje se hakaton u prostorijama Nordeusa 14.03.2021. Za više informacija pogledati sajt Nordeusa."
 }
+
+/* 2 */
 {
-	kategorija : "takmicenja",
-	datum: "01-25-2021",
-	tekst: "Organizuje se takmičenje iz matematike u Bugarskoj."
+    "_id" : ObjectId("6033fde79b2b3bb4b8bcbc2c"),
+    "kategorija" : "takmicenja",
+    "datum" : "01-25-2021",
+    "tekst" : "Organizuje se takmičenje iz matematike u Bugarskoj."
 }
+
+/* 3 */
 {
-	kategorija : "konferencije",
-	datum: "01-12-2021",
-	tekst: "Sve otkazane konferencije prethodnog meseca će se ove godine održati u febrauru. Pratite obaveštenja u narednom periodu."
+    "_id" : ObjectId("6033fde79b2b3bb4b8bcbc2f"),
+    "kategorija" : "konferencije",
+    "datum" : "01-12-2021",
+    "tekst" : "Sve otkazane konferencije prethodnog meseca će se ove godine održati u febrauru. Pratite obaveštenja u narednom periodu."
 }
+
+/* 4 */
 {
-	kategorija : "praksa",
-	datum: "12-12-2020",
-	tekst: "Praksa u Google-u."
+    "_id" : ObjectId("6033fde79b2b3bb4b8bcbc32"),
+    "kategorija" : "praksa",
+    "datum" : "12-12-2020",
+    "tekst" : "Praksa u Google-u."
 }
+
+/* 5 */
 {
-	kategorija : "praksa",
-	datum: "11-12-2020",
-	tekst: "Praksa u rt-rk."
+    "_id" : ObjectId("6033fde79b2b3bb4b8bcbc35"),
+    "kategorija" : "praksa",
+    "datum" : "11-12-2020",
+    "tekst" : "Praksa u rt-rk."
 }
+
+/* 6 */
 {
-	kategorija : "praksa",
-	datum: "02-12-2021",
-	tekst: "Praksa u Endavi."
+    "_id" : ObjectId("6033fde79b2b3bb4b8bcbc38"),
+    "kategorija" : "praksa",
+    "datum" : "02-12-2021",
+    "tekst" : "Praksa u Endavi."
 }
+
+/* 7 */
 {
-	kategorija : "posao",
-	datum: "12-02-2020",
-	tekst: "Ima posla ko hoće da radi."
+    "_id" : ObjectId("6033fde79b2b3bb4b8bcbc3b"),
+    "kategorija" : "posao",
+    "datum" : "12-02-2020",
+    "tekst" : "Ima posla ko hoće da radi."
 }
+
+/* 8 */
 {
-	kategorija : "SI4PIA",
-	datum: "09-02-2020",
-	tekst: "Starije je od 7 dana."
+    "_id" : ObjectId("6038da662c3ccf3cec162f9e"),
+    "materijali" : [ 
+        "vest1.txt"
+    ],
+    "autor" : "slavko.gajin",
+    "kategorija" : "SI3MOJ",
+    "naslov" : "Vest na mom predmetu",
+    "tekst" : "Ovo je vest.",
+    "timestamp" : 1614338662024.0,
+    "datum" : "2-27-2021",
+    "__v" : 0
 }
+
+/* 9 */
 {
-	kategorija : "SI4PIA",
-	datum: "02-21-2021",
-	tekst: "Projekat iz PIE je ogroman."
+    "_id" : ObjectId("6038e4a82c3ccf3cec162fa0"),
+    "materijali" : [],
+    "autor" : "nbosko",
+    "kategorija" : "RTI4PIA",
+    "naslov" : "vest za rti pia",
+    "tekst" : "tekst vesti stariji od 7 dana i nema fajl",
+    "timestamp" : 1614341288732.0,
+    "datum" : "2-2-2021",
+    "__v" : 0
 }
+
+/* 10 */
 {
-	kategorija : "SI4PIA",
-	datum: "02-19-2021",
-	tekst: "sve ok."
+    "_id" : ObjectId("6038e7662c3ccf3cec162fa1"),
+    "materijali" : [ 
+        "vest2.txt"
+    ],
+    "autor" : "nbosko",
+    "kategorija" : "RTI4PIA",
+    "naslov" : "Jos neka vest",
+    "tekst" : "Vest vest pia pia rti",
+    "timestamp" : 1614341990414.0,
+    "datum" : "3-3-2021",
+    "__v" : 0
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("6038eaf82c3ccf3cec162faa"),
+    "materijali" : [ 
+        "vest1.txt"
+    ],
+    "autor" : "jelica",
+    "kategorija" : "RTI4PIA",
+    "naslov" : "jelicina vest",
+    "tekst" : "Vest o vestima za vesti na vestima i ima fajl i izmenjena je",
+    "timestamp" : 1614342904112.0,
+    "datum" : "3-28-2021",
+    "__v" : 0
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("6038ebb52c3ccf3cec162fab"),
+    "materijali" : [ 
+        ""
+    ],
+    "autor" : "jelica",
+    "tekst" : "srećna nova godina",
+    "naslov" : "novij god",
+    "kategorija" : "RTI4PIA",
+    "timestamp" : 1614343093897.0,
+    "datum" : "1-1-2021",
+    "__v" : 0
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("6038f5776465d43614420a4b"),
+    "materijali" : [],
+    "autor" : "jelica",
+    "kategorija" : "RTI4PIA",
+    "naslov" : "prastaro",
+    "tekst" : "prastara vest",
+    "timestamp" : 1614345591164.0,
+    "datum" : "12-3-2020",
+    "__v" : 0
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("6038f5946465d43614420a4c"),
+    "materijali" : [],
+    "autor" : "jelica",
+    "kategorija" : "RTI4PIA",
+    "naslov" : "ne tako prastara",
+    "tekst" : "malo manje stara",
+    "timestamp" : 1614345620043.0,
+    "datum" : "1-16-2021",
+    "__v" : 0
 }

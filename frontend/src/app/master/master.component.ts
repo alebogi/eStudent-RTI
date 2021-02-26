@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { Predmeti } from '../model/predmeti.model';
 import { PredmetiServisService } from '../servisi/predmeti-servis.service';
 import { latinicaUcirilicu } from '../app.component'
+import { KorisnikServisService } from '../servisi/korisnik-servis.service';
+import { Student } from '../model/studenti.model';
 
 @Component({
   selector: 'app-master',
@@ -15,10 +17,12 @@ export class MasterComponent implements OnInit {
   ulogovaniTip: string;
   ulogovanUsername: string;
   ulogvanImePrezime: string;
+
+  ulogovanStudent: Student;
   
   sviPredmeti: Predmeti[];
 
-  constructor(private servis : PredmetiServisService, private ruter:Router) { }
+  constructor(private servis : PredmetiServisService, private ruter:Router, private servisKorisnik: KorisnikServisService) { }
 
   ngOnInit(): void {
     this.ulogovan = localStorage.getItem("ulogovan");
@@ -26,6 +30,15 @@ export class MasterComponent implements OnInit {
     this.ulogovanUsername = localStorage.getItem("ulogovan_username");
     this.ulogvanImePrezime = localStorage.getItem("ulogovan_imeprezime");
     this.dohvatiPredmete("master");
+    if(this.ulogovaniTip == "student"){
+      this.dohvatiStudenta();
+    }
+  }
+
+  dohvatiStudenta(){
+    this.servisKorisnik.dohvatiStudenta(this.ulogovanUsername).subscribe((s: Student)=>{
+      this.ulogovanStudent = s;
+    })
   }
 
   dohvatiPredmete(smer: string){
@@ -48,7 +61,12 @@ export class MasterComponent implements OnInit {
       this.ruter.navigate(['/predmet']);
     }else if(this.ulogovaniTip == "student"){
       //provera da li prati taj predmet
-      var prati = 1;
+      var prati = 0;
+      this.ulogovanStudent.prati.forEach(element => {
+        if(element == sifra){
+          prati = 1;
+        }
+      });
       if(prati == 1){
         localStorage.setItem("predmet", sifra);
         this.ruter.navigate(['/predmet']);

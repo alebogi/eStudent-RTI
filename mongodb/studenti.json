@@ -1,70 +1,119 @@
+/* 1 */
 {
-	username: "ba170390d@student.etf.rs",
-	password: "lexo123",
-	pass_changed: 0,
-	index: "2017/0390",
-	study_type: "d",
-	name: "Aleksandra",
-	lastname: "Bogićević",
-	status: "active"
+    "_id" : ObjectId("60259c843156e5c62c9da64e"),
+    "username" : "ba170390d@student.etf.rs",
+    "password" : "lexo123",
+    "pass_changed" : 1,
+    "index" : "2017/0390",
+    "study_type" : "d",
+    "name" : "Aleksandra",
+    "lastname" : "Bogićević",
+    "status" : "active",
+    "prati" : [ 
+        "SI4PIA", 
+        "13S113RM2"
+    ]
 }
+
+/* 2 */
 {
-	username: "mn171389@student.etf.rs",
-	password: "munzekonza1987",
-	pass_changed: 0,
-	index: "2017/1389",
-	study_type: "p",
-	name: "Nikola",
-	lastname: "Miličević",
-	status: "active"
+    "_id" : ObjectId("60259c843156e5c62c9da651"),
+    "username" : "mn171389p@student.etf.rs",
+    "password" : "munzekonza1987",
+    "pass_changed" : 1,
+    "index" : "2017/1389",
+    "study_type" : "p",
+    "name" : "Nikola",
+    "lastname" : "Miličević",
+    "status" : "active",
+    "prati" : []
 }
+
+/* 3 */
 {
-	username: "kd150666d@student.etf.rs",
-	password: "duledidule69",
-	pass_changed: 0,
-	index: "2015/0666",
-	study_type: "d",
-	name: "Dušan",
-	lastname: "Kodžopeljić",
-	status: "nonactive"
+    "_id" : ObjectId("60259c843156e5c62c9da654"),
+    "username" : "kd150666d@student.etf.rs",
+    "password" : "duledidule69",
+    "pass_changed" : 0,
+    "index" : "2015/0666",
+    "study_type" : "d",
+    "name" : "Dušan",
+    "lastname" : "Kodžopeljić",
+    "status" : "nonactive",
+    "prati" : [ 
+        "13S111P1", 
+        "13S111P2"
+    ]
 }
+
+/* 4 */
 {
-	username: "ml160645@student.etf.rs",
-	password: "lazarus1312",
-	pass_changed: 0,
-	index: "2016/0645",
-	study_type: "d",
-	name: "Lazar",
-	lastname: "Mihailović",
-	status: "active"
+    "_id" : ObjectId("60259c843156e5c62c9da657"),
+    "username" : "ml160645d@student.etf.rs",
+    "password" : "lazarus1312",
+    "pass_changed" : 0,
+    "index" : "2016/0645",
+    "study_type" : "d",
+    "name" : "Lazar",
+    "lastname" : "Mihailović",
+    "status" : "active",
+    "prati" : [ 
+        "13S112OO1"
+    ]
 }
+
+/* 5 */
 {
-	username: "ca207859@student.etf.rs",
-	password: "volimpartizan333",
-	pass_changed: 0,
-	index: "2020/7859",
-	study_type: "m",
-	name: "Aleksa",
-	lastname: "Čolović",
-	status: "active"
+    "_id" : ObjectId("60259c843156e5c62c9da65a"),
+    "username" : "ca207859m@student.etf.rs",
+    "password" : "123",
+    "pass_changed" : 1,
+    "index" : "2020/7859",
+    "study_type" : "m",
+    "name" : "Aleksa",
+    "lastname" : "Čolović",
+    "status" : "active",
+    "prati" : [ 
+        "13M111SON"
+    ]
 }
+
+/* 6 */
 {
-	username: "lb189012@student.etf.rs",
-	password: "lebronsakaraburme23",
-	pass_changed: 0,
-	index: "2018/9012",
-	study_type: "p",
-	name: "Božo",
-	lastname: "Labović",
-	status: "active"
+    "_id" : ObjectId("60259c843156e5c62c9da65d"),
+    "username" : "lb189012p@student.etf.rs",
+    "password" : "lebronsakaraburme23",
+    "pass_changed" : 0,
+    "index" : "2018/9012",
+    "study_type" : "p",
+    "name" : "Božo",
+    "lastname" : "Labović",
+    "status" : "active"
 }
+
+/* 7 */
 {
-	username: "ld190189@student.etf.rs",
-	password: "codasahmajstor123",
-	pass_changed: 0,
-	index: "2019/0189",
-	study_type: "d",
-	name: "Danilo",
-	lastname: "Lalić",
-	status: "nonactive"
+    "_id" : ObjectId("60259c843156e5c62c9da660"),
+    "username" : "ld190189d@student.etf.rs",
+    "password" : "codasahmajstor123",
+    "pass_changed" : 0,
+    "index" : "2019/0189",
+    "study_type" : "d",
+    "name" : "Danilo",
+    "lastname" : "Lalić",
+    "status" : "nonactive"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("6038cdafd4c1fd26e82405f9"),
+    "username" : "kn210001d@student.etf.rs",
+    "password" : "sifra",
+    "index" : "2021/0001",
+    "study_type" : "d",
+    "name" : "Novajlija",
+    "lastname" : "Korisniković",
+    "status" : "active",
+    "pass_changed" : 1,
+    "__v" : 0
 }

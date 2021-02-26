@@ -113,6 +113,8 @@ export class PredmetComponent implements OnInit {
 
     this.obavServis.dohvatiObavestenja().subscribe((obav: Obavestenja[])=>{
       this.svaObavestenja = obav;
+
+      
       
       for (let i = 0; i < this.svaObavestenja.length; i++){
 
@@ -129,6 +131,32 @@ export class PredmetComponent implements OnInit {
 
       }
     
+      //sortiranje obavestenjaPredmet
+      this.obavestenjaPredmet.sort((a,b)=>{
+        let datumA = new Date(a.datum);
+        let timestampA = datumA.getTime();
+
+        let datumB = new Date(b.datum);
+        let timestampB = datumB.getTime();
+
+        if(timestampA < timestampB) return 1;
+        if(timestampA > timestampB) return -1;
+        return 0;
+      })
+
+
+      //sortiranje obavestenjaStarije
+      this.obavestenjaStarije.sort((a,b)=>{
+        let datumA = new Date(a.datum);
+        let timestampA = datumA.getTime();
+
+        let datumB = new Date(b.datum);
+        let timestampB = datumB.getTime();
+
+        if(timestampA < timestampB) return 1;
+        if(timestampA > timestampB) return -1;
+        return 0;
+      })
       
     })
   }

@@ -3,6 +3,7 @@ import { latinicaUcirilicu } from '../app.component';
 import { Materijal } from '../model/materijal.model';
 import { Obavestenja } from '../model/obavestenja.model';
 import { Predmeti } from '../model/predmeti.model';
+import { KorisnikServisService } from '../servisi/korisnik-servis.service';
 import { MaterijaliServisService } from '../servisi/materijali-servis.service';
 import { ObavestenjaServisService } from '../servisi/obavestenja-servis.service';
 import { PredmetiServisService } from '../servisi/predmeti-servis.service';
@@ -15,7 +16,7 @@ import { PredmetiServisService } from '../servisi/predmeti-servis.service';
 })
 export class IzmenaVestiComponent implements OnInit {
 
-  constructor(private servisObavestenja: ObavestenjaServisService, private servisPredmeti: PredmetiServisService, private servisMaterijali:MaterijaliServisService) { }
+  constructor(private servisObavestenja: ObavestenjaServisService, private servisPredmeti: PredmetiServisService, private servisMaterijali:MaterijaliServisService, private servisKorisnik:KorisnikServisService) { }
 
   ngOnInit(): void {
     this.ulogovan = localStorage.getItem("ulogovan");
@@ -118,7 +119,17 @@ export class IzmenaVestiComponent implements OnInit {
   obrisiFajl(naziv){
     this.servisMaterijali.obrisiFajl(naziv).subscribe((err : any)=>{
       alert("Фајл је успешно обрисан.");
-      location.reload();
+      var i; var ukloni;
+      for(i = 0; i < this.vest.materijali.length; i++){
+        if(this.vest.materijali[i] == naziv){
+          this.vest.materijali[i] = "";
+         
+        }
+      }
+      this.servisObavestenja.izmeniVest(this.selektovanaVestIzmena, this.vest).subscribe((err : any)=>{
+        alert("Вест је успешно измењена.");
+        location.reload();
+      });
     });
   }
 
@@ -175,7 +186,7 @@ export class IzmenaVestiComponent implements OnInit {
     m.postavioImePrezime = this.ulogvanImePrezime;
     m.velicina = event.target.files[0].size;
     m.kategorija = "obavestenje";
-
+    m.naslovObavestenja = this.vest.naslov;
 
     if(this.materijal[i] == undefined){
       this.materijal.push(event.target.files[0]);
@@ -201,9 +212,47 @@ export class IzmenaVestiComponent implements OnInit {
     
     this.vest.autor = this.ulogovanUsername;
 
+    this.vest.materijali = [];
+    if(this.materijalName.length != 0){
+      for(let i = 0; i < this.materijalName.length; i++){
+        //alert(this.materijalName[i])
+        this.vest.materijali.push(this.materijalName[i]);
+        this.uploadFile(i);
+      }
+      
+      
+    }
+
     this.servisObavestenja.izmeniVest(this.selektovanaVestIzmena, this.vest).subscribe((err : any)=>{
       alert("Вест је успешно измењена.");
       location.reload();
+    });
+
+    this.nizFajlovaZaBazu.forEach(element => {
+      this.servisMaterijali.dodajFajl(element).subscribe(ob=>{
+        if(ob['m']=='ok'){
+          alert( "Додавање успешно!! Материјали су додати у базу података.");
+          location.reload();
+        }else if(ob['m']=='no'){
+          alert('Неуспешно додавање материјала.');
+        }
+      })
+    });
+  }
+
+
+  
+
+  
+
+  uploadFile(i){
+    this.servisKorisnik.uploadFile(this.materijal[i]).subscribe(res=>{
+      
+      if(res["ret"]=="ok")
+        alert("Фајл(ови) успешно додат(и) на сервер.");
+       else{
+         alert("Неуспешно додавање на сервер.")
+       } 
     });
   }
 }

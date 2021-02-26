@@ -7,4 +7,5 @@ export class Student{
 	name: string;
 	lastname: string;
 	status: string;
+	prati: Array<Object>;
 }

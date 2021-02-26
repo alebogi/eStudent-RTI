@@ -28,7 +28,9 @@ export class MyheaderComponent implements OnInit {
     localStorage.setItem("ulogovaniTip", "");
     localStorage.setItem("ulogovan_username", "");
     localStorage.setItem("ulogovan_imeprezime", "");
-    this.router.navigate(['/']);
+    //this.router.navigate(['/']);
+    
+    location.reload();
   }
 
 }

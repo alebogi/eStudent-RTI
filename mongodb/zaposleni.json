@@ -1,225 +1,306 @@
+/* 1 */
 {
-	username: "nbosko",
-	password: "bosko123",
-	pass_changed: 1,
-	name: "Boško",
-	lastname: "Nikolić",
-	address: "Grčića Milenka 56, Beograd",
-	phone: "060/3218378",
-	website: null,
-	personal_info: null,
-	title: "redovni profesor",
-	office: "lola-909",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5d7"),
+    "username" : "nbosko",
+    "password" : "sifra",
+    "pass_changed" : 1,
+    "name" : "Boško",
+    "lastname" : "Nikolić",
+    "address" : "Grčića Milenka 56, Beograd",
+    "phone" : "060/3218378",
+    "website" : null,
+    "personal_info" : "moja_biografija.txt",
+    "title" : "redovni profesor",
+    "office" : "lola-909",
+    "status" : "active",
+    "photo" : "icon-nijntje.png"
 }
+
+/* 2 */
 {
-	username: "zaki",
-	password: "sifra123",
-	pass_changed: 0,
-	name: "Zaharije",
-	lastname: "Radivojević",
-	address: "Takovska 6, Beograd",
-	phone: "060/3218392",
-	website: null,
-	personal_info: null,
-	title: "redovni profesor",
-	office: "etf-37a",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5da"),
+    "username" : "zaki",
+    "password" : "sifra123",
+    "pass_changed" : 0,
+    "name" : "Zaharije",
+    "lastname" : "Radivojević",
+    "address" : "Takovska 6, Beograd",
+    "phone" : "060/3218392",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "redovni profesor",
+    "office" : "etf-37a",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 3 */
 {
-	username: "marko.misic",
-	password: "sifra123",
-	pass_changed: 0,
-	name: "Marko",
-	lastname: "Mišić",
-	address: "Topolska 6, Beograd",
-	phone: "060/1234392",
-	website: null,
-	personal_info: null,
-	title: "docent",
-	office: "lola-916",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5dd"),
+    "username" : "tartalja",
+    "password" : "sifra123",
+    "pass_changed" : 0,
+    "name" : "Igor",
+    "lastname" : "Tartalja",
+    "address" : "Topolska 18, Beograd",
+    "phone" : "060/32183456",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "vanredni profesor",
+    "office" : "etf-18",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 4 */
 {
-	username: "slavko.gajin",
-	password: "sifra123",
-	pass_changed: 0,
-	name: "Slavko",
-	lastname: "Gajin",
-	address: "Jurija Gagarina 6, Beograd",
-	phone: "060/1288392",
-	website: null,
-	personal_info: null,
-	title: "vanredni profesor",
-	office: "lola-914",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5e0"),
+    "username" : "milo",
+    "password" : "sifra123",
+    "pass_changed" : 0,
+    "name" : "Milo",
+    "lastname" : "Tomašević",
+    "address" : "Milenka 156, Beograd",
+    "phone" : "060/3218302",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "redovni profesor",
+    "office" : "etf-54a",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 5 */
 {
-	username: "tartalja",
-	password: "sifra123",
-	pass_changed: 0,
-	name: "Igor",
-	lastname: "Tartalja",
-	address: "Topolska 18, Beograd",
-	phone: "060/32183456",
-	website: null,
-	personal_info: null,
-	title: "vanredni profesor",
-	office: "etf-18",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5e3"),
+    "username" : "dmilicev",
+    "password" : "volimos123",
+    "pass_changed" : 0,
+    "name" : "Dragan",
+    "lastname" : "Milićev",
+    "address" : "Maksima Gorkog 7, Beograd",
+    "phone" : null,
+    "website" : "http://afrodita.rcub.bg.ac.rs/~dmilicev/",
+    "personal_info" : null,
+    "title" : "redovni profesor",
+    "office" : "p-24",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 6 */
 {
-	username: "milo",
-	password: "sifra123",
-	pass_changed: 0,
-	name: "Milo",
-	lastname: "Tomašević",
-	address: "Milenka 156, Beograd",
-	phone: "060/3218302",
-	website: null,
-	personal_info: null,
-	title: "redovni profesor",
-	office: "etf-54a",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5e6"),
+    "username" : "pavle.vuletic",
+    "password" : "pavle123",
+    "pass_changed" : 0,
+    "name" : "Pavle",
+    "lastname" : "Vuletić",
+    "address" : "Zire Adamović 4, Beograd",
+    "phone" : "060/3218465",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "vanredni profesor",
+    "office" : "lola-914",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 7 */
 {
-	username: "jeca",
-	password: "jeca123",
-	pass_changed: 0,
-	name: "Jelica",
-	lastname: "Protić",
-	address: "šilerova 7, Beograd",
-	phone: "060/3218456",
-	website: "",
-	personal_info: null,
-	title: "redovni profesor",
-	office: "etf-18",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5e9"),
+    "username" : "drazen.draskovic",
+    "password" : "drasko123",
+    "pass_changed" : 0,
+    "name" : "Dražen",
+    "lastname" : "Drašković",
+    "address" : "Stjepana Filipovića 30, Beograd",
+    "phone" : null,
+    "website" : null,
+    "personal_info" : null,
+    "title" : "docent",
+    "office" : "etf-37b",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 8 */
 {
-	username: "dmilicev",
-	password: "volimos123",
-	pass_changed: 0,
-	name: "Dragan",
-	lastname: "Milićev",
-	address: "Maksima Gorkog 7, Beograd",
-	phone: null,
-	website: "http://afrodita.rcub.bg.ac.rs/~dmilicev/",
-	personal_info: null,
-	title: "redovni profesor",
-	office: "p-24",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5ec"),
+    "username" : "jelica",
+    "password" : "sifra",
+    "pass_changed" : 1,
+    "name" : "Jelica",
+    "lastname" : "Cincović",
+    "address" : "Milutina Milankovića 65, Beograd",
+    "phone" : null,
+    "website" : null,
+    "personal_info" : null,
+    "title" : "asistent",
+    "office" : "etf-37a",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 9 */
 {
-	username: "pavle.vuletic",
-	password: "pavle123",
-	pass_changed: 0,
-	name: "Pavle",
-	lastname: "Vuletić",
-	address: "Zire Adamović 4, Beograd",
-	phone: "060/3218465",
-	website: null,
-	personal_info: null,
-	title: "vanredni profesor",
-	office: "lola-914",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5ef"),
+    "username" : "aleksas",
+    "password" : "aleksa123",
+    "pass_changed" : 0,
+    "name" : "Aleksa",
+    "lastname" : "Srbijanović",
+    "address" : "Cvijićeva 89,  Beograd",
+    "phone" : "064/1234567",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "saradnik",
+    "office" : "etf-37a",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 10 */
 {
-	username: "drazen.draskovic",
-	password: "drasko123",
-	pass_changed: 0,
-	name: "Dražen",
-	lastname: "Drašković",
-	address: "Stjepana Filipovića 30, Beograd",
-	phone: null,
-	website: null,
-	personal_info: null,
-	title: "docent",
-	office: "etf-37b",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5f2"),
+    "username" : "ristob",
+    "password" : "risto123",
+    "pass_changed" : 0,
+    "name" : "Risto",
+    "lastname" : "Bošković",
+    "address" : "Nehruova 157, Beograd",
+    "phone" : "065/1239875",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "lab. tehničar",
+    "office" : "p-25",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 11 */
 {
-	username: "jelica",
-	password: "jelica123",
-	pass_changed: 0,
-	name: "Jelica",
-	lastname: "Cincović",
-	address: "Milutina Milankovića 65, Beograd",
-	phone: null,
-	website: null,
-	personal_info: null,
-	title: "asistent",
-	office: "etf-37a",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("602ee5f287f220955afcf5f5"),
+    "username" : "nenadko",
+    "password" : "nenad123",
+    "pass_changed" : 0,
+    "name" : "Nenad",
+    "lastname" : "Korolija",
+    "address" : "Vojvođanska 17, Beograd",
+    "phone" : "066/1735175",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "lab. inž.",
+    "office" : "p-25",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 12 */
 {
-	username: "aleksas",
-	password: "aleksa123",
-	pass_changed: 0,
-	name: "Aleksa",
-	lastname: "Srbijanović",
-	address: "Cvijićeva 89,  Beograd",
-	phone: "064/1234567",
-	website: null,
-	personal_info: null,
-	title: "saradnik",
-	office: "etf-37a",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("6033e1319b2b3bb4b8bcb32d"),
+    "username" : "jeca",
+    "password" : "jeca123",
+    "pass_changed" : 0,
+    "name" : "Jelica",
+    "lastname" : "Protić",
+    "address" : "Šilerova 7, Beograd",
+    "phone" : "060/3218456",
+    "website" : "",
+    "personal_info" : null,
+    "title" : "redovni profesor",
+    "office" : "etf-18",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 13 */
 {
-	username: "ristob",
-	password: "risto123",
-	pass_changed: 0,
-	name: "Risto",
-	lastname: "Bošković",
-	address: "Nehruova 157, Beograd",
-	phone: "065/1239875",
-	website: null,
-	personal_info: null,
-	title: "lab. tehničar",
-	office: "p-25",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("60340e939b2b3bb4b8bcc14a"),
+    "username" : "slavko.gajin",
+    "password" : "123",
+    "pass_changed" : 1,
+    "name" : "Slavko",
+    "lastname" : "Gajin",
+    "address" : "Jurija Gagarina 6, Beograd",
+    "phone" : "060/1288392",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "vanredni profesor",
+    "office" : "lola-914",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 14 */
 {
-	username: "nenadko",
-	password: "nenad123",
-	pass_changed: 0,
-	name: "Nenad",
-	lastname: "Korolija",
-	address: "Vojvođanska 17, Beograd",
-	phone: "066/1735175",
-	website: null,
-	personal_info: null,
-	title: "lab. inž.",
-	office: "p-25",
-	status: "active",
-	photo: null
+    "_id" : ObjectId("6034128a9b2b3bb4b8bcc252"),
+    "username" : "marko.misic",
+    "password" : "sifra123",
+    "pass_changed" : 0,
+    "name" : "Marko",
+    "lastname" : "Mišić",
+    "address" : "Topolska 6, Beograd",
+    "phone" : "060/1234392",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "docent",
+    "office" : "lola-916",
+    "status" : "active",
+    "photo" : null
 }
+
+/* 15 */
 {
-	username: "ana.lazovic",
-	password: "ana123",
-	pass_changed: 0,
-	name: "Ana",
-	lastname: "Lazović",
-	address: "Gandijeva 99, Beograd",
-	phone: "061/6425978",
-	website: null,
-	personal_info: null,
-	title: "istraživač",
-	office: "p-25",
-	status: "nonactive",
-	photo: null
+    "_id" : ObjectId("60357bf59b2b3bb4b8bce019"),
+    "username" : "ana.lazovic",
+    "password" : "ana123",
+    "pass_changed" : 0,
+    "name" : "Ana",
+    "lastname" : "Lazović",
+    "address" : "Gandijeva 99, Beograd",
+    "phone" : "061/6425978",
+    "website" : null,
+    "personal_info" : null,
+    "title" : "istraživač",
+    "office" : "p-25",
+    "status" : "nonactive",
+    "photo" : null
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("60385e3b3eefce2fb0ea51a6"),
+    "username" : "novizap",
+    "password" : "123",
+    "name" : "Novi",
+    "lastname" : "Zaposlenković",
+    "address" : "Jurija Gagarina 19, Beograd",
+    "phone" : "061/0123456",
+    "title" : "redovni profesor",
+    "office" : "etf-56",
+    "status" : "active",
+    "pass_changed" : 1,
+    "photo" : "fghj.png",
+    "personal_info" : "moja_biografija.txt",
+    "__v" : 0
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("6038d5ea2c3ccf3cec162f97"),
+    "username" : "zikapavlovic",
+    "password" : "123",
+    "name" : "Žika",
+    "lastname" : "Pavlović",
+    "address" : "Zlatno Burence 7, Beograd",
+    "phone" : "",
+    "title" : "vanredni profesor",
+    "office" : "etf-9",
+    "status" : "active",
+    "pass_changed" : 1,
+    "photo" : "og-image.png",
+    "personal_info" : "moja_biografija.txt",
+    "__v" : 0,
+    "website" : null
 }

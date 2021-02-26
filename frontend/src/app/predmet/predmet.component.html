@@ -31,6 +31,11 @@
                         </div>
                         <div *ngFor="let ob of obavestenjaStarije">
                             <i>{{datumIspis(ob.datum)}}</i> - {{prevedi(ob.tekst)}}
+                            <div *ngFor="let o of ob.materijali">
+                                <div *ngIf="o!=''">
+                                    <button type="button" class="btn bg-dark" (click)="preuzmi(o)"><i class="fa fa-download" aria-hidden="true"></i>{{o}}</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
@@ -86,7 +91,7 @@
                     <br><hr><br><h5><b>Испитна питања</b></h5>
                     <div class="justify-content-left text-left">
                         <b>Испитни рокови:</b>
-                        <div *ngFor="let m of nizMaterijalaVezbe"> 
+                        <div *ngFor="let m of nizMaterijalaIspit"> 
                             {{m.nazivFajla}}<button type="button" class="btn bg-dark" (click)="preuzmi(m.nazivFajla)"><i class="fa fa-download" aria-hidden="true"></i></button>
                         </div>
                     </div>
@@ -101,7 +106,7 @@
                             Нема информација.
                             </div>
                         <div > <b>Материјали</b> <br>
-                            <div *ngFor="let  m of nizMaterijalaVezbe">
+                            <div *ngFor="let  m of nizMaterijalaLab">
                                 {{m.nazivFajla}}<button type="button" class="btn bg-dark" (click)="preuzmi(m.nazivFajla)"><i class="fa fa-download" aria-hidden="true"></i></button>
                             </div>
                         </div>

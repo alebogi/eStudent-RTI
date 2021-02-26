@@ -26,6 +26,9 @@ let Student = new Schema({
     },
     status: {
         type: String
+    },
+    prati: {
+        type: Array
     }
 })
 

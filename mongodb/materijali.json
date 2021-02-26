@@ -1,0 +1,252 @@
+/* 1 */
+{
+    "_id" : ObjectId("60382afcbf94061c849e9272"),
+    "sifraPredmeta" : "OT4PIA",
+    "nazivFajla" : "v1_LeksickaAnaliza_V_dodatak.doc",
+    "tip" : "doc",
+    "datumPostavljanja" : "2-25-2021",
+    "postavio" : "nbosko",
+    "velicina" : "105984",
+    "kategorija" : "predavanja",
+    "postavioImePrezime" : "Boško Nikolić",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("60384314de7e773d5c1ee284"),
+    "sifraPredmeta" : "OT4PIA",
+    "nazivFajla" : "v6_TDParsiranje.doc",
+    "tip" : "doc",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "198144",
+    "kategorija" : "obavestenje",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6038434ede7e773d5c1ee285"),
+    "sifraPredmeta" : "OT4PIA",
+    "nazivFajla" : "v7_ATGramatike.doc",
+    "tip" : "doc",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "342016",
+    "kategorija" : "predavanja",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6038434ede7e773d5c1ee286"),
+    "sifraPredmeta" : "OT4PIA",
+    "nazivFajla" : "v4_BottomUp.doc",
+    "tip" : "doc",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "1072640",
+    "kategorija" : "predavanja",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6038444dde7e773d5c1ee287"),
+    "sifraPredmeta" : "OT4PIA",
+    "nazivFajla" : "PP1_P03.ppt",
+    "tip" : "ppt",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "265728",
+    "kategorija" : "vezbe",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("603844f5de7e773d5c1ee288"),
+    "sifraPredmeta" : "OT4PIA",
+    "nazivFajla" : "PP1_P05.ppt",
+    "tip" : "ppt",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "584192",
+    "kategorija" : "ispit",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("60384786017e1f052c11eef0"),
+    "sifraPredmeta" : "OT4PIA",
+    "nazivFajla" : "PP1_P08.ppt",
+    "tip" : "ppt",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "482816",
+    "kategorija" : "lab",
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("6038d8bf2c3ccf3cec162f99"),
+    "sifraPredmeta" : "SI3MOJ",
+    "nazivFajla" : "predavanja1.pptx",
+    "tip" : "pptx",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "slavko.gajin",
+    "postavioImePrezime" : "Slavko Gajin",
+    "velicina" : "764665",
+    "kategorija" : "predavanja",
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("6038d8dd2c3ccf3cec162f9b"),
+    "sifraPredmeta" : "SI3MOJ",
+    "nazivFajla" : "vezbe1.pptx",
+    "tip" : "pptx",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "slavko.gajin",
+    "postavioImePrezime" : "Slavko Gajin",
+    "velicina" : "121812",
+    "kategorija" : "vezbe",
+    "__v" : 0
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("6038d8dd2c3ccf3cec162f9c"),
+    "sifraPredmeta" : "SI3MOJ",
+    "nazivFajla" : "vezbe2.pptx",
+    "tip" : "pptx",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "slavko.gajin",
+    "postavioImePrezime" : "Slavko Gajin",
+    "velicina" : "121812",
+    "kategorija" : "vezbe",
+    "__v" : 0
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("6038d8fa2c3ccf3cec162f9d"),
+    "sifraPredmeta" : "SI3MOJ",
+    "nazivFajla" : "ispitni_rok1.pdf",
+    "tip" : "pdf",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "slavko.gajin",
+    "postavioImePrezime" : "Slavko Gajin",
+    "velicina" : "38877",
+    "kategorija" : "ispit",
+    "__v" : 0
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("6038e7662c3ccf3cec162fa2"),
+    "sifraPredmeta" : "RTI4PIA",
+    "nazivFajla" : "vest2.txt",
+    "tip" : "txt",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "11",
+    "kategorija" : "obavestenje",
+    "naslovObavestenja" : "Jos neka vest",
+    "__v" : 0
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("6038e7c72c3ccf3cec162fa3"),
+    "sifraPredmeta" : "RTI4PIA",
+    "nazivFajla" : "predavanja1.pptx",
+    "tip" : "pptx",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "764665",
+    "kategorija" : "predavanja",
+    "__v" : 0
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("6038e7c72c3ccf3cec162fa4"),
+    "sifraPredmeta" : "RTI4PIA",
+    "nazivFajla" : "predavanja2.pptx",
+    "tip" : "pptx",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "764665",
+    "kategorija" : "predavanja",
+    "__v" : 0
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("6038e7eb2c3ccf3cec162fa5"),
+    "sifraPredmeta" : "RTI4PIA",
+    "nazivFajla" : "vezbe2.pptx",
+    "tip" : "pptx",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "nbosko",
+    "postavioImePrezime" : "Boško Nikolić",
+    "velicina" : "121812",
+    "kategorija" : "vezbe",
+    "__v" : 0
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("6038e8802c3ccf3cec162fa6"),
+    "sifraPredmeta" : "RTI4PIA",
+    "nazivFajla" : "vezbe1.pptx",
+    "tip" : "pptx",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "jelica",
+    "postavioImePrezime" : "Jelica Cincović",
+    "velicina" : "121812",
+    "kategorija" : "vezbe",
+    "__v" : 0
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("6038e8a32c3ccf3cec162fa7"),
+    "sifraPredmeta" : "RTI4PIA",
+    "nazivFajla" : "ispitni_rok_resenje1.pdf",
+    "tip" : "pdf",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "jelica",
+    "postavioImePrezime" : "Jelica Cincović",
+    "velicina" : "39404",
+    "kategorija" : "ispit",
+    "__v" : 0
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("6038e9072c3ccf3cec162fa8"),
+    "sifraPredmeta" : "RTI4PIA",
+    "nazivFajla" : "lab1.txt",
+    "tip" : "txt",
+    "datumPostavljanja" : "2-26-2021",
+    "postavio" : "jelica",
+    "postavioImePrezime" : "Jelica Cincović",
+    "velicina" : "11",
+    "kategorija" : "lab",
+    "__v" : 0
+}
