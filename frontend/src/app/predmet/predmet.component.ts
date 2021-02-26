@@ -9,6 +9,8 @@ import { ObavestenjaServisService } from '../servisi/obavestenja-servis.service'
 import { PredmetiServisService } from '../servisi/predmeti-servis.service';
 import { ispisiDatum } from '../app.component';
 import {saveAs} from "file-saver";
+import { MaterijaliServisService } from '../servisi/materijali-servis.service';
+import { Materijal } from '../model/materijal.model';
 
 @Component({
   selector: 'app-predmet',
@@ -31,7 +33,12 @@ export class PredmetComponent implements OnInit {
   obavestenjaPredmet: Obavestenja[] = [];
   obavestenjaStarije: Obavestenja[] = [];
 
-  constructor(private servis : PredmetiServisService, private ruter:Router, private korservis: KorisnikServisService, private obavServis: ObavestenjaServisService) { }
+  nizMaterijalaPredavanja: Materijal[] = [];
+  nizMaterijalaVezbe: Materijal[] = [];
+  nizMaterijalaIspit: Materijal[] = [];
+  nizMaterijalaLab: Materijal[] = [];
+
+  constructor(private servis : PredmetiServisService, private ruter:Router, private korservis: KorisnikServisService, private obavServis: ObavestenjaServisService, private servisMaterijali: MaterijaliServisService) { }
   
 
   ngOnInit(): void {
@@ -42,6 +49,10 @@ export class PredmetComponent implements OnInit {
     this.predmetSifra = localStorage.getItem("predmet");
     this.dohvatiPredmetInfo();
     this.dohvatiObavestenja(this.predmetSifra);
+      this.dohvatiFajlovePredavanja();
+      this.dohvatiFajloveVezbe();
+      this.dohvatiFajloveIspit();
+      this.dohvatiFajloveLab();
   }
 
   prevedi(str:string){
@@ -142,12 +153,42 @@ export class PredmetComponent implements OnInit {
     return result;
   }
 
-  //-------------------------------
-  // download(){
-  //   this.korservis.downloadFile("template.txt").subscribe(blob => {
-  //     saveAs(blob, "smrd.txt");
-  // }
-  //   )
-  // }
+  preuzmi(naziv){
+    this.servisMaterijali.downloadFile(naziv).subscribe(blob => {
+           saveAs(blob, naziv);
+       } )
+  }
+
+
+
+
+  dohvatiFajlovePredavanja(){
+    this.servisMaterijali.dohvatiFajlove(this.predmetSifra, "predavanja").subscribe((m: Materijal[])=>{
+      this.nizMaterijalaPredavanja = m;
+    })
+  }
+
+  dohvatiFajloveVezbe(){
+    this.servisMaterijali.dohvatiFajlove(this.predmetSifra, "vezbe").subscribe((m: Materijal[])=>{
+      this.nizMaterijalaVezbe = m;
+
+    })
+  }
+
+  
+
+  dohvatiFajloveIspit(){
+    this.servisMaterijali.dohvatiFajlove(this.predmetSifra, "ispit").subscribe((m: Materijal[])=>{
+      this.nizMaterijalaIspit = m;
+
+    })
+  }
+
+  dohvatiFajloveLab(){
+    this.servisMaterijali.dohvatiFajlove(this.predmetSifra, "lab").subscribe((m: Materijal[])=>{
+      this.nizMaterijalaLab = m;
+
+    })
+  }
 }
 
